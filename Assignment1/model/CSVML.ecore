@@ -21,7 +21,7 @@
     <eLiterals name="Boolean" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StaticField" eSuperTypes="#//FieldDefinition"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DerivedField" eSuperTypes="#//FieldDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DerivedField" abstract="true" eSuperTypes="#//FieldDefinition"/>
   <eClassifiers xsi:type="ecore:EClass" name="AggregationField" eSuperTypes="#//DerivedField">
     <eStructuralFeatures xsi:type="ecore:EReference" name="aggregates" upperBound="-1"
         eType="#//FieldDefinition"/>
@@ -33,21 +33,20 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DefaultValue" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Rule" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Resultvalue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ResultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Index" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="minreq">
     <eLiterals name="asdf" literal="String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ComparisonRules" eSuperTypes="#//Rule">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ComparisonValue" eType="#//FieldType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ComparisonValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" lowerBound="1"
         eType="#//Operator"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="compares" lowerBound="1"
-        eType="#//FieldDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compares" eType="#//FieldDefinition"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CompositeRules" eSuperTypes="#//Rule">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" lowerBound="1"

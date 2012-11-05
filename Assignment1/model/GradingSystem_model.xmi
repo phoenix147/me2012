@@ -55,7 +55,7 @@
             Name="S1"
             RequiredPoints="176"/>
         <consistsOf
-            Name="G2"
+            Name="U2"
             RequiredPoints="150"/>
         <consistsOf
             Name="B3"

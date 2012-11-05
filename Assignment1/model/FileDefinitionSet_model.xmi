@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ASCII"?>
+<csvml:FileDefinitionSet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:csvml="http://csvml/1.0"
+    xsi:schemaLocation="http://csvml/1.0 CSVML.ecore">
+  <consistsOf
+      Name="Model Engineering WS2012 Gradings">
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Name="Student Registration Number"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="1"
+        Name="Student First Name"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="2"
+        Name="Student Last Name"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="3"
+        Name="Lecture Part Exam 1 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="4"
+        Name="Lecture Part Exam 2 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="5"
+        Name="Lab Part Lab 1 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="6"
+        Name="Lab Part Lab 2 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="7"
+        Name="Lab Part Lab 3 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:StaticField"
+        Index="8"
+        Name="Lab Part Lab 4 Points"
+        FieldType="Integer"/>
+    <consistsOf
+        xsi:type="csvml:AggregationField"
+        Index="9"
+        Name="Lecture Part Sum"
+        FieldType="Integer"
+        aggregates="//@consistsOf.0/@consistsOf.3 //@consistsOf.0/@consistsOf.4"/>
+    <consistsOf
+        xsi:type="csvml:AggregationField"
+        Index="10"
+        Name="Lab Part Sum"
+        FieldType="Integer"
+        aggregates="//@consistsOf.0/@consistsOf.5 //@consistsOf.0/@consistsOf.6 //@consistsOf.0/@consistsOf.7 //@consistsOf.0/@consistsOf.8"/>
+    <consistsOf
+        xsi:type="csvml:RuleBasedField"
+        Index="11"
+        Name="Min Requirements Fulfilled"
+        FieldType="Boolean"
+        DefaultValue="false">
+      <has xsi:type="csvml:CompositeRules"
+          ResultValue="true">
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            ComparisonValue="25"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.3"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="1"
+            ComparisonValue="25"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.4"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="2"
+            ComparisonValue="8"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.5"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="3"
+            ComparisonValue="8"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.6"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="4"
+            ComparisonValue="8"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.7"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="5"
+            ComparisonValue="8"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.8"/>
+        <composes
+            xsi:type="csvml:ComparisonRules"
+            ResultValue="true"
+            Index="6"
+            ComparisonValue="50"
+            Operator=">="
+            compares="//@consistsOf.0/@consistsOf.10"/>
+      </has>
+    </consistsOf>
+    <consistsOf
+        xsi:type="csvml:AggregationField"
+        Name="Total Sum"
+        FieldType="Integer"
+        aggregates="//@consistsOf.0/@consistsOf.3 //@consistsOf.0/@consistsOf.4 //@consistsOf.0/@consistsOf.5 //@consistsOf.0/@consistsOf.6 //@consistsOf.0/@consistsOf.7 //@consistsOf.0/@consistsOf.8"/>
+    <consistsOf
+        xsi:type="csvml:RuleBasedField">
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="N5"
+          ComparisonValue="false"
+          Operator="=="
+          compares="//@consistsOf.0/@consistsOf.11"/>
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="S1"
+          Index="1"
+          ComparisonValue="176"
+          Operator=">="
+          compares="//@consistsOf.0/@consistsOf.12"/>
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="U2"
+          Index="2"
+          ComparisonValue="150"
+          Operator=">="
+          compares="//@consistsOf.0/@consistsOf.12"/>
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="B3"
+          Index="3"
+          ComparisonValue="124"
+          Operator=">="
+          compares="//@consistsOf.0/@consistsOf.12"/>
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="G4"
+          Index="4"
+          ComparisonValue="100"
+          Operator=">="
+          compares="//@consistsOf.0/@consistsOf.12"/>
+      <has xsi:type="csvml:ComparisonRules"
+          ResultValue="N5"
+          Index="5"
+          ComparisonValue="0"
+          Operator=">="
+          compares="//@consistsOf.0/@consistsOf.12"/>
+    </consistsOf>
+  </consistsOf>
+</csvml:FileDefinitionSet>
