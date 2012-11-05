@@ -7,6 +7,10 @@
         <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Course/Name"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_whuyaia0EeKMuY7ffou3iA"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_MSadECdPEeKIUe1eC3beMw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Course/Semester"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MSadESdPEeKIUe1eC3beMw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_whuyYia0EeKMuY7ffou3iA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_whuyYya0EeKMuY7ffou3iA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_whuyZCa0EeKMuY7ffou3iA"/>
@@ -18,7 +22,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_whuLUSa0EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="GSML.ecore#//Course"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whuLUia0EeKMuY7ffou3iA" x="95" y="125"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whuLUia0EeKMuY7ffou3iA" x="65" y="125"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_whvZcCa0EeKMuY7ffou3iA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_whvZcya0EeKMuY7ffou3iA" type="4001"/>
@@ -30,6 +34,10 @@
       <children xmi:type="notation:Node" xmi:id="_whwAiia0EeKMuY7ffou3iA" type="2001">
         <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Task/MinRequirement"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_whwAiya0EeKMuY7ffou3iA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_93gdQCdPEeKIUe1eC3beMw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Task/RequirementType"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_93gdQSdPEeKIUe1eC3beMw"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_whwAgSa0EeKMuY7ffou3iA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_whwAgia0EeKMuY7ffou3iA"/>
@@ -152,6 +160,25 @@
     <element xmi:type="ecore:EClass" href="GSML.ecore#//GradingSystem"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wUugoidCEeKhXc5IAKmT-w" x="105" y="18"/>
   </children>
+  <children xmi:type="notation:Node" xmi:id="_3nbmUCdPEeKIUe1eC3beMw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_3nc0cCdPEeKIUe1eC3beMw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_3nc0cSdPEeKIUe1eC3beMw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_6QWwYCdPEeKIUe1eC3beMw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="GSML.ecore#//RequirementType/Absolute"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6QWwYSdPEeKIUe1eC3beMw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_79GmECdPEeKIUe1eC3beMw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="GSML.ecore#//RequirementType/Percentage"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_79GmESdPEeKIUe1eC3beMw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_3nc0cidPEeKIUe1eC3beMw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_3nc0cydPEeKIUe1eC3beMw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_3nc0dCdPEeKIUe1eC3beMw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_3nbmUSdPEeKIUe1eC3beMw" fontColor="4210752" fontName="Nimbus Sans L" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="GSML.ecore#//RequirementType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nbmUidPEeKIUe1eC3beMw" x="830" y="85"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_whp54Sa0EeKMuY7ffou3iA"/>
   <element xmi:type="ecore:EPackage" href="GSML.ecore#/"/>
   <edges xmi:type="notation:Edge" xmi:id="_wh0R8ia0EeKMuY7ffou3iA" type="3002" source="_QuOCYCdBEeKhXc5IAKmT-w" target="_whvZcCa0EeKMuY7ffou3iA">
@@ -221,7 +248,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_avhvQSdBEeKhXc5IAKmT-w" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_avhvQidBEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="GSML.ecore#//Course/semester"/>
+    <element xmi:type="ecore:EReference" href="GSML.ecore#//Course/has.1"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_avhvQydBEeKhXc5IAKmT-w" points="[12, 3, -101, -20]$[114, 4, 1, -19]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_avmnwCdBEeKhXc5IAKmT-w" id="(0.8983050847457628,0.5714285714285714)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_avnO0CdBEeKhXc5IAKmT-w" id="(0.12745098039215685,0.47619047619047616)"/>
