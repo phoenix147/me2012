@@ -3,9 +3,9 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gradingsystem" nsURI="http://gradingsystem/1.0" nsPrefix="gradingsystem">
   <eClassifiers xsi:type="ecore:EClass" name="Course">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="consitsOf" upperBound="-1"
-        eType="#//Task"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="has" eType="#//GradingScheme"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="semester" upperBound="-1"
+        eType="#//Grading" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Task" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -27,5 +27,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="RequiredPoints" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Grading" eSuperTypes="#//GradingScheme">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consitsOf" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" lowerBound="1" eType="#//GradingScheme"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GradingSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comprises" upperBound="-1"
+        eType="#//Course" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
