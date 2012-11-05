@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gradingsystem:GradingSystem
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gradingsystem="http://gradingsystem/1.0"
+    xsi:schemaLocation="http://gradingsystem/1.0 GSML.ecore">
+  <comprises
+      Name="188.923 4VU Model Engineering WS 2012/2013"
+      Semester="WS 2012/2013">
+    <has>
+      <consitsOf
+          xsi:type="gradingsystem:TaskGroup"
+          Name="Lecture Part">
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Exam 1"
+            MinRequirement="50"
+            RequirementType="Percentage"
+            MaxPoints="50"/>
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Exam 2"
+            MinRequirement="50"
+            RequirementType="Percentage"
+            MaxPoints="50"/>
+      </consitsOf>
+      <consitsOf
+          xsi:type="gradingsystem:TaskGroup"
+          Name="Lab Part"
+          MinRequirement="50">
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Lab 1 Meta Modeling"
+            MinRequirement="8"
+            MaxPoints="25"/>
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Lab 2 Concrete Syntax"
+            MinRequirement="8"
+            MaxPoints="25"/>
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Lab 3 Model Transformation"
+            MinRequirement="8"
+            MaxPoints="25"/>
+        <exists
+            xsi:type="gradingsystem:ConcreteTask"
+            Name="Lab 4 Code Generation"
+            MinRequirement="8"
+            MaxPoints="25"/>
+      </consitsOf>
+      <has>
+        <consistsOf
+            Name="S1"
+            RequiredPoints="176"/>
+        <consistsOf
+            Name="G2"
+            RequiredPoints="150"/>
+        <consistsOf
+            Name="B3"
+            RequiredPoints="124"/>
+        <consistsOf
+            Name="G4"
+            RequiredPoints="100"/>
+        <consistsOf
+            Name="N5"
+            isDefaultValue="true"/>
+      </has>
+    </has>
+  </comprises>
+</gradingsystem:GradingSystem>
