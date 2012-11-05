@@ -22,4 +22,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StaticField" eSuperTypes="#//FieldDefinition"/>
   <eClassifiers xsi:type="ecore:EClass" name="DerivedField" eSuperTypes="#//FieldDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AggregationField" eSuperTypes="#//DerivedField"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RuleBasedField" eSuperTypes="#//DerivedField">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Rule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="minreq">
+    <eLiterals name="asdf" literal="String"/>
+  </eClassifiers>
 </ecore:EPackage>
