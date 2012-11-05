@@ -22,7 +22,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_whuLUSa0EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="GSML.ecore#//Course"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whuLUia0EeKMuY7ffou3iA" x="65" y="125"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whuLUia0EeKMuY7ffou3iA" x="65" y="120"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_whvZcCa0EeKMuY7ffou3iA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_whvZcya0EeKMuY7ffou3iA" type="4001"/>
@@ -115,6 +115,10 @@
         <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Grade/RequiredPoints"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_wh0R8Sa0EeKMuY7ffou3iA"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_w4GyICdQEeKIUe1eC3beMw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="GSML.ecore#//Grade/isDefaultValue"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_w4GyISdQEeKIUe1eC3beMw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_whzq4Sa0EeKMuY7ffou3iA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_whzq4ia0EeKMuY7ffou3iA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_whzq4ya0EeKMuY7ffou3iA"/>
@@ -158,7 +162,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_wUugoSdCEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="GSML.ecore#//GradingSystem"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wUugoidCEeKhXc5IAKmT-w" x="105" y="18"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wUugoidCEeKhXc5IAKmT-w" x="95" y="5"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_3nbmUCdPEeKIUe1eC3beMw" type="1005">
     <children xmi:type="notation:Node" xmi:id="_3nc0cCdPEeKIUe1eC3beMw" type="4010"/>
@@ -177,7 +181,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_3nbmUSdPEeKIUe1eC3beMw" fontColor="4210752" fontName="Nimbus Sans L" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="GSML.ecore#//RequirementType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nbmUidPEeKIUe1eC3beMw" x="830" y="85"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nbmUidPEeKIUe1eC3beMw" x="475" y="30"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_whp54Sa0EeKMuY7ffou3iA"/>
   <element xmi:type="ecore:EPackage" href="GSML.ecore#/"/>
