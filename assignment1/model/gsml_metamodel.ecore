@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gsml_metamodel" nsURI="http://gsml_metamodel/1.0" nsPrefix="gsml_metamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="GradingSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Course"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comprise" upperBound="-1"
+        eType="#//Course" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Course">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consists of" eType="#//Task.1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//GradingScheme"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference1" eType="#//Course"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference2" eType="#//Grading"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task" abstract="true" eSuperTypes="#//ConcreteTask #//TaskGroup">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConcreteTask" eSuperTypes="#//TaskGroup #//GradingSystem #//Task.1">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MaxPoints" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TaskGroup" eSuperTypes="#//Task.1">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" lowerBound="1"
+        upperBound="-1" eType="#//Task.1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MinRequirement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RequirementIsAbsolute"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="EDataType0"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GradingScheme">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Semester" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consists of" lowerBound="1"
+        upperBound="-1" eType="#//Grade"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NegativeGrade" eType="#//Grade.1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Grade" instanceClassName="at.ac.tuwien.modeleng.Grade">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RequiredPoints" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MinRequirement" instanceTypeName="Object"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="MinRequirement" instanceTypeName="Object"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Grading">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Semester" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Task.1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference1" eType="#//GradingScheme"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Grade" instanceTypeName="Grade"/>
+</ecore:EPackage>
