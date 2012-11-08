@@ -13,14 +13,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_KMGe0ya1EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_KMECkSa1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//FileDefinitionSet"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//FileDefinitionSet"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KMECkia1EeKMuY7ffou3iA" x="55" y="55"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_MhK4wCa1EeKMuY7ffou3iA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_MhMG4Ca1EeKMuY7ffou3iA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_MhMG4Sa1EeKMuY7ffou3iA" type="5001">
       <children xmi:type="notation:Node" xmi:id="_RHzssCa1EeKMuY7ffou3iA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//FileDefinition/Name"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//FileDefinition/Name"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_RHzssSa1EeKMuY7ffou3iA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_MhMG4ia1EeKMuY7ffou3iA"/>
@@ -33,22 +33,22 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_MhMt8ya1EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_MhK4wSa1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//FileDefinition"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//FileDefinition"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MhK4wia1EeKMuY7ffou3iA" x="285" y="55"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_YnfxYCa1EeKMuY7ffou3iA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_YnhmkCa1EeKMuY7ffou3iA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_YnhmkSa1EeKMuY7ffou3iA" type="5001">
       <children xmi:type="notation:Node" xmi:id="_ggCa8Ca1EeKMuY7ffou3iA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//FieldDefinition/Index"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//FieldDefinition/Index"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_ggCa8Sa1EeKMuY7ffou3iA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_qaSdkCa1EeKMuY7ffou3iA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//FieldDefinition/Name"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//FieldDefinition/Name"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_qaSdkSa1EeKMuY7ffou3iA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_R1dAYCa2EeKMuY7ffou3iA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//FieldDefinition/FieldType"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//FieldDefinition/FieldType"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_R1dAYSa2EeKMuY7ffou3iA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_Ynhmkia1EeKMuY7ffou3iA"/>
@@ -61,22 +61,22 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_YniNpCa1EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_YnfxYSa1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//FieldDefinition"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//FieldDefinition"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YnfxYia1EeKMuY7ffou3iA" x="500" y="60"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_zZjeoCa1EeKMuY7ffou3iA" type="1005">
     <children xmi:type="notation:Node" xmi:id="_zZl64Ca1EeKMuY7ffou3iA" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_zZnJACa1EeKMuY7ffou3iA" type="5008">
       <children xmi:type="notation:Node" xmi:id="_D6N0kCa2EeKMuY7ffou3iA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//FieldType/String"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//FieldType/String"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_D6N0kSa2EeKMuY7ffou3iA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_JbVTwCa2EeKMuY7ffou3iA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//FieldType/Integer"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//FieldType/Integer"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_JbVTwSa2EeKMuY7ffou3iA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_MLg8YCa2EeKMuY7ffou3iA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//FieldType/Boolean"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//FieldType/Boolean"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_MLg8YSa2EeKMuY7ffou3iA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_zZnJASa1EeKMuY7ffou3iA"/>
@@ -84,7 +84,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_zZnJAya1EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_zZjeoSa1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EEnum" href="CSVML.ecore#//FieldType"/>
+    <element xmi:type="ecore:EEnum" href="csv.ecore#//FieldType"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zZjeoia1EeKMuY7ffou3iA" x="210" y="155"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_630xkCa2EeKMuY7ffou3iA" type="1001">
@@ -100,7 +100,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_631_tya2EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_630xkSa2EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//StaticField"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//StaticField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_630xkia2EeKMuY7ffou3iA" x="405" y="215"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_FqqCACa3EeKMuY7ffou3iA" type="1001">
@@ -116,14 +116,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_Fqr3Mya3EeKMuY7ffou3iA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_FqqCASa3EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//DerivedField"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//DerivedField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FqqCAia3EeKMuY7ffou3iA" x="655" y="215"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_nHBu4CcqEeKhXc5IAKmT-w" type="1001">
     <children xmi:type="notation:Node" xmi:id="_nHDkECcqEeKhXc5IAKmT-w" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_nHELICcqEeKhXc5IAKmT-w" type="5001">
       <children xmi:type="notation:Node" xmi:id="_PBND8CdiEeKU3O7O5y6VkA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//AggregationField/Aggregation"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//AggregationField/Aggregation"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_PBND8SdiEeKU3O7O5y6VkA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_nHELIScqEeKhXc5IAKmT-w"/>
@@ -136,14 +136,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_nHEyMycqEeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_nHBu4ScqEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//AggregationField"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//AggregationField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHBu4icqEeKhXc5IAKmT-w" x="735" y="325"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_pE2tgCcqEeKhXc5IAKmT-w" type="1001">
     <children xmi:type="notation:Node" xmi:id="_pE37oCcqEeKhXc5IAKmT-w" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_pE4isCcqEeKhXc5IAKmT-w" type="5001">
       <children xmi:type="notation:Node" xmi:id="_dQKHsCc7EeKhXc5IAKmT-w" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//RuleBasedField/DefaultValue"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//RuleBasedField/DefaultValue"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_dQKHsSc7EeKhXc5IAKmT-w"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_pE4isScqEeKhXc5IAKmT-w"/>
@@ -158,18 +158,18 @@
       <layoutConstraint xmi:type="notation:Ratio" xmi:id="_sM6DkCcqEeKhXc5IAKmT-w" value="0.3"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_pE2tgScqEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//RuleBasedField"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//RuleBasedField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pE2tgicqEeKhXc5IAKmT-w" x="550" y="325"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_1PqdgCcqEeKhXc5IAKmT-w" type="1001">
     <children xmi:type="notation:Node" xmi:id="_1PsSsCcqEeKhXc5IAKmT-w" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_1Ps5wCcqEeKhXc5IAKmT-w" type="5001">
       <children xmi:type="notation:Node" xmi:id="_fPSG0Cc7EeKhXc5IAKmT-w" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Rule/ResultValue"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//Rule/ResultValue"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_fPSG0Sc7EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_se4p8CdiEeKU3O7O5y6VkA" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Rule/Index"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//Rule/Index"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_se4p8SdiEeKU3O7O5y6VkA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_1Ps5wScqEeKhXc5IAKmT-w"/>
@@ -182,18 +182,18 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_1Ptg0ycqEeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_1PqdgScqEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//Rule"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//Rule"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1PqdgicqEeKhXc5IAKmT-w" x="335" y="311"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_8prIQCc7EeKhXc5IAKmT-w" type="1001">
     <children xmi:type="notation:Node" xmi:id="_8psWYCc7EeKhXc5IAKmT-w" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_8psWYSc7EeKhXc5IAKmT-w" type="5001">
       <children xmi:type="notation:Node" xmi:id="_HO5agCc8EeKhXc5IAKmT-w" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//ComparisonRules/ComparisonValue"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//ComparisonRules/ComparisonValue"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_HO5agSc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_rKA-ACc8EeKhXc5IAKmT-w" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//ComparisonRules/Operator"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//ComparisonRules/Operator"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rKA-ASc8EeKhXc5IAKmT-w"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_8psWYic7EeKhXc5IAKmT-w"/>
@@ -206,14 +206,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_8ptkgyc7EeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_8prIQSc7EeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//ComparisonRules"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//ComparisonRules"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8prIQic7EeKhXc5IAKmT-w" x="475" y="460"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_934AwCc7EeKhXc5IAKmT-w" type="1001">
     <children xmi:type="notation:Node" xmi:id="_934n0Cc7EeKhXc5IAKmT-w" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_934n0Sc7EeKhXc5IAKmT-w" type="5001">
       <children xmi:type="notation:Node" xmi:id="_jm3gMCc9EeKhXc5IAKmT-w" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//CompositeRules/Operator"/>
+        <element xmi:type="ecore:EAttribute" href="csv.ecore#//CompositeRules/Operator"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_jm3gMSc9EeKhXc5IAKmT-w"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_934n0ic7EeKhXc5IAKmT-w"/>
@@ -226,34 +226,34 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_934n2Cc7EeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_934AwSc7EeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//CompositeRules"/>
+    <element xmi:type="ecore:EClass" href="csv.ecore#//CompositeRules"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_934Awic7EeKhXc5IAKmT-w" x="210" y="480"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_Lo0oICc8EeKhXc5IAKmT-w" type="1005">
     <children xmi:type="notation:Node" xmi:id="_Lo1PMCc8EeKhXc5IAKmT-w" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_Lo12QCc8EeKhXc5IAKmT-w" type="5008">
       <children xmi:type="notation:Node" xmi:id="_PNV3wCc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/Greater"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/Greater"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_PNV3wSc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_W3DbICc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/GreaterOrEquals"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/GreaterOrEquals"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_W3DbISc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_b2BPgCc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/Lower"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/Lower"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_b2BPgSc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_dg_jkCc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/LowerOrEquals"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/LowerOrEquals"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_dg_jkSc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_jY3V4Cc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/UnEquals"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/UnEquals"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_jY3V4Sc8EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_l5ITMCc8EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Operator/Equals"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Operator/Equals"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_l5ITMSc8EeKhXc5IAKmT-w"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_Lo12QSc8EeKhXc5IAKmT-w"/>
@@ -261,22 +261,22 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_Lo12Qyc8EeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_Lo0oISc8EeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EEnum" href="CSVML.ecore#//Operator"/>
+    <element xmi:type="ecore:EEnum" href="csv.ecore#//Operator"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lo0oIic8EeKhXc5IAKmT-w" x="50" y="285"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_gNkCECc9EeKhXc5IAKmT-w" type="1005">
     <children xmi:type="notation:Node" xmi:id="_gNkpICc9EeKhXc5IAKmT-w" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_gNlQMCc9EeKhXc5IAKmT-w" type="5008">
       <children xmi:type="notation:Node" xmi:id="_hbcKcCc9EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//LogicalOperator/AND"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//LogicalOperator/AND"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_hbcxgCc9EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_h83cgCc9EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//LogicalOperator/OR"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//LogicalOperator/OR"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_h83cgSc9EeKhXc5IAKmT-w"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_i4U_MCc9EeKhXc5IAKmT-w" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//LogicalOperator/NOT"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//LogicalOperator/NOT"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_i4U_MSc9EeKhXc5IAKmT-w"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_gNlQMSc9EeKhXc5IAKmT-w"/>
@@ -284,26 +284,26 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_gNlQMyc9EeKhXc5IAKmT-w"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_gNkCESc9EeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EEnum" href="CSVML.ecore#//LogicalOperator"/>
+    <element xmi:type="ecore:EEnum" href="csv.ecore#//LogicalOperator"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gNkCEic9EeKhXc5IAKmT-w" x="50" y="455"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_BpxIwCdiEeKU3O7O5y6VkA" type="1005">
     <children xmi:type="notation:Node" xmi:id="_BpyW4CdiEeKU3O7O5y6VkA" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_Bpy98CdiEeKU3O7O5y6VkA" type="5008">
       <children xmi:type="notation:Node" xmi:id="_C1q7MCdiEeKU3O7O5y6VkA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Aggregation/SUM"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Aggregation/SUM"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_C1q7MSdiEeKU3O7O5y6VkA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_DqmYECdiEeKU3O7O5y6VkA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Aggregation/AVERAGE"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Aggregation/AVERAGE"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_DqmYESdiEeKU3O7O5y6VkA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_FTCVgCdiEeKU3O7O5y6VkA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Aggregation/MINIMUM"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Aggregation/MINIMUM"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FTCVgSdiEeKU3O7O5y6VkA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_L4Ev0CdiEeKU3O7O5y6VkA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="CSVML.ecore#//Aggregation/MAXIMUM"/>
+        <element xmi:type="ecore:EEnumLiteral" href="csv.ecore#//Aggregation/MAXIMUM"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_L4Ev0SdiEeKU3O7O5y6VkA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_Bpy98SdiEeKU3O7O5y6VkA"/>
@@ -311,11 +311,11 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_Bpy98ydiEeKU3O7O5y6VkA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_BpxIwSdiEeKU3O7O5y6VkA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EEnum" href="CSVML.ecore#//Aggregation"/>
+    <element xmi:type="ecore:EEnum" href="csv.ecore#//Aggregation"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BpxIwidiEeKU3O7O5y6VkA" x="55" y="150"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_ahzXYSa0EeKMuY7ffou3iA"/>
-  <element xmi:type="ecore:EPackage" href="CSVML.ecore#/"/>
+  <element xmi:type="ecore:EPackage" href="csv.ecore#/"/>
   <edges xmi:type="notation:Edge" xmi:id="_UfT0ACa1EeKMuY7ffou3iA" type="3002" source="_KMECkCa1EeKMuY7ffou3iA" target="_MhK4wCa1EeKMuY7ffou3iA">
     <children xmi:type="notation:Node" xmi:id="_UfVCICa1EeKMuY7ffou3iA" type="4011">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_UfVCISa1EeKMuY7ffou3iA" x="-10" y="-10"/>
@@ -325,7 +325,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_UfT0ASa1EeKMuY7ffou3iA" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_UfT0Aia1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//FileDefinitionSet/consistsOf"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//FileDefinitionSet/consistsOf"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UfT0Aya1EeKMuY7ffou3iA" points="[8, 0, -178, -13]$[187, -5, 1, -18]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UfZTkCa1EeKMuY7ffou3iA" id="(0.9349593495934959,0.42857142857142855)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UfZ6oCa1EeKMuY7ffou3iA" id="(0.22033898305084745,0.3877551020408163)"/>
@@ -339,7 +339,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_aD3owSa1EeKMuY7ffou3iA" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_aD3owia1EeKMuY7ffou3iA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//FileDefinition/consistsOf"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//FileDefinition/consistsOf"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aD3owya1EeKMuY7ffou3iA" points="[4, 10, -95, -194]$[45, 197, -54, -7]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aD6sECa1EeKMuY7ffou3iA" id="(0.6016949152542372,0.7959183673469388)"/>
   </edges>
@@ -377,7 +377,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_D43ikScrEeKhXc5IAKmT-w" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_D43ikicrEeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//RuleBasedField/has"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//RuleBasedField/has"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D43ikycrEeKhXc5IAKmT-w" points="[-26, 4, 150, 1]$[-126, 4, 50, 1]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D5AFcCcrEeKhXc5IAKmT-w" id="(0.23478260869565218,0.42857142857142855)"/>
   </edges>
@@ -405,7 +405,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_sSkFASc9EeKhXc5IAKmT-w" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_sSkFAic9EeKhXc5IAKmT-w" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//CompositeRules/composes"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//CompositeRules/composes"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sSkFAyc9EeKhXc5IAKmT-w" points="[-7, -7, -95, 141]$[-7, -148, -95, 0]$[88, -148, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sSoWcCc9EeKhXc5IAKmT-w" id="(0.1919191919191919,0.16326530612244897)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sSo9gCc9EeKhXc5IAKmT-w" id="(0.0,0.4461538461538462)"/>
@@ -419,7 +419,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_75xgESdhEeKU3O7O5y6VkA" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_75xgEidhEeKU3O7O5y6VkA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//AggregationField/aggregates"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//AggregationField/aggregates"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_75xgEydhEeKU3O7O5y6VkA" points="[9, -6, 184, 211]$[9, -217, 184, 0]$[-173, -217, 2, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_75400CdhEeKU3O7O5y6VkA" id="(0.5,0.14285714285714285)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_75400SdhEeKU3O7O5y6VkA" id="(0.9875,0.691358024691358)"/>
@@ -433,7 +433,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_VLyPgSdlEeKU3O7O5y6VkA" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_VLyPgidlEeKU3O7O5y6VkA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//ComparisonRules/compares"/>
+    <element xmi:type="ecore:EReference" href="csv.ecore#//ComparisonRules/compares"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VLyPgydlEeKU3O7O5y6VkA" points="[32, -9, 9, 409]$[337, -9, 314, 409]$[337, -418, 314, 0]$[27, -418, 4, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VL4WICdlEeKU3O7O5y6VkA" id="(0.8309178743961353,0.4583333333333333)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wnL7ECdtEeKU3O7O5y6VkA" id="(0.975,0.13580246913580246)"/>

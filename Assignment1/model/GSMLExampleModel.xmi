@@ -4,7 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gradingsystem="http://gradingsystem/1.0"
-    xsi:schemaLocation="http://gradingsystem/1.0 GSML.ecore">
+    xsi:schemaLocation="http://gradingsystem/1.0 gradingsystem.ecore">
   <comprises
       Name="188.923 4VU Model Engineering WS 2012/2013"
       Semester="WS 2012/2013">

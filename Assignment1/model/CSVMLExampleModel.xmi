@@ -4,7 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:csvml="http://csvml/1.0"
-    xsi:schemaLocation="http://csvml/1.0 CSVML.ecore">
+    xsi:schemaLocation="http://csvml/1.0 csv.ecore">
   <consistsOf
       Name="Model Engineering WS2012 Gradings">
     <consistsOf
