@@ -1,6 +1,15 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: assignment1
-Bundle-SymbolicName: assignment1; singleton:=true
-Bundle-Version: 0.1.0
-Require-Bundle: org.eclipse.emf.ecore
+Bundle-Name: %pluginName
+Bundle-SymbolicName: assignment1;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: gsml_metamodel,
+ gsml_metamodel.impl,
+ gsml_metamodel.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy
