@@ -33,7 +33,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gsml_metamodel.ecore#//ConcreteTask/MaxPoints"/>
     </genClasses>
     <genClasses ecoreClass="gsml_metamodel.ecore#//TaskGroup">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gsml_metamodel.ecore#//TaskGroup/contains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gsml_metamodel.ecore#//TaskGroup/contains"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
