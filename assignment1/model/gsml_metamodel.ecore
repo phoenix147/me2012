@@ -7,7 +7,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Course">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Grading"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Grading"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Grading">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Semester" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
