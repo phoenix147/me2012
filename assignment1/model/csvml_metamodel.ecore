@@ -2,14 +2,68 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="csvml_metamodel" nsURI="http://csvml_metamodel/1.0" nsPrefix="csvml_metamodel">
   <eClassifiers xsi:type="ecore:EClass" name="FileDefinitionSet">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" upperBound="-1"
-        eType="#//FileDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comprises" lowerBound="1"
+        upperBound="-1" eType="#//FileDefinition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FileDefinition">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consistsOF" lowerBound="1"
+        upperBound="-1" eType="#//FieldDefinition" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FieldDefinition">
+  <eClassifiers xsi:type="ecore:EClass" name="FieldDefinition" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//FieldType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FieldType">
+    <eLiterals name="String" value="3"/>
+    <eLiterals name="Integer" value="1"/>
+    <eLiterals name="Boolean" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StaticField" eSuperTypes="#//FieldDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DerivedField" abstract="true" eSuperTypes="#//FieldDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AggregationField" eSuperTypes="#//DerivedField">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" eType="#//AggOperation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" lowerBound="1"
+        upperBound="-1" eType="#//FieldDefinition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RuleBasedField" eSuperTypes="#//DerivedField">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DefaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRules" lowerBound="1"
+        upperBound="-1" eType="#//Rule" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AggOperation">
+    <eLiterals name="sum" value="1"/>
+    <eLiterals name="average" value="4"/>
+    <eLiterals name="minimum" value="2"/>
+    <eLiterals name="maximum" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComparisonRule" eSuperTypes="#//Rule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compares" lowerBound="1"
+        eType="#//FieldDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ComparisonValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="#//Operator"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeRule" eSuperTypes="#//Rule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="#//LogicalOperator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="composedOf" lowerBound="1"
+        upperBound="-1" eType="#//Rule" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Operator">
+    <eLiterals name="Greater"/>
+    <eLiterals name="GreaterOrEquals" value="1"/>
+    <eLiterals name="Lower" value="2"/>
+    <eLiterals name="LowerOrEquals" value="3"/>
+    <eLiterals name="UnEquals" value="4"/>
+    <eLiterals name="Equals" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LogicalOperator">
+    <eLiterals name="AND" value="3"/>
+    <eLiterals name="OR" value="1"/>
+    <eLiterals name="NOT" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ResultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RIndex" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
 </ecore:EPackage>

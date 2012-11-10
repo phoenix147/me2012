@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<csvml_metamodel:FileDefinitionSet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:csvml_metamodel="http://csvml_metamodel/1.0"
+    xsi:schemaLocation="http://csvml_metamodel/1.0 csvml_metamodel.ecore">
+  <comprises
+      Name="Model Engineering WS2012 Gradings">
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Name="Student Registration Number"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="1"
+        Name="First Name"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="2"
+        Name="Last Name"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="3"
+        Name="Lecture Part Exam 1 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="4"
+        Name="Lecture Part Exam 2 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="5"
+        Name="Lab Part Lab 1 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="6"
+        Name="Lab Part Lab 2 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="7"
+        Name="Lab Part Lab 3 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:StaticField"
+        Index="8"
+        Name="Lab Part Lab 4 Points"
+        Type="Integer"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:AggregationField"
+        Index="9"
+        Name="Lecture Part Sum"
+        Type="Integer"
+        fields="//@comprises.0/@consistsOF.3 //@comprises.0/@consistsOF.4"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:AggregationField"
+        Index="10"
+        Name="Lab Part Sum"
+        Type="Integer"
+        fields="//@comprises.0/@consistsOF.5 //@comprises.0/@consistsOF.6 //@comprises.0/@consistsOF.7 //@comprises.0/@consistsOF.8"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:RuleBasedField"
+        Index="11"
+        Name="Min Requirements Fulfilled"
+        Type="Boolean"
+        DefaultValue="false">
+      <hasRules
+          xsi:type="csvml_metamodel:CompositeRule"
+          ResultValue="true">
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            compares="//@comprises.0/@consistsOF.3"
+            ComparisonValue="25"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="1"
+            compares="//@comprises.0/@consistsOF.4"
+            ComparisonValue="25"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="2"
+            compares="//@comprises.0/@consistsOF.5"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="3"
+            compares="//@comprises.0/@consistsOF.6"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="4"
+            compares="//@comprises.0/@consistsOF.7"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="5"
+            compares="//@comprises.0/@consistsOF.8"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedOf
+            xsi:type="csvml_metamodel:ComparisonRule"
+            ResultValue="true"
+            RIndex="6"
+            compares="//@comprises.0/@consistsOF.10"
+            ComparisonValue="50"
+            Operator="GreaterOrEquals"/>
+      </hasRules>
+    </consistsOF>
+    <consistsOF
+        xsi:type="csvml_metamodel:AggregationField"
+        Index="12"
+        Name="Total Sum"
+        Type="Integer"
+        fields="//@comprises.0/@consistsOF.3 //@comprises.0/@consistsOF.4 //@comprises.0/@consistsOF.5 //@comprises.0/@consistsOF.6 //@comprises.0/@consistsOF.7 //@comprises.0/@consistsOF.8"/>
+    <consistsOF
+        xsi:type="csvml_metamodel:RuleBasedField"
+        Index="13"
+        Name="Grade">
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="N5"
+          compares="//@comprises.0/@consistsOF.11"
+          ComparisonValue="false"
+          Operator="Equals"/>
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="S1"
+          RIndex="1"
+          compares="//@comprises.0/@consistsOF.12"
+          ComparisonValue="176"
+          Operator="GreaterOrEquals"/>
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="U2"
+          RIndex="2"
+          compares="//@comprises.0/@consistsOF.12"
+          ComparisonValue="150"
+          Operator="GreaterOrEquals"/>
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="B3"
+          RIndex="3"
+          compares="//@comprises.0/@consistsOF.12"
+          ComparisonValue="124"
+          Operator="GreaterOrEquals"/>
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="G4"
+          RIndex="4"
+          compares="//@comprises.0/@consistsOF.12"
+          ComparisonValue="100"
+          Operator="GreaterOrEquals"/>
+      <hasRules
+          xsi:type="csvml_metamodel:ComparisonRule"
+          ResultValue="N5"
+          RIndex="5"
+          compares="//@comprises.0/@consistsOF.12"
+          ComparisonValue="0"
+          Operator="GreaterOrEquals"/>
+    </consistsOF>
+  </comprises>
+</csvml_metamodel:FileDefinitionSet>
