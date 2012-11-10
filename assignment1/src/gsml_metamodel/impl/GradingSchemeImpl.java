@@ -4,6 +4,7 @@ package gsml_metamodel.impl;
 
 import gsml_metamodel.Grade;
 import gsml_metamodel.GradingScheme;
+import gsml_metamodel.gradingsystemPackage;
 import gsml_metamodel.Gsml_metamodelPackage;
 
 import java.util.Collection;

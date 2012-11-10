@@ -5,6 +5,7 @@ package gsml_metamodel.impl;
 import gsml_metamodel.Gsml_metamodelPackage;
 import gsml_metamodel.Task;
 
+import gsml_metamodel.gradingsystemPackage;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;

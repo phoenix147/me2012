@@ -6,6 +6,7 @@ import gsml_metamodel.Gsml_metamodelPackage;
 import gsml_metamodel.Task;
 import gsml_metamodel.TaskGroup;
 
+import gsml_metamodel.gradingsystemPackage;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
