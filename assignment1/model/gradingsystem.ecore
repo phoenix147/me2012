@@ -38,6 +38,6 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TaskGroup" eSuperTypes="#//Task">
     <eStructuralFeatures xsi:type="ecore:EReference" name="contains" lowerBound="1"
-        upperBound="-1" eType="#//Task"/>
+        upperBound="-1" eType="#//Task" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
