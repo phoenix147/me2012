@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/assignment1/src" modelPluginID="assignment1" modelName="Csv"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>csv.ecore</foreignModel>
+  <genPackages prefix="Csvml_metamodel" disposableProviderFactory="true" ecorePackage="csv.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="csv.ecore#//FieldType">
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//FieldType/String"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//FieldType/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//FieldType/Boolean"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="csv.ecore#//AggOperation">
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//AggOperation/sum"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//AggOperation/average"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//AggOperation/minimum"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//AggOperation/maximum"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="csv.ecore#//Operator">
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/Greater"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/GreaterOrEquals"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/Lower"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/LowerOrEquals"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/UnEquals"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//Operator/Equals"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="csv.ecore#//LogicalOperator">
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//LogicalOperator/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//LogicalOperator/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="csv.ecore#//LogicalOperator/NOT"/>
+    </genEnums>
+    <genClasses ecoreClass="csv.ecore#//FileDefinitionSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference csv.ecore#//FileDefinitionSet/comprises"/>
+    </genClasses>
+    <genClasses ecoreClass="csv.ecore#//FileDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//FileDefinition/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference csv.ecore#//FileDefinition/consistsOf"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="csv.ecore#//FieldDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//FieldDefinition/Index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//FieldDefinition/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//FieldDefinition/Type"/>
+    </genClasses>
+    <genClasses ecoreClass="csv.ecore#//StaticField"/>
+    <genClasses image="false" ecoreClass="csv.ecore#//DerivedField"/>
+    <genClasses ecoreClass="csv.ecore#//AggregationField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//AggregationField/operation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference csv.ecore#//AggregationField/fields"/>
+    </genClasses>
+    <genClasses ecoreClass="csv.ecore#//RuleBasedField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//RuleBasedField/DefaultValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference csv.ecore#//RuleBasedField/hasRules"/>
+    </genClasses>
+    <genClasses ecoreClass="csv.ecore#//ComparisonRule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference csv.ecore#//ComparisonRule/compares"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//ComparisonRule/ComparisonValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//ComparisonRule/Operator"/>
+    </genClasses>
+    <genClasses ecoreClass="csv.ecore#//CompositeRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//CompositeRule/Operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference csv.ecore#//CompositeRule/composedOf"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="csv.ecore#//Rule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//Rule/ResultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute csv.ecore#//Rule/RIndex"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
