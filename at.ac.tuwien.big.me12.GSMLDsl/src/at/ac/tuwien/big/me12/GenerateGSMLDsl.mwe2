@@ -5,7 +5,7 @@ import org.eclipse.xtext.generator.*
 import org.eclipse.xtext.ui.generator.*
 
 var grammarURI = "classpath:/at/ac/tuwien/big/me12/GSMLDsl.xtext"
-var file.extensions = "mydsl"
+var file.extensions = "gsml"
 var projectName = "at.ac.tuwien.big.me12.GSMLDsl"
 var runtimeProject = "../${projectName}"
 
