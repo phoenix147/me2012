@@ -12,6 +12,16 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.emf.codegen.ecore;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
  org.eclipse.emf.mwe2.launch;resolution:=optional,
- at.ac.tuwien.big.me12.gradingsystem
+ at.ac.tuwien.big.me12.gradingsystem,
+ org.eclipse.xtext.util,
+ org.antlr.runtime
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: at.ac.tuwien.big.me12,
+ at.ac.tuwien.big.me12.services,
+ at.ac.tuwien.big.me12.parseTreeConstruction,
+ at.ac.tuwien.big.me12.parser.antlr,
+ at.ac.tuwien.big.me12.parser.antlr.internal,
+ at.ac.tuwien.big.me12.validation,
+ at.ac.tuwien.big.me12.scoping,
+ at.ac.tuwien.big.me12.formatting
