@@ -25,10 +25,10 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cCoursesCourseParserRuleCall_0 = (RuleCall)cCoursesAssignment.eContents().get(0);
 		
 		//GradingSystem:
-		//	courses+=Course+;
+		//	courses+=Course*;
 		public ParserRule getRule() { return rule; }
 
-		//courses+=Course+
+		//courses+=Course*
 		public Assignment getCoursesAssignment() { return cCoursesAssignment; }
 
 		//Course
@@ -48,10 +48,10 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Course:
-		//	{Course} "course" name=ID "{" gradings+=Grading+ "}";
+		//	{Course} "course" name=ID "{" gradings+=Grading* "}";
 		public ParserRule getRule() { return rule; }
 
-		//{Course} "course" name=ID "{" gradings+=Grading+ "}"
+		//{Course} "course" name=ID "{" gradings+=Grading* "}"
 		public Group getGroup() { return cGroup; }
 
 		//{Course}
@@ -69,7 +69,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
 
-		//gradings+=Grading+
+		//gradings+=Grading*
 		public Assignment getGradingsAssignment_4() { return cGradingsAssignment_4; }
 
 		//Grading
@@ -93,10 +93,10 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Grading:
-		//	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task* "}";
+		//	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task+ "}";
 		public ParserRule getRule() { return rule; }
 
-		//"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task* "}"
+		//"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task+ "}"
 		public Group getGroup() { return cGroup; }
 
 		//"semester"
@@ -117,7 +117,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		//GradingScheme
 		public RuleCall getGradingSchemeGradingSchemeParserRuleCall_3_0() { return cGradingSchemeGradingSchemeParserRuleCall_3_0; }
 
-		//tasks+=Task*
+		//tasks+=Task+
 		public Assignment getTasksAssignment_4() { return cTasksAssignment_4; }
 
 		//Task
@@ -252,10 +252,10 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//TaskGroup:
-		//	name=ID "{" contains+=Task* ("@all" ":" minRequirement=MinRequirement ";")? "}";
+		//	name=ID "{" contains+=Task+ ("@all" ":" minRequirement=MinRequirement ";")? "}";
 		public ParserRule getRule() { return rule; }
 
-		//name=ID "{" contains+=Task* ("@all" ":" minRequirement=MinRequirement ";")? "}"
+		//name=ID "{" contains+=Task+ ("@all" ":" minRequirement=MinRequirement ";")? "}"
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -267,7 +267,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
 
-		//contains+=Task*
+		//contains+=Task+
 		public Assignment getContainsAssignment_2() { return cContainsAssignment_2; }
 
 		//Task
@@ -462,7 +462,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//GradingSystem:
-	//	courses+=Course+;
+	//	courses+=Course*;
 	public GradingSystemElements getGradingSystemAccess() {
 		return (pGradingSystem != null) ? pGradingSystem : (pGradingSystem = new GradingSystemElements());
 	}
@@ -472,7 +472,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Course:
-	//	{Course} "course" name=ID "{" gradings+=Grading+ "}";
+	//	{Course} "course" name=ID "{" gradings+=Grading* "}";
 	public CourseElements getCourseAccess() {
 		return (pCourse != null) ? pCourse : (pCourse = new CourseElements());
 	}
@@ -482,7 +482,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Grading:
-	//	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task* "}";
+	//	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task+ "}";
 	public GradingElements getGradingAccess() {
 		return (pGrading != null) ? pGrading : (pGrading = new GradingElements());
 	}
@@ -522,7 +522,7 @@ public class GSMLDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//TaskGroup:
-	//	name=ID "{" contains+=Task* ("@all" ":" minRequirement=MinRequirement ";")? "}";
+	//	name=ID "{" contains+=Task+ ("@all" ":" minRequirement=MinRequirement ";")? "}";
 	public TaskGroupElements getTaskGroupAccess() {
 		return (pTaskGroup != null) ? pTaskGroup : (pTaskGroup = new TaskGroupElements());
 	}

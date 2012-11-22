@@ -72,16 +72,9 @@ ruleGradingSystem
     }
 	:
 (
-(
-{ before(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); }
-(rule__GradingSystem__CoursesAssignment)
-{ after(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); }
-)
-(
 { before(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); }
 (rule__GradingSystem__CoursesAssignment)*
 { after(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); }
-)
 )
 
 ;
@@ -523,16 +516,9 @@ rule__Course__Group__4__Impl
     }
 :
 (
-(
-{ before(grammarAccess.getCourseAccess().getGradingsAssignment_4()); }
-(rule__Course__GradingsAssignment_4)
-{ after(grammarAccess.getCourseAccess().getGradingsAssignment_4()); }
-)
-(
 { before(grammarAccess.getCourseAccess().getGradingsAssignment_4()); }
 (rule__Course__GradingsAssignment_4)*
 { after(grammarAccess.getCourseAccess().getGradingsAssignment_4()); }
-)
 )
 
 ;
@@ -721,9 +707,16 @@ rule__Grading__Group__4__Impl
     }
 :
 (
+(
+{ before(grammarAccess.getGradingAccess().getTasksAssignment_4()); }
+(rule__Grading__TasksAssignment_4)
+{ after(grammarAccess.getGradingAccess().getTasksAssignment_4()); }
+)
+(
 { before(grammarAccess.getGradingAccess().getTasksAssignment_4()); }
 (rule__Grading__TasksAssignment_4)*
 { after(grammarAccess.getGradingAccess().getTasksAssignment_4()); }
+)
 )
 
 ;
@@ -1212,9 +1205,16 @@ rule__TaskGroup__Group__2__Impl
     }
 :
 (
+(
+{ before(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); }
+(rule__TaskGroup__ContainsAssignment_2)
+{ after(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); }
+)
+(
 { before(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); }
 (rule__TaskGroup__ContainsAssignment_2)*
 { after(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); }
+)
 )
 
 ;

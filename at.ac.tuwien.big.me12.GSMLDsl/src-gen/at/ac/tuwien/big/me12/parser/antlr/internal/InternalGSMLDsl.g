@@ -96,7 +96,7 @@ ruleGradingSystem returns [EObject current=null]
 	    }
 
 )
-)+
+)*
 ;
 
 
@@ -167,7 +167,7 @@ ruleCourse returns [EObject current=null]
 	    }
 
 )
-)+	otherlv_5='}' 
+)*	otherlv_5='}' 
     {
     	newLeafNode(otherlv_5, grammarAccess.getCourseAccess().getRightCurlyBracketKeyword_5());
     }
@@ -254,7 +254,7 @@ ruleGrading returns [EObject current=null]
 	    }
 
 )
-)*	otherlv_5='}' 
+)+	otherlv_5='}' 
     {
     	newLeafNode(otherlv_5, grammarAccess.getGradingAccess().getRightCurlyBracketKeyword_5());
     }
@@ -496,7 +496,7 @@ ruleTaskGroup returns [EObject current=null]
 	    }
 
 )
-)*(	otherlv_3='@all' 
+)+(	otherlv_3='@all' 
     {
     	newLeafNode(otherlv_3, grammarAccess.getTaskGroupAccess().getAllKeyword_3_0());
     }

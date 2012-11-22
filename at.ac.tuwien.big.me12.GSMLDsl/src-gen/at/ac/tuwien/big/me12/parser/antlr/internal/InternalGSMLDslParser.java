@@ -121,7 +121,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGradingSystem"
-    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:77:1: ruleGradingSystem returns [EObject current=null] : ( (lv_courses_0_0= ruleCourse ) )+ ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:77:1: ruleGradingSystem returns [EObject current=null] : ( (lv_courses_0_0= ruleCourse ) )* ;
     public final EObject ruleGradingSystem() throws RecognitionException {
         EObject current = null;
 
@@ -131,11 +131,10 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:80:28: ( ( (lv_courses_0_0= ruleCourse ) )+ )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:81:1: ( (lv_courses_0_0= ruleCourse ) )+
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:80:28: ( ( (lv_courses_0_0= ruleCourse ) )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:81:1: ( (lv_courses_0_0= ruleCourse ) )*
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:81:1: ( (lv_courses_0_0= ruleCourse ) )+
-            int cnt1=0;
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:81:1: ( (lv_courses_0_0= ruleCourse ) )*
             loop1:
             do {
                 int alt1=2;
@@ -180,12 +179,8 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt1 >= 1 ) break loop1;
-                        EarlyExitException eee =
-                            new EarlyExitException(1, input);
-                        throw eee;
+            	    break loop1;
                 }
-                cnt1++;
             } while (true);
 
 
@@ -242,7 +237,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCourse"
-    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:116:1: ruleCourse returns [EObject current=null] : ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )+ otherlv_5= '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:116:1: ruleCourse returns [EObject current=null] : ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )* otherlv_5= '}' ) ;
     public final EObject ruleCourse() throws RecognitionException {
         EObject current = null;
 
@@ -256,11 +251,11 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:119:28: ( ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )+ otherlv_5= '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:1: ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )+ otherlv_5= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:119:28: ( ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )* otherlv_5= '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:1: ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )* otherlv_5= '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:1: ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )+ otherlv_5= '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:2: () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )+ otherlv_5= '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:1: ( () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )* otherlv_5= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:2: () otherlv_1= 'course' ( (lv_name_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_gradings_4_0= ruleGrading ) )* otherlv_5= '}'
             {
             // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:120:2: ()
             // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:121:5: 
@@ -307,8 +302,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_3, grammarAccess.getCourseAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:152:1: ( (lv_gradings_4_0= ruleGrading ) )+
-            int cnt2=0;
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:152:1: ( (lv_gradings_4_0= ruleGrading ) )*
             loop2:
             do {
                 int alt2=2;
@@ -353,12 +347,8 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt2 >= 1 ) break loop2;
-                        EarlyExitException eee =
-                            new EarlyExitException(2, input);
-                        throw eee;
+            	    break loop2;
                 }
-                cnt2++;
             } while (true);
 
             otherlv_5=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleCourse290); 
@@ -422,7 +412,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGrading"
-    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:191:1: ruleGrading returns [EObject current=null] : (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )* otherlv_5= '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:191:1: ruleGrading returns [EObject current=null] : (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )+ otherlv_5= '}' ) ;
     public final EObject ruleGrading() throws RecognitionException {
         EObject current = null;
 
@@ -438,11 +428,11 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:194:28: ( (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )* otherlv_5= '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:1: (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )* otherlv_5= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:194:28: ( (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )+ otherlv_5= '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:1: (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )+ otherlv_5= '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:1: (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )* otherlv_5= '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:3: otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )* otherlv_5= '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:1: (otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )+ otherlv_5= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:195:3: otherlv_0= 'semester' ( (lv_semester_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_gradingScheme_3_0= ruleGradingScheme ) ) ( (lv_tasks_4_0= ruleTask ) )+ otherlv_5= '}'
             {
             otherlv_0=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleGrading373); 
 
@@ -509,7 +499,8 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:239:2: ( (lv_tasks_4_0= ruleTask ) )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:239:2: ( (lv_tasks_4_0= ruleTask ) )+
+            int cnt3=0;
             loop3:
             do {
                 int alt3=2;
@@ -554,8 +545,12 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop3;
+            	    if ( cnt3 >= 1 ) break loop3;
+                        EarlyExitException eee =
+                            new EarlyExitException(3, input);
+                        throw eee;
                 }
+                cnt3++;
             } while (true);
 
             otherlv_5=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleGrading462); 
@@ -1063,7 +1058,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTaskGroup"
-    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:455:1: ruleTaskGroup returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )* (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:455:1: ruleTaskGroup returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )+ (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' ) ;
     public final EObject ruleTaskGroup() throws RecognitionException {
         EObject current = null;
 
@@ -1081,11 +1076,11 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:458:28: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )* (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )* (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:458:28: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )+ (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )+ (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )* (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:2: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )* (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )+ (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:2: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= '{' ( (lv_contains_2_0= ruleTask ) )+ (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )? otherlv_7= '}'
             {
             // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:459:2: ( (lv_name_0_0= RULE_ID ) )
             // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:460:1: (lv_name_0_0= RULE_ID )
@@ -1117,7 +1112,8 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_1, grammarAccess.getTaskGroupAccess().getLeftCurlyBracketKeyword_1());
                 
-            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:481:1: ( (lv_contains_2_0= ruleTask ) )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:481:1: ( (lv_contains_2_0= ruleTask ) )+
+            int cnt6=0;
             loop6:
             do {
                 int alt6=2;
@@ -1162,8 +1158,12 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop6;
+            	    if ( cnt6 >= 1 ) break loop6;
+                        EarlyExitException eee =
+                            new EarlyExitException(6, input);
+                        throw eee;
                 }
+                cnt6++;
             } while (true);
 
             // ../at.ac.tuwien.big.me12.GSMLDsl/src-gen/at/ac/tuwien/big/me12/parser/antlr/internal/InternalGSMLDsl.g:499:3: (otherlv_3= '@all' otherlv_4= ':' ( (lv_minRequirement_5_0= ruleMinRequirement ) ) otherlv_6= ';' )?
@@ -1678,7 +1678,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_EOF_in_entryRuleCourse176 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_11_in_ruleCourse222 = new BitSet(new long[]{0x0000000000000010L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleCourse239 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleCourse256 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_12_in_ruleCourse256 = new BitSet(new long[]{0x0000000000006000L});
         public static final BitSet FOLLOW_ruleGrading_in_ruleCourse277 = new BitSet(new long[]{0x0000000000006000L});
         public static final BitSet FOLLOW_13_in_ruleCourse290 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleGrading_in_entryRuleGrading326 = new BitSet(new long[]{0x0000000000000000L});
@@ -1686,7 +1686,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_14_in_ruleGrading373 = new BitSet(new long[]{0x0000000000000010L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleGrading390 = new BitSet(new long[]{0x0000000000001000L});
         public static final BitSet FOLLOW_12_in_ruleGrading407 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleGradingScheme_in_ruleGrading428 = new BitSet(new long[]{0x0000000000002010L});
+        public static final BitSet FOLLOW_ruleGradingScheme_in_ruleGrading428 = new BitSet(new long[]{0x0000000000000010L});
         public static final BitSet FOLLOW_ruleTask_in_ruleGrading449 = new BitSet(new long[]{0x0000000000002010L});
         public static final BitSet FOLLOW_13_in_ruleGrading462 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleGradingScheme_in_entryRuleGradingScheme498 = new BitSet(new long[]{0x0000000000000000L});
@@ -1711,7 +1711,7 @@ public class InternalGSMLDslParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_ruleTaskGroup_in_entryRuleTaskGroup929 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleTaskGroup939 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleTaskGroup981 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleTaskGroup998 = new BitSet(new long[]{0x0000000000102010L});
+        public static final BitSet FOLLOW_12_in_ruleTaskGroup998 = new BitSet(new long[]{0x0000000000000010L});
         public static final BitSet FOLLOW_ruleTask_in_ruleTaskGroup1019 = new BitSet(new long[]{0x0000000000102010L});
         public static final BitSet FOLLOW_20_in_ruleTaskGroup1033 = new BitSet(new long[]{0x0000000000040000L});
         public static final BitSet FOLLOW_18_in_ruleTaskGroup1045 = new BitSet(new long[]{0x0000000000200000L});

@@ -114,42 +114,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleGradingSystem"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:69:1: ruleGradingSystem : ( ( ( rule__GradingSystem__CoursesAssignment ) ) ( ( rule__GradingSystem__CoursesAssignment )* ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:69:1: ruleGradingSystem : ( ( rule__GradingSystem__CoursesAssignment )* ) ;
     public final void ruleGradingSystem() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:73:2: ( ( ( ( rule__GradingSystem__CoursesAssignment ) ) ( ( rule__GradingSystem__CoursesAssignment )* ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:74:1: ( ( ( rule__GradingSystem__CoursesAssignment ) ) ( ( rule__GradingSystem__CoursesAssignment )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:73:2: ( ( ( rule__GradingSystem__CoursesAssignment )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:74:1: ( ( rule__GradingSystem__CoursesAssignment )* )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:74:1: ( ( ( rule__GradingSystem__CoursesAssignment ) ) ( ( rule__GradingSystem__CoursesAssignment )* ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:75:1: ( ( rule__GradingSystem__CoursesAssignment ) ) ( ( rule__GradingSystem__CoursesAssignment )* )
-            {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:75:1: ( ( rule__GradingSystem__CoursesAssignment ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:76:1: ( rule__GradingSystem__CoursesAssignment )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:74:1: ( ( rule__GradingSystem__CoursesAssignment )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:75:1: ( rule__GradingSystem__CoursesAssignment )*
             {
              before(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:77:1: ( rule__GradingSystem__CoursesAssignment )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:77:2: rule__GradingSystem__CoursesAssignment
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem96);
-            rule__GradingSystem__CoursesAssignment();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); 
-
-            }
-
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:80:1: ( ( rule__GradingSystem__CoursesAssignment )* )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:81:1: ( rule__GradingSystem__CoursesAssignment )*
-            {
-             before(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:82:1: ( rule__GradingSystem__CoursesAssignment )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:76:1: ( rule__GradingSystem__CoursesAssignment )*
             loop1:
             do {
                 int alt1=2;
@@ -162,9 +140,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:82:2: rule__GradingSystem__CoursesAssignment
+            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:76:2: rule__GradingSystem__CoursesAssignment
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem108);
+            	    pushFollow(FollowSets000.FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem94);
             	    rule__GradingSystem__CoursesAssignment();
 
             	    state._fsp--;
@@ -179,9 +157,6 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             } while (true);
 
              after(grammarAccess.getGradingSystemAccess().getCoursesAssignment()); 
-
-            }
-
 
             }
 
@@ -204,20 +179,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleCourse"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:95:1: entryRuleCourse : ruleCourse EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:88:1: entryRuleCourse : ruleCourse EOF ;
     public final void entryRuleCourse() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:96:1: ( ruleCourse EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:97:1: ruleCourse EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:89:1: ( ruleCourse EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:90:1: ruleCourse EOF
             {
              before(grammarAccess.getCourseRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCourse_in_entryRuleCourse138);
+            pushFollow(FollowSets000.FOLLOW_ruleCourse_in_entryRuleCourse122);
             ruleCourse();
 
             state._fsp--;
 
              after(grammarAccess.getCourseRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCourse145); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCourse129); 
 
             }
 
@@ -234,23 +209,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleCourse"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:104:1: ruleCourse : ( ( rule__Course__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:97:1: ruleCourse : ( ( rule__Course__Group__0 ) ) ;
     public final void ruleCourse() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:108:2: ( ( ( rule__Course__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:109:1: ( ( rule__Course__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:101:2: ( ( ( rule__Course__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:102:1: ( ( rule__Course__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:109:1: ( ( rule__Course__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:110:1: ( rule__Course__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:102:1: ( ( rule__Course__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:103:1: ( rule__Course__Group__0 )
             {
              before(grammarAccess.getCourseAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:111:1: ( rule__Course__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:111:2: rule__Course__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:104:1: ( rule__Course__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:104:2: rule__Course__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__0_in_ruleCourse171);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__0_in_ruleCourse155);
             rule__Course__Group__0();
 
             state._fsp--;
@@ -281,20 +256,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleGrading"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:123:1: entryRuleGrading : ruleGrading EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:116:1: entryRuleGrading : ruleGrading EOF ;
     public final void entryRuleGrading() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:124:1: ( ruleGrading EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:125:1: ruleGrading EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:117:1: ( ruleGrading EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:118:1: ruleGrading EOF
             {
              before(grammarAccess.getGradingRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrading_in_entryRuleGrading198);
+            pushFollow(FollowSets000.FOLLOW_ruleGrading_in_entryRuleGrading182);
             ruleGrading();
 
             state._fsp--;
 
              after(grammarAccess.getGradingRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrading205); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrading189); 
 
             }
 
@@ -311,23 +286,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleGrading"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:132:1: ruleGrading : ( ( rule__Grading__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:125:1: ruleGrading : ( ( rule__Grading__Group__0 ) ) ;
     public final void ruleGrading() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:136:2: ( ( ( rule__Grading__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:137:1: ( ( rule__Grading__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:129:2: ( ( ( rule__Grading__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:130:1: ( ( rule__Grading__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:137:1: ( ( rule__Grading__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:138:1: ( rule__Grading__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:130:1: ( ( rule__Grading__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:131:1: ( rule__Grading__Group__0 )
             {
              before(grammarAccess.getGradingAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:139:1: ( rule__Grading__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:139:2: rule__Grading__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:132:1: ( rule__Grading__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:132:2: rule__Grading__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__0_in_ruleGrading231);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__0_in_ruleGrading215);
             rule__Grading__Group__0();
 
             state._fsp--;
@@ -358,20 +333,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleGradingScheme"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:151:1: entryRuleGradingScheme : ruleGradingScheme EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:144:1: entryRuleGradingScheme : ruleGradingScheme EOF ;
     public final void entryRuleGradingScheme() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:152:1: ( ruleGradingScheme EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:153:1: ruleGradingScheme EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:145:1: ( ruleGradingScheme EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:146:1: ruleGradingScheme EOF
             {
              before(grammarAccess.getGradingSchemeRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGradingScheme_in_entryRuleGradingScheme258);
+            pushFollow(FollowSets000.FOLLOW_ruleGradingScheme_in_entryRuleGradingScheme242);
             ruleGradingScheme();
 
             state._fsp--;
 
              after(grammarAccess.getGradingSchemeRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGradingScheme265); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGradingScheme249); 
 
             }
 
@@ -388,23 +363,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleGradingScheme"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:160:1: ruleGradingScheme : ( ( rule__GradingScheme__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:153:1: ruleGradingScheme : ( ( rule__GradingScheme__Group__0 ) ) ;
     public final void ruleGradingScheme() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:164:2: ( ( ( rule__GradingScheme__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:165:1: ( ( rule__GradingScheme__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:157:2: ( ( ( rule__GradingScheme__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:158:1: ( ( rule__GradingScheme__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:165:1: ( ( rule__GradingScheme__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:166:1: ( rule__GradingScheme__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:158:1: ( ( rule__GradingScheme__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:159:1: ( rule__GradingScheme__Group__0 )
             {
              before(grammarAccess.getGradingSchemeAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:167:1: ( rule__GradingScheme__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:167:2: rule__GradingScheme__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:160:1: ( rule__GradingScheme__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:160:2: rule__GradingScheme__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__0_in_ruleGradingScheme291);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__0_in_ruleGradingScheme275);
             rule__GradingScheme__Group__0();
 
             state._fsp--;
@@ -435,20 +410,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleGrade"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:179:1: entryRuleGrade : ruleGrade EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:172:1: entryRuleGrade : ruleGrade EOF ;
     public final void entryRuleGrade() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:180:1: ( ruleGrade EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:181:1: ruleGrade EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:173:1: ( ruleGrade EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:174:1: ruleGrade EOF
             {
              before(grammarAccess.getGradeRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrade_in_entryRuleGrade318);
+            pushFollow(FollowSets000.FOLLOW_ruleGrade_in_entryRuleGrade302);
             ruleGrade();
 
             state._fsp--;
 
              after(grammarAccess.getGradeRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrade325); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrade309); 
 
             }
 
@@ -465,23 +440,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleGrade"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:188:1: ruleGrade : ( ( rule__Grade__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:181:1: ruleGrade : ( ( rule__Grade__Group__0 ) ) ;
     public final void ruleGrade() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:192:2: ( ( ( rule__Grade__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:193:1: ( ( rule__Grade__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:185:2: ( ( ( rule__Grade__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:186:1: ( ( rule__Grade__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:193:1: ( ( rule__Grade__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:194:1: ( rule__Grade__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:186:1: ( ( rule__Grade__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:187:1: ( rule__Grade__Group__0 )
             {
              before(grammarAccess.getGradeAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:195:1: ( rule__Grade__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:195:2: rule__Grade__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:188:1: ( rule__Grade__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:188:2: rule__Grade__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__0_in_ruleGrade351);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__0_in_ruleGrade335);
             rule__Grade__Group__0();
 
             state._fsp--;
@@ -512,20 +487,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleTask"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:207:1: entryRuleTask : ruleTask EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:200:1: entryRuleTask : ruleTask EOF ;
     public final void entryRuleTask() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:208:1: ( ruleTask EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:209:1: ruleTask EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:201:1: ( ruleTask EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:202:1: ruleTask EOF
             {
              before(grammarAccess.getTaskRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTask_in_entryRuleTask378);
+            pushFollow(FollowSets000.FOLLOW_ruleTask_in_entryRuleTask362);
             ruleTask();
 
             state._fsp--;
 
              after(grammarAccess.getTaskRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTask385); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTask369); 
 
             }
 
@@ -542,23 +517,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleTask"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:216:1: ruleTask : ( ( rule__Task__Alternatives ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:209:1: ruleTask : ( ( rule__Task__Alternatives ) ) ;
     public final void ruleTask() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:220:2: ( ( ( rule__Task__Alternatives ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:221:1: ( ( rule__Task__Alternatives ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:213:2: ( ( ( rule__Task__Alternatives ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:214:1: ( ( rule__Task__Alternatives ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:221:1: ( ( rule__Task__Alternatives ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:222:1: ( rule__Task__Alternatives )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:214:1: ( ( rule__Task__Alternatives ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:215:1: ( rule__Task__Alternatives )
             {
              before(grammarAccess.getTaskAccess().getAlternatives()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:223:1: ( rule__Task__Alternatives )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:223:2: rule__Task__Alternatives
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:216:1: ( rule__Task__Alternatives )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:216:2: rule__Task__Alternatives
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Task__Alternatives_in_ruleTask411);
+            pushFollow(FollowSets000.FOLLOW_rule__Task__Alternatives_in_ruleTask395);
             rule__Task__Alternatives();
 
             state._fsp--;
@@ -589,20 +564,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleTaskGroup"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:235:1: entryRuleTaskGroup : ruleTaskGroup EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:228:1: entryRuleTaskGroup : ruleTaskGroup EOF ;
     public final void entryRuleTaskGroup() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:236:1: ( ruleTaskGroup EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:237:1: ruleTaskGroup EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:229:1: ( ruleTaskGroup EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:230:1: ruleTaskGroup EOF
             {
              before(grammarAccess.getTaskGroupRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTaskGroup_in_entryRuleTaskGroup438);
+            pushFollow(FollowSets000.FOLLOW_ruleTaskGroup_in_entryRuleTaskGroup422);
             ruleTaskGroup();
 
             state._fsp--;
 
              after(grammarAccess.getTaskGroupRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTaskGroup445); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTaskGroup429); 
 
             }
 
@@ -619,23 +594,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleTaskGroup"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:244:1: ruleTaskGroup : ( ( rule__TaskGroup__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:237:1: ruleTaskGroup : ( ( rule__TaskGroup__Group__0 ) ) ;
     public final void ruleTaskGroup() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:248:2: ( ( ( rule__TaskGroup__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:249:1: ( ( rule__TaskGroup__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:241:2: ( ( ( rule__TaskGroup__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:242:1: ( ( rule__TaskGroup__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:249:1: ( ( rule__TaskGroup__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:250:1: ( rule__TaskGroup__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:242:1: ( ( rule__TaskGroup__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:243:1: ( rule__TaskGroup__Group__0 )
             {
              before(grammarAccess.getTaskGroupAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:251:1: ( rule__TaskGroup__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:251:2: rule__TaskGroup__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:244:1: ( rule__TaskGroup__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:244:2: rule__TaskGroup__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__0_in_ruleTaskGroup471);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__0_in_ruleTaskGroup455);
             rule__TaskGroup__Group__0();
 
             state._fsp--;
@@ -666,20 +641,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleConcreteTask"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:263:1: entryRuleConcreteTask : ruleConcreteTask EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:256:1: entryRuleConcreteTask : ruleConcreteTask EOF ;
     public final void entryRuleConcreteTask() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:264:1: ( ruleConcreteTask EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:265:1: ruleConcreteTask EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:257:1: ( ruleConcreteTask EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:258:1: ruleConcreteTask EOF
             {
              before(grammarAccess.getConcreteTaskRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleConcreteTask_in_entryRuleConcreteTask498);
+            pushFollow(FollowSets000.FOLLOW_ruleConcreteTask_in_entryRuleConcreteTask482);
             ruleConcreteTask();
 
             state._fsp--;
 
              after(grammarAccess.getConcreteTaskRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleConcreteTask505); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleConcreteTask489); 
 
             }
 
@@ -696,23 +671,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleConcreteTask"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:272:1: ruleConcreteTask : ( ( rule__ConcreteTask__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:265:1: ruleConcreteTask : ( ( rule__ConcreteTask__Group__0 ) ) ;
     public final void ruleConcreteTask() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:276:2: ( ( ( rule__ConcreteTask__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:277:1: ( ( rule__ConcreteTask__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:269:2: ( ( ( rule__ConcreteTask__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:270:1: ( ( rule__ConcreteTask__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:277:1: ( ( rule__ConcreteTask__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:278:1: ( rule__ConcreteTask__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:270:1: ( ( rule__ConcreteTask__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:271:1: ( rule__ConcreteTask__Group__0 )
             {
              before(grammarAccess.getConcreteTaskAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:279:1: ( rule__ConcreteTask__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:279:2: rule__ConcreteTask__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:272:1: ( rule__ConcreteTask__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:272:2: rule__ConcreteTask__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ConcreteTask__Group__0_in_ruleConcreteTask531);
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteTask__Group__0_in_ruleConcreteTask515);
             rule__ConcreteTask__Group__0();
 
             state._fsp--;
@@ -743,20 +718,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleMinRequirement"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:291:1: entryRuleMinRequirement : ruleMinRequirement EOF ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:284:1: entryRuleMinRequirement : ruleMinRequirement EOF ;
     public final void entryRuleMinRequirement() throws RecognitionException {
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:292:1: ( ruleMinRequirement EOF )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:293:1: ruleMinRequirement EOF
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:285:1: ( ruleMinRequirement EOF )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:286:1: ruleMinRequirement EOF
             {
              before(grammarAccess.getMinRequirementRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleMinRequirement_in_entryRuleMinRequirement558);
+            pushFollow(FollowSets000.FOLLOW_ruleMinRequirement_in_entryRuleMinRequirement542);
             ruleMinRequirement();
 
             state._fsp--;
 
              after(grammarAccess.getMinRequirementRule()); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleMinRequirement565); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleMinRequirement549); 
 
             }
 
@@ -773,23 +748,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleMinRequirement"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:300:1: ruleMinRequirement : ( ( rule__MinRequirement__Group__0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:293:1: ruleMinRequirement : ( ( rule__MinRequirement__Group__0 ) ) ;
     public final void ruleMinRequirement() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:304:2: ( ( ( rule__MinRequirement__Group__0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:305:1: ( ( rule__MinRequirement__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:297:2: ( ( ( rule__MinRequirement__Group__0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:298:1: ( ( rule__MinRequirement__Group__0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:305:1: ( ( rule__MinRequirement__Group__0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:306:1: ( rule__MinRequirement__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:298:1: ( ( rule__MinRequirement__Group__0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:299:1: ( rule__MinRequirement__Group__0 )
             {
              before(grammarAccess.getMinRequirementAccess().getGroup()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:307:1: ( rule__MinRequirement__Group__0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:307:2: rule__MinRequirement__Group__0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:300:1: ( rule__MinRequirement__Group__0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:300:2: rule__MinRequirement__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__MinRequirement__Group__0_in_ruleMinRequirement591);
+            pushFollow(FollowSets000.FOLLOW_rule__MinRequirement__Group__0_in_ruleMinRequirement575);
             rule__MinRequirement__Group__0();
 
             state._fsp--;
@@ -820,23 +795,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleMinRequirementsType"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:320:1: ruleMinRequirementsType : ( ( rule__MinRequirementsType__Alternatives ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:313:1: ruleMinRequirementsType : ( ( rule__MinRequirementsType__Alternatives ) ) ;
     public final void ruleMinRequirementsType() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:324:1: ( ( ( rule__MinRequirementsType__Alternatives ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:325:1: ( ( rule__MinRequirementsType__Alternatives ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:317:1: ( ( ( rule__MinRequirementsType__Alternatives ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:318:1: ( ( rule__MinRequirementsType__Alternatives ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:325:1: ( ( rule__MinRequirementsType__Alternatives ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:326:1: ( rule__MinRequirementsType__Alternatives )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:318:1: ( ( rule__MinRequirementsType__Alternatives ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:319:1: ( rule__MinRequirementsType__Alternatives )
             {
              before(grammarAccess.getMinRequirementsTypeAccess().getAlternatives()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:327:1: ( rule__MinRequirementsType__Alternatives )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:327:2: rule__MinRequirementsType__Alternatives
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:320:1: ( rule__MinRequirementsType__Alternatives )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:320:2: rule__MinRequirementsType__Alternatives
             {
-            pushFollow(FollowSets000.FOLLOW_rule__MinRequirementsType__Alternatives_in_ruleMinRequirementsType628);
+            pushFollow(FollowSets000.FOLLOW_rule__MinRequirementsType__Alternatives_in_ruleMinRequirementsType612);
             rule__MinRequirementsType__Alternatives();
 
             state._fsp--;
@@ -867,13 +842,13 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__Alternatives"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:338:1: rule__Task__Alternatives : ( ( ruleConcreteTask ) | ( ruleTaskGroup ) );
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:331:1: rule__Task__Alternatives : ( ( ruleConcreteTask ) | ( ruleTaskGroup ) );
     public final void rule__Task__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:342:1: ( ( ruleConcreteTask ) | ( ruleTaskGroup ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:335:1: ( ( ruleConcreteTask ) | ( ruleTaskGroup ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -901,13 +876,13 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             }
             switch (alt2) {
                 case 1 :
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:343:1: ( ruleConcreteTask )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:336:1: ( ruleConcreteTask )
                     {
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:343:1: ( ruleConcreteTask )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:344:1: ruleConcreteTask
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:336:1: ( ruleConcreteTask )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:337:1: ruleConcreteTask
                     {
                      before(grammarAccess.getTaskAccess().getConcreteTaskParserRuleCall_0()); 
-                    pushFollow(FollowSets000.FOLLOW_ruleConcreteTask_in_rule__Task__Alternatives663);
+                    pushFollow(FollowSets000.FOLLOW_ruleConcreteTask_in_rule__Task__Alternatives647);
                     ruleConcreteTask();
 
                     state._fsp--;
@@ -920,13 +895,13 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:349:6: ( ruleTaskGroup )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:342:6: ( ruleTaskGroup )
                     {
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:349:6: ( ruleTaskGroup )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:350:1: ruleTaskGroup
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:342:6: ( ruleTaskGroup )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:343:1: ruleTaskGroup
                     {
                      before(grammarAccess.getTaskAccess().getTaskGroupParserRuleCall_1()); 
-                    pushFollow(FollowSets000.FOLLOW_ruleTaskGroup_in_rule__Task__Alternatives680);
+                    pushFollow(FollowSets000.FOLLOW_ruleTaskGroup_in_rule__Task__Alternatives664);
                     ruleTaskGroup();
 
                     state._fsp--;
@@ -956,13 +931,13 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__MinRequirementsType__Alternatives"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:360:1: rule__MinRequirementsType__Alternatives : ( ( ( 'point(s)' ) ) | ( ( '%' ) ) );
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:353:1: rule__MinRequirementsType__Alternatives : ( ( ( 'point(s)' ) ) | ( ( '%' ) ) );
     public final void rule__MinRequirementsType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:364:1: ( ( ( 'point(s)' ) ) | ( ( '%' ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:357:1: ( ( ( 'point(s)' ) ) | ( ( '%' ) ) )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -980,16 +955,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             }
             switch (alt3) {
                 case 1 :
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:365:1: ( ( 'point(s)' ) )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:358:1: ( ( 'point(s)' ) )
                     {
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:365:1: ( ( 'point(s)' ) )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:366:1: ( 'point(s)' )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:358:1: ( ( 'point(s)' ) )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:359:1: ( 'point(s)' )
                     {
                      before(grammarAccess.getMinRequirementsTypeAccess().getAbsoluteEnumLiteralDeclaration_0()); 
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:367:1: ( 'point(s)' )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:367:3: 'point(s)'
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:360:1: ( 'point(s)' )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:360:3: 'point(s)'
                     {
-                    match(input,11,FollowSets000.FOLLOW_11_in_rule__MinRequirementsType__Alternatives713); 
+                    match(input,11,FollowSets000.FOLLOW_11_in_rule__MinRequirementsType__Alternatives697); 
 
                     }
 
@@ -1001,16 +976,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:372:6: ( ( '%' ) )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:365:6: ( ( '%' ) )
                     {
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:372:6: ( ( '%' ) )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:373:1: ( '%' )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:365:6: ( ( '%' ) )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:366:1: ( '%' )
                     {
                      before(grammarAccess.getMinRequirementsTypeAccess().getPercentageEnumLiteralDeclaration_1()); 
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:374:1: ( '%' )
-                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:374:3: '%'
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:367:1: ( '%' )
+                    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:367:3: '%'
                     {
-                    match(input,12,FollowSets000.FOLLOW_12_in_rule__MinRequirementsType__Alternatives734); 
+                    match(input,12,FollowSets000.FOLLOW_12_in_rule__MinRequirementsType__Alternatives718); 
 
                     }
 
@@ -1039,21 +1014,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__0"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:386:1: rule__Course__Group__0 : rule__Course__Group__0__Impl rule__Course__Group__1 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:379:1: rule__Course__Group__0 : rule__Course__Group__0__Impl rule__Course__Group__1 ;
     public final void rule__Course__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:390:1: ( rule__Course__Group__0__Impl rule__Course__Group__1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:391:2: rule__Course__Group__0__Impl rule__Course__Group__1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:383:1: ( rule__Course__Group__0__Impl rule__Course__Group__1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:384:2: rule__Course__Group__0__Impl rule__Course__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__0__Impl_in_rule__Course__Group__0767);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__0__Impl_in_rule__Course__Group__0751);
             rule__Course__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__1_in_rule__Course__Group__0770);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__1_in_rule__Course__Group__0754);
             rule__Course__Group__1();
 
             state._fsp--;
@@ -1077,21 +1052,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__0__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:398:1: rule__Course__Group__0__Impl : ( () ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:391:1: rule__Course__Group__0__Impl : ( () ) ;
     public final void rule__Course__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:402:1: ( ( () ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:403:1: ( () )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:395:1: ( ( () ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:396:1: ( () )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:403:1: ( () )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:404:1: ()
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:396:1: ( () )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:397:1: ()
             {
              before(grammarAccess.getCourseAccess().getCourseAction_0()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:405:1: ()
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:407:1: 
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:398:1: ()
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:400:1: 
             {
             }
 
@@ -1114,21 +1089,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__1"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:417:1: rule__Course__Group__1 : rule__Course__Group__1__Impl rule__Course__Group__2 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:410:1: rule__Course__Group__1 : rule__Course__Group__1__Impl rule__Course__Group__2 ;
     public final void rule__Course__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:421:1: ( rule__Course__Group__1__Impl rule__Course__Group__2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:422:2: rule__Course__Group__1__Impl rule__Course__Group__2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:414:1: ( rule__Course__Group__1__Impl rule__Course__Group__2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:415:2: rule__Course__Group__1__Impl rule__Course__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__1__Impl_in_rule__Course__Group__1828);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__1__Impl_in_rule__Course__Group__1812);
             rule__Course__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__2_in_rule__Course__Group__1831);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__2_in_rule__Course__Group__1815);
             rule__Course__Group__2();
 
             state._fsp--;
@@ -1152,20 +1127,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__1__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:429:1: rule__Course__Group__1__Impl : ( 'course' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:422:1: rule__Course__Group__1__Impl : ( 'course' ) ;
     public final void rule__Course__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:433:1: ( ( 'course' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:434:1: ( 'course' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:426:1: ( ( 'course' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:427:1: ( 'course' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:434:1: ( 'course' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:435:1: 'course'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:427:1: ( 'course' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:428:1: 'course'
             {
              before(grammarAccess.getCourseAccess().getCourseKeyword_1()); 
-            match(input,13,FollowSets000.FOLLOW_13_in_rule__Course__Group__1__Impl859); 
+            match(input,13,FollowSets000.FOLLOW_13_in_rule__Course__Group__1__Impl843); 
              after(grammarAccess.getCourseAccess().getCourseKeyword_1()); 
 
             }
@@ -1189,21 +1164,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__2"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:448:1: rule__Course__Group__2 : rule__Course__Group__2__Impl rule__Course__Group__3 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:441:1: rule__Course__Group__2 : rule__Course__Group__2__Impl rule__Course__Group__3 ;
     public final void rule__Course__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:452:1: ( rule__Course__Group__2__Impl rule__Course__Group__3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:453:2: rule__Course__Group__2__Impl rule__Course__Group__3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:445:1: ( rule__Course__Group__2__Impl rule__Course__Group__3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:446:2: rule__Course__Group__2__Impl rule__Course__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__2__Impl_in_rule__Course__Group__2890);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__2__Impl_in_rule__Course__Group__2874);
             rule__Course__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__3_in_rule__Course__Group__2893);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__3_in_rule__Course__Group__2877);
             rule__Course__Group__3();
 
             state._fsp--;
@@ -1227,23 +1202,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__2__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:460:1: rule__Course__Group__2__Impl : ( ( rule__Course__NameAssignment_2 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:453:1: rule__Course__Group__2__Impl : ( ( rule__Course__NameAssignment_2 ) ) ;
     public final void rule__Course__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:464:1: ( ( ( rule__Course__NameAssignment_2 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:465:1: ( ( rule__Course__NameAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:457:1: ( ( ( rule__Course__NameAssignment_2 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:458:1: ( ( rule__Course__NameAssignment_2 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:465:1: ( ( rule__Course__NameAssignment_2 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:466:1: ( rule__Course__NameAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:458:1: ( ( rule__Course__NameAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:459:1: ( rule__Course__NameAssignment_2 )
             {
              before(grammarAccess.getCourseAccess().getNameAssignment_2()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:467:1: ( rule__Course__NameAssignment_2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:467:2: rule__Course__NameAssignment_2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:460:1: ( rule__Course__NameAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:460:2: rule__Course__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__NameAssignment_2_in_rule__Course__Group__2__Impl920);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__NameAssignment_2_in_rule__Course__Group__2__Impl904);
             rule__Course__NameAssignment_2();
 
             state._fsp--;
@@ -1274,21 +1249,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__3"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:477:1: rule__Course__Group__3 : rule__Course__Group__3__Impl rule__Course__Group__4 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:470:1: rule__Course__Group__3 : rule__Course__Group__3__Impl rule__Course__Group__4 ;
     public final void rule__Course__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:481:1: ( rule__Course__Group__3__Impl rule__Course__Group__4 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:482:2: rule__Course__Group__3__Impl rule__Course__Group__4
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:474:1: ( rule__Course__Group__3__Impl rule__Course__Group__4 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:475:2: rule__Course__Group__3__Impl rule__Course__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__3__Impl_in_rule__Course__Group__3950);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__3__Impl_in_rule__Course__Group__3934);
             rule__Course__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__4_in_rule__Course__Group__3953);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__4_in_rule__Course__Group__3937);
             rule__Course__Group__4();
 
             state._fsp--;
@@ -1312,20 +1287,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__3__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:489:1: rule__Course__Group__3__Impl : ( '{' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:482:1: rule__Course__Group__3__Impl : ( '{' ) ;
     public final void rule__Course__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:493:1: ( ( '{' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:494:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:486:1: ( ( '{' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:487:1: ( '{' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:494:1: ( '{' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:495:1: '{'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:487:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:488:1: '{'
             {
              before(grammarAccess.getCourseAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Course__Group__3__Impl981); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Course__Group__3__Impl965); 
              after(grammarAccess.getCourseAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -1349,21 +1324,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__4"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:508:1: rule__Course__Group__4 : rule__Course__Group__4__Impl rule__Course__Group__5 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:501:1: rule__Course__Group__4 : rule__Course__Group__4__Impl rule__Course__Group__5 ;
     public final void rule__Course__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:512:1: ( rule__Course__Group__4__Impl rule__Course__Group__5 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:513:2: rule__Course__Group__4__Impl rule__Course__Group__5
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:505:1: ( rule__Course__Group__4__Impl rule__Course__Group__5 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:506:2: rule__Course__Group__4__Impl rule__Course__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__4__Impl_in_rule__Course__Group__41012);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__4__Impl_in_rule__Course__Group__4996);
             rule__Course__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__5_in_rule__Course__Group__41015);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__5_in_rule__Course__Group__4999);
             rule__Course__Group__5();
 
             state._fsp--;
@@ -1387,42 +1362,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__4__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:520:1: rule__Course__Group__4__Impl : ( ( ( rule__Course__GradingsAssignment_4 ) ) ( ( rule__Course__GradingsAssignment_4 )* ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:513:1: rule__Course__Group__4__Impl : ( ( rule__Course__GradingsAssignment_4 )* ) ;
     public final void rule__Course__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:524:1: ( ( ( ( rule__Course__GradingsAssignment_4 ) ) ( ( rule__Course__GradingsAssignment_4 )* ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:525:1: ( ( ( rule__Course__GradingsAssignment_4 ) ) ( ( rule__Course__GradingsAssignment_4 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:517:1: ( ( ( rule__Course__GradingsAssignment_4 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:518:1: ( ( rule__Course__GradingsAssignment_4 )* )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:525:1: ( ( ( rule__Course__GradingsAssignment_4 ) ) ( ( rule__Course__GradingsAssignment_4 )* ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:526:1: ( ( rule__Course__GradingsAssignment_4 ) ) ( ( rule__Course__GradingsAssignment_4 )* )
-            {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:526:1: ( ( rule__Course__GradingsAssignment_4 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:527:1: ( rule__Course__GradingsAssignment_4 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:518:1: ( ( rule__Course__GradingsAssignment_4 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:519:1: ( rule__Course__GradingsAssignment_4 )*
             {
              before(grammarAccess.getCourseAccess().getGradingsAssignment_4()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:528:1: ( rule__Course__GradingsAssignment_4 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:528:2: rule__Course__GradingsAssignment_4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1044);
-            rule__Course__GradingsAssignment_4();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getCourseAccess().getGradingsAssignment_4()); 
-
-            }
-
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:531:1: ( ( rule__Course__GradingsAssignment_4 )* )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:532:1: ( rule__Course__GradingsAssignment_4 )*
-            {
-             before(grammarAccess.getCourseAccess().getGradingsAssignment_4()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:533:1: ( rule__Course__GradingsAssignment_4 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:520:1: ( rule__Course__GradingsAssignment_4 )*
             loop4:
             do {
                 int alt4=2;
@@ -1435,9 +1388,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:533:2: rule__Course__GradingsAssignment_4
+            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:520:2: rule__Course__GradingsAssignment_4
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1056);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1026);
             	    rule__Course__GradingsAssignment_4();
 
             	    state._fsp--;
@@ -1452,9 +1405,6 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             } while (true);
 
              after(grammarAccess.getCourseAccess().getGradingsAssignment_4()); 
-
-            }
-
 
             }
 
@@ -1477,16 +1427,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__5"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:544:1: rule__Course__Group__5 : rule__Course__Group__5__Impl ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:530:1: rule__Course__Group__5 : rule__Course__Group__5__Impl ;
     public final void rule__Course__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:548:1: ( rule__Course__Group__5__Impl )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:549:2: rule__Course__Group__5__Impl
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:534:1: ( rule__Course__Group__5__Impl )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:535:2: rule__Course__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__5__Impl_in_rule__Course__Group__51089);
+            pushFollow(FollowSets000.FOLLOW_rule__Course__Group__5__Impl_in_rule__Course__Group__51057);
             rule__Course__Group__5__Impl();
 
             state._fsp--;
@@ -1510,20 +1460,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Course__Group__5__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:555:1: rule__Course__Group__5__Impl : ( '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:541:1: rule__Course__Group__5__Impl : ( '}' ) ;
     public final void rule__Course__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:559:1: ( ( '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:560:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:545:1: ( ( '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:546:1: ( '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:560:1: ( '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:561:1: '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:546:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:547:1: '}'
             {
              before(grammarAccess.getCourseAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Course__Group__5__Impl1117); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Course__Group__5__Impl1085); 
              after(grammarAccess.getCourseAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -1547,21 +1497,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__0"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:586:1: rule__Grading__Group__0 : rule__Grading__Group__0__Impl rule__Grading__Group__1 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:572:1: rule__Grading__Group__0 : rule__Grading__Group__0__Impl rule__Grading__Group__1 ;
     public final void rule__Grading__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:590:1: ( rule__Grading__Group__0__Impl rule__Grading__Group__1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:591:2: rule__Grading__Group__0__Impl rule__Grading__Group__1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:576:1: ( rule__Grading__Group__0__Impl rule__Grading__Group__1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:577:2: rule__Grading__Group__0__Impl rule__Grading__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__0__Impl_in_rule__Grading__Group__01160);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__0__Impl_in_rule__Grading__Group__01128);
             rule__Grading__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__1_in_rule__Grading__Group__01163);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__1_in_rule__Grading__Group__01131);
             rule__Grading__Group__1();
 
             state._fsp--;
@@ -1585,20 +1535,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__0__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:598:1: rule__Grading__Group__0__Impl : ( 'semester' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:584:1: rule__Grading__Group__0__Impl : ( 'semester' ) ;
     public final void rule__Grading__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:602:1: ( ( 'semester' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:603:1: ( 'semester' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:588:1: ( ( 'semester' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:589:1: ( 'semester' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:603:1: ( 'semester' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:604:1: 'semester'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:589:1: ( 'semester' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:590:1: 'semester'
             {
              before(grammarAccess.getGradingAccess().getSemesterKeyword_0()); 
-            match(input,16,FollowSets000.FOLLOW_16_in_rule__Grading__Group__0__Impl1191); 
+            match(input,16,FollowSets000.FOLLOW_16_in_rule__Grading__Group__0__Impl1159); 
              after(grammarAccess.getGradingAccess().getSemesterKeyword_0()); 
 
             }
@@ -1622,21 +1572,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__1"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:617:1: rule__Grading__Group__1 : rule__Grading__Group__1__Impl rule__Grading__Group__2 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:603:1: rule__Grading__Group__1 : rule__Grading__Group__1__Impl rule__Grading__Group__2 ;
     public final void rule__Grading__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:621:1: ( rule__Grading__Group__1__Impl rule__Grading__Group__2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:622:2: rule__Grading__Group__1__Impl rule__Grading__Group__2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:607:1: ( rule__Grading__Group__1__Impl rule__Grading__Group__2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:608:2: rule__Grading__Group__1__Impl rule__Grading__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__1__Impl_in_rule__Grading__Group__11222);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__1__Impl_in_rule__Grading__Group__11190);
             rule__Grading__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__2_in_rule__Grading__Group__11225);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__2_in_rule__Grading__Group__11193);
             rule__Grading__Group__2();
 
             state._fsp--;
@@ -1660,23 +1610,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__1__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:629:1: rule__Grading__Group__1__Impl : ( ( rule__Grading__SemesterAssignment_1 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:615:1: rule__Grading__Group__1__Impl : ( ( rule__Grading__SemesterAssignment_1 ) ) ;
     public final void rule__Grading__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:633:1: ( ( ( rule__Grading__SemesterAssignment_1 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:634:1: ( ( rule__Grading__SemesterAssignment_1 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:619:1: ( ( ( rule__Grading__SemesterAssignment_1 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:620:1: ( ( rule__Grading__SemesterAssignment_1 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:634:1: ( ( rule__Grading__SemesterAssignment_1 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:635:1: ( rule__Grading__SemesterAssignment_1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:620:1: ( ( rule__Grading__SemesterAssignment_1 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:621:1: ( rule__Grading__SemesterAssignment_1 )
             {
              before(grammarAccess.getGradingAccess().getSemesterAssignment_1()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:636:1: ( rule__Grading__SemesterAssignment_1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:636:2: rule__Grading__SemesterAssignment_1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:622:1: ( rule__Grading__SemesterAssignment_1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:622:2: rule__Grading__SemesterAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__SemesterAssignment_1_in_rule__Grading__Group__1__Impl1252);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__SemesterAssignment_1_in_rule__Grading__Group__1__Impl1220);
             rule__Grading__SemesterAssignment_1();
 
             state._fsp--;
@@ -1707,21 +1657,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__2"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:646:1: rule__Grading__Group__2 : rule__Grading__Group__2__Impl rule__Grading__Group__3 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:632:1: rule__Grading__Group__2 : rule__Grading__Group__2__Impl rule__Grading__Group__3 ;
     public final void rule__Grading__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:650:1: ( rule__Grading__Group__2__Impl rule__Grading__Group__3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:651:2: rule__Grading__Group__2__Impl rule__Grading__Group__3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:636:1: ( rule__Grading__Group__2__Impl rule__Grading__Group__3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:637:2: rule__Grading__Group__2__Impl rule__Grading__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__2__Impl_in_rule__Grading__Group__21282);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__2__Impl_in_rule__Grading__Group__21250);
             rule__Grading__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__3_in_rule__Grading__Group__21285);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__3_in_rule__Grading__Group__21253);
             rule__Grading__Group__3();
 
             state._fsp--;
@@ -1745,20 +1695,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__2__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:658:1: rule__Grading__Group__2__Impl : ( '{' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:644:1: rule__Grading__Group__2__Impl : ( '{' ) ;
     public final void rule__Grading__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:662:1: ( ( '{' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:663:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:648:1: ( ( '{' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:649:1: ( '{' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:663:1: ( '{' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:664:1: '{'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:649:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:650:1: '{'
             {
              before(grammarAccess.getGradingAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Grading__Group__2__Impl1313); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Grading__Group__2__Impl1281); 
              after(grammarAccess.getGradingAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -1782,21 +1732,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__3"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:677:1: rule__Grading__Group__3 : rule__Grading__Group__3__Impl rule__Grading__Group__4 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:663:1: rule__Grading__Group__3 : rule__Grading__Group__3__Impl rule__Grading__Group__4 ;
     public final void rule__Grading__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:681:1: ( rule__Grading__Group__3__Impl rule__Grading__Group__4 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:682:2: rule__Grading__Group__3__Impl rule__Grading__Group__4
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:667:1: ( rule__Grading__Group__3__Impl rule__Grading__Group__4 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:668:2: rule__Grading__Group__3__Impl rule__Grading__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__3__Impl_in_rule__Grading__Group__31344);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__3__Impl_in_rule__Grading__Group__31312);
             rule__Grading__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__4_in_rule__Grading__Group__31347);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__4_in_rule__Grading__Group__31315);
             rule__Grading__Group__4();
 
             state._fsp--;
@@ -1820,23 +1770,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__3__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:689:1: rule__Grading__Group__3__Impl : ( ( rule__Grading__GradingSchemeAssignment_3 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:675:1: rule__Grading__Group__3__Impl : ( ( rule__Grading__GradingSchemeAssignment_3 ) ) ;
     public final void rule__Grading__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:693:1: ( ( ( rule__Grading__GradingSchemeAssignment_3 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:694:1: ( ( rule__Grading__GradingSchemeAssignment_3 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:679:1: ( ( ( rule__Grading__GradingSchemeAssignment_3 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:680:1: ( ( rule__Grading__GradingSchemeAssignment_3 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:694:1: ( ( rule__Grading__GradingSchemeAssignment_3 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:695:1: ( rule__Grading__GradingSchemeAssignment_3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:680:1: ( ( rule__Grading__GradingSchemeAssignment_3 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:681:1: ( rule__Grading__GradingSchemeAssignment_3 )
             {
              before(grammarAccess.getGradingAccess().getGradingSchemeAssignment_3()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:696:1: ( rule__Grading__GradingSchemeAssignment_3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:696:2: rule__Grading__GradingSchemeAssignment_3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:682:1: ( rule__Grading__GradingSchemeAssignment_3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:682:2: rule__Grading__GradingSchemeAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__GradingSchemeAssignment_3_in_rule__Grading__Group__3__Impl1374);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__GradingSchemeAssignment_3_in_rule__Grading__Group__3__Impl1342);
             rule__Grading__GradingSchemeAssignment_3();
 
             state._fsp--;
@@ -1867,21 +1817,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__4"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:706:1: rule__Grading__Group__4 : rule__Grading__Group__4__Impl rule__Grading__Group__5 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:692:1: rule__Grading__Group__4 : rule__Grading__Group__4__Impl rule__Grading__Group__5 ;
     public final void rule__Grading__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:710:1: ( rule__Grading__Group__4__Impl rule__Grading__Group__5 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:711:2: rule__Grading__Group__4__Impl rule__Grading__Group__5
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:696:1: ( rule__Grading__Group__4__Impl rule__Grading__Group__5 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:697:2: rule__Grading__Group__4__Impl rule__Grading__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__4__Impl_in_rule__Grading__Group__41404);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__4__Impl_in_rule__Grading__Group__41372);
             rule__Grading__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__5_in_rule__Grading__Group__41407);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__5_in_rule__Grading__Group__41375);
             rule__Grading__Group__5();
 
             state._fsp--;
@@ -1905,20 +1855,42 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__4__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:718:1: rule__Grading__Group__4__Impl : ( ( rule__Grading__TasksAssignment_4 )* ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:704:1: rule__Grading__Group__4__Impl : ( ( ( rule__Grading__TasksAssignment_4 ) ) ( ( rule__Grading__TasksAssignment_4 )* ) ) ;
     public final void rule__Grading__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:722:1: ( ( ( rule__Grading__TasksAssignment_4 )* ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:723:1: ( ( rule__Grading__TasksAssignment_4 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:708:1: ( ( ( ( rule__Grading__TasksAssignment_4 ) ) ( ( rule__Grading__TasksAssignment_4 )* ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:709:1: ( ( ( rule__Grading__TasksAssignment_4 ) ) ( ( rule__Grading__TasksAssignment_4 )* ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:723:1: ( ( rule__Grading__TasksAssignment_4 )* )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:724:1: ( rule__Grading__TasksAssignment_4 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:709:1: ( ( ( rule__Grading__TasksAssignment_4 ) ) ( ( rule__Grading__TasksAssignment_4 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:710:1: ( ( rule__Grading__TasksAssignment_4 ) ) ( ( rule__Grading__TasksAssignment_4 )* )
+            {
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:710:1: ( ( rule__Grading__TasksAssignment_4 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:711:1: ( rule__Grading__TasksAssignment_4 )
             {
              before(grammarAccess.getGradingAccess().getTasksAssignment_4()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:725:1: ( rule__Grading__TasksAssignment_4 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:712:1: ( rule__Grading__TasksAssignment_4 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:712:2: rule__Grading__TasksAssignment_4
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1404);
+            rule__Grading__TasksAssignment_4();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getGradingAccess().getTasksAssignment_4()); 
+
+            }
+
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:715:1: ( ( rule__Grading__TasksAssignment_4 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:716:1: ( rule__Grading__TasksAssignment_4 )*
+            {
+             before(grammarAccess.getGradingAccess().getTasksAssignment_4()); 
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:717:1: ( rule__Grading__TasksAssignment_4 )*
             loop5:
             do {
                 int alt5=2;
@@ -1931,9 +1903,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt5) {
             	case 1 :
-            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:725:2: rule__Grading__TasksAssignment_4
+            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:717:2: rule__Grading__TasksAssignment_4
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1434);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1416);
             	    rule__Grading__TasksAssignment_4();
 
             	    state._fsp--;
@@ -1948,6 +1920,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             } while (true);
 
              after(grammarAccess.getGradingAccess().getTasksAssignment_4()); 
+
+            }
+
 
             }
 
@@ -1970,16 +1945,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__5"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:735:1: rule__Grading__Group__5 : rule__Grading__Group__5__Impl ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:728:1: rule__Grading__Group__5 : rule__Grading__Group__5__Impl ;
     public final void rule__Grading__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:739:1: ( rule__Grading__Group__5__Impl )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:740:2: rule__Grading__Group__5__Impl
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:732:1: ( rule__Grading__Group__5__Impl )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:733:2: rule__Grading__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__5__Impl_in_rule__Grading__Group__51465);
+            pushFollow(FollowSets000.FOLLOW_rule__Grading__Group__5__Impl_in_rule__Grading__Group__51449);
             rule__Grading__Group__5__Impl();
 
             state._fsp--;
@@ -2003,20 +1978,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grading__Group__5__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:746:1: rule__Grading__Group__5__Impl : ( '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:739:1: rule__Grading__Group__5__Impl : ( '}' ) ;
     public final void rule__Grading__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:750:1: ( ( '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:751:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:743:1: ( ( '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:744:1: ( '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:751:1: ( '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:752:1: '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:744:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:745:1: '}'
             {
              before(grammarAccess.getGradingAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Grading__Group__5__Impl1493); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Grading__Group__5__Impl1477); 
              after(grammarAccess.getGradingAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -2040,21 +2015,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__0"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:777:1: rule__GradingScheme__Group__0 : rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:770:1: rule__GradingScheme__Group__0 : rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1 ;
     public final void rule__GradingScheme__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:781:1: ( rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:782:2: rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:774:1: ( rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:775:2: rule__GradingScheme__Group__0__Impl rule__GradingScheme__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__0__Impl_in_rule__GradingScheme__Group__01536);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__0__Impl_in_rule__GradingScheme__Group__01520);
             rule__GradingScheme__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__1_in_rule__GradingScheme__Group__01539);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__1_in_rule__GradingScheme__Group__01523);
             rule__GradingScheme__Group__1();
 
             state._fsp--;
@@ -2078,20 +2053,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__0__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:789:1: rule__GradingScheme__Group__0__Impl : ( 'grading scheme' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:782:1: rule__GradingScheme__Group__0__Impl : ( 'grading scheme' ) ;
     public final void rule__GradingScheme__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:793:1: ( ( 'grading scheme' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:794:1: ( 'grading scheme' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:786:1: ( ( 'grading scheme' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:787:1: ( 'grading scheme' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:794:1: ( 'grading scheme' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:795:1: 'grading scheme'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:787:1: ( 'grading scheme' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:788:1: 'grading scheme'
             {
              before(grammarAccess.getGradingSchemeAccess().getGradingSchemeKeyword_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__GradingScheme__Group__0__Impl1567); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__GradingScheme__Group__0__Impl1551); 
              after(grammarAccess.getGradingSchemeAccess().getGradingSchemeKeyword_0()); 
 
             }
@@ -2115,21 +2090,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__1"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:808:1: rule__GradingScheme__Group__1 : rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:801:1: rule__GradingScheme__Group__1 : rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2 ;
     public final void rule__GradingScheme__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:812:1: ( rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:813:2: rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:805:1: ( rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:806:2: rule__GradingScheme__Group__1__Impl rule__GradingScheme__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__1__Impl_in_rule__GradingScheme__Group__11598);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__1__Impl_in_rule__GradingScheme__Group__11582);
             rule__GradingScheme__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__2_in_rule__GradingScheme__Group__11601);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__2_in_rule__GradingScheme__Group__11585);
             rule__GradingScheme__Group__2();
 
             state._fsp--;
@@ -2153,20 +2128,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__1__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:820:1: rule__GradingScheme__Group__1__Impl : ( '(' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:813:1: rule__GradingScheme__Group__1__Impl : ( '(' ) ;
     public final void rule__GradingScheme__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:824:1: ( ( '(' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:825:1: ( '(' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:817:1: ( ( '(' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:818:1: ( '(' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:825:1: ( '(' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:826:1: '('
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:818:1: ( '(' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:819:1: '('
             {
              before(grammarAccess.getGradingSchemeAccess().getLeftParenthesisKeyword_1()); 
-            match(input,18,FollowSets000.FOLLOW_18_in_rule__GradingScheme__Group__1__Impl1629); 
+            match(input,18,FollowSets000.FOLLOW_18_in_rule__GradingScheme__Group__1__Impl1613); 
              after(grammarAccess.getGradingSchemeAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -2190,21 +2165,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__2"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:839:1: rule__GradingScheme__Group__2 : rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:832:1: rule__GradingScheme__Group__2 : rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3 ;
     public final void rule__GradingScheme__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:843:1: ( rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:844:2: rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:836:1: ( rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:837:2: rule__GradingScheme__Group__2__Impl rule__GradingScheme__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__2__Impl_in_rule__GradingScheme__Group__21660);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__2__Impl_in_rule__GradingScheme__Group__21644);
             rule__GradingScheme__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__3_in_rule__GradingScheme__Group__21663);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__3_in_rule__GradingScheme__Group__21647);
             rule__GradingScheme__Group__3();
 
             state._fsp--;
@@ -2228,23 +2203,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__2__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:851:1: rule__GradingScheme__Group__2__Impl : ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:844:1: rule__GradingScheme__Group__2__Impl : ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) ) ;
     public final void rule__GradingScheme__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:855:1: ( ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:856:1: ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:848:1: ( ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:849:1: ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:856:1: ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:857:1: ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:849:1: ( ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:850:1: ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 )
             {
              before(grammarAccess.getGradingSchemeAccess().getMinRequirementNotFulfilledGradeAssignment_2()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:858:1: ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:858:2: rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:851:1: ( rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:851:2: rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2_in_rule__GradingScheme__Group__2__Impl1690);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2_in_rule__GradingScheme__Group__2__Impl1674);
             rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2();
 
             state._fsp--;
@@ -2275,21 +2250,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__3"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:868:1: rule__GradingScheme__Group__3 : rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:861:1: rule__GradingScheme__Group__3 : rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4 ;
     public final void rule__GradingScheme__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:872:1: ( rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:873:2: rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:865:1: ( rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:866:2: rule__GradingScheme__Group__3__Impl rule__GradingScheme__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__3__Impl_in_rule__GradingScheme__Group__31720);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__3__Impl_in_rule__GradingScheme__Group__31704);
             rule__GradingScheme__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__4_in_rule__GradingScheme__Group__31723);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__4_in_rule__GradingScheme__Group__31707);
             rule__GradingScheme__Group__4();
 
             state._fsp--;
@@ -2313,20 +2288,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__3__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:880:1: rule__GradingScheme__Group__3__Impl : ( ')' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:873:1: rule__GradingScheme__Group__3__Impl : ( ')' ) ;
     public final void rule__GradingScheme__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:884:1: ( ( ')' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:885:1: ( ')' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:877:1: ( ( ')' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:878:1: ( ')' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:885:1: ( ')' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:886:1: ')'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:878:1: ( ')' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:879:1: ')'
             {
              before(grammarAccess.getGradingSchemeAccess().getRightParenthesisKeyword_3()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__GradingScheme__Group__3__Impl1751); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__GradingScheme__Group__3__Impl1735); 
              after(grammarAccess.getGradingSchemeAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -2350,21 +2325,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__4"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:899:1: rule__GradingScheme__Group__4 : rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:892:1: rule__GradingScheme__Group__4 : rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5 ;
     public final void rule__GradingScheme__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:903:1: ( rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:904:2: rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:896:1: ( rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:897:2: rule__GradingScheme__Group__4__Impl rule__GradingScheme__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__4__Impl_in_rule__GradingScheme__Group__41782);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__4__Impl_in_rule__GradingScheme__Group__41766);
             rule__GradingScheme__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__5_in_rule__GradingScheme__Group__41785);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__5_in_rule__GradingScheme__Group__41769);
             rule__GradingScheme__Group__5();
 
             state._fsp--;
@@ -2388,20 +2363,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__4__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:911:1: rule__GradingScheme__Group__4__Impl : ( '{' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:904:1: rule__GradingScheme__Group__4__Impl : ( '{' ) ;
     public final void rule__GradingScheme__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:915:1: ( ( '{' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:916:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:908:1: ( ( '{' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:909:1: ( '{' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:916:1: ( '{' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:917:1: '{'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:909:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:910:1: '{'
             {
              before(grammarAccess.getGradingSchemeAccess().getLeftCurlyBracketKeyword_4()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__GradingScheme__Group__4__Impl1813); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__GradingScheme__Group__4__Impl1797); 
              after(grammarAccess.getGradingSchemeAccess().getLeftCurlyBracketKeyword_4()); 
 
             }
@@ -2425,21 +2400,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__5"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:930:1: rule__GradingScheme__Group__5 : rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:923:1: rule__GradingScheme__Group__5 : rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6 ;
     public final void rule__GradingScheme__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:934:1: ( rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:935:2: rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:927:1: ( rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:928:2: rule__GradingScheme__Group__5__Impl rule__GradingScheme__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__5__Impl_in_rule__GradingScheme__Group__51844);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__5__Impl_in_rule__GradingScheme__Group__51828);
             rule__GradingScheme__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__6_in_rule__GradingScheme__Group__51847);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__6_in_rule__GradingScheme__Group__51831);
             rule__GradingScheme__Group__6();
 
             state._fsp--;
@@ -2463,26 +2438,26 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__5__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:942:1: rule__GradingScheme__Group__5__Impl : ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:935:1: rule__GradingScheme__Group__5__Impl : ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) ) ;
     public final void rule__GradingScheme__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:946:1: ( ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:947:1: ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:939:1: ( ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:940:1: ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:947:1: ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:948:1: ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:940:1: ( ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:941:1: ( ( rule__GradingScheme__GradesAssignment_5 ) ) ( ( rule__GradingScheme__GradesAssignment_5 )* )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:948:1: ( ( rule__GradingScheme__GradesAssignment_5 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:949:1: ( rule__GradingScheme__GradesAssignment_5 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:941:1: ( ( rule__GradingScheme__GradesAssignment_5 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:942:1: ( rule__GradingScheme__GradesAssignment_5 )
             {
              before(grammarAccess.getGradingSchemeAccess().getGradesAssignment_5()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:950:1: ( rule__GradingScheme__GradesAssignment_5 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:950:2: rule__GradingScheme__GradesAssignment_5
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:943:1: ( rule__GradingScheme__GradesAssignment_5 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:943:2: rule__GradingScheme__GradesAssignment_5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1876);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1860);
             rule__GradingScheme__GradesAssignment_5();
 
             state._fsp--;
@@ -2494,11 +2469,11 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:953:1: ( ( rule__GradingScheme__GradesAssignment_5 )* )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:954:1: ( rule__GradingScheme__GradesAssignment_5 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:946:1: ( ( rule__GradingScheme__GradesAssignment_5 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:947:1: ( rule__GradingScheme__GradesAssignment_5 )*
             {
              before(grammarAccess.getGradingSchemeAccess().getGradesAssignment_5()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:955:1: ( rule__GradingScheme__GradesAssignment_5 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:948:1: ( rule__GradingScheme__GradesAssignment_5 )*
             loop6:
             do {
                 int alt6=2;
@@ -2511,9 +2486,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:955:2: rule__GradingScheme__GradesAssignment_5
+            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:948:2: rule__GradingScheme__GradesAssignment_5
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1888);
+            	    pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1872);
             	    rule__GradingScheme__GradesAssignment_5();
 
             	    state._fsp--;
@@ -2553,16 +2528,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__6"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:966:1: rule__GradingScheme__Group__6 : rule__GradingScheme__Group__6__Impl ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:959:1: rule__GradingScheme__Group__6 : rule__GradingScheme__Group__6__Impl ;
     public final void rule__GradingScheme__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:970:1: ( rule__GradingScheme__Group__6__Impl )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:971:2: rule__GradingScheme__Group__6__Impl
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:963:1: ( rule__GradingScheme__Group__6__Impl )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:964:2: rule__GradingScheme__Group__6__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__6__Impl_in_rule__GradingScheme__Group__61921);
+            pushFollow(FollowSets000.FOLLOW_rule__GradingScheme__Group__6__Impl_in_rule__GradingScheme__Group__61905);
             rule__GradingScheme__Group__6__Impl();
 
             state._fsp--;
@@ -2586,20 +2561,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GradingScheme__Group__6__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:977:1: rule__GradingScheme__Group__6__Impl : ( '}' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:970:1: rule__GradingScheme__Group__6__Impl : ( '}' ) ;
     public final void rule__GradingScheme__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:981:1: ( ( '}' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:982:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:974:1: ( ( '}' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:975:1: ( '}' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:982:1: ( '}' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:983:1: '}'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:975:1: ( '}' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:976:1: '}'
             {
              before(grammarAccess.getGradingSchemeAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__GradingScheme__Group__6__Impl1949); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__GradingScheme__Group__6__Impl1933); 
              after(grammarAccess.getGradingSchemeAccess().getRightCurlyBracketKeyword_6()); 
 
             }
@@ -2623,21 +2598,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__0"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1010:1: rule__Grade__Group__0 : rule__Grade__Group__0__Impl rule__Grade__Group__1 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1003:1: rule__Grade__Group__0 : rule__Grade__Group__0__Impl rule__Grade__Group__1 ;
     public final void rule__Grade__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1014:1: ( rule__Grade__Group__0__Impl rule__Grade__Group__1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1015:2: rule__Grade__Group__0__Impl rule__Grade__Group__1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1007:1: ( rule__Grade__Group__0__Impl rule__Grade__Group__1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1008:2: rule__Grade__Group__0__Impl rule__Grade__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__0__Impl_in_rule__Grade__Group__01994);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__0__Impl_in_rule__Grade__Group__01978);
             rule__Grade__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__1_in_rule__Grade__Group__01997);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__1_in_rule__Grade__Group__01981);
             rule__Grade__Group__1();
 
             state._fsp--;
@@ -2661,23 +2636,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__0__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1022:1: rule__Grade__Group__0__Impl : ( ( rule__Grade__NameAssignment_0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1015:1: rule__Grade__Group__0__Impl : ( ( rule__Grade__NameAssignment_0 ) ) ;
     public final void rule__Grade__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1026:1: ( ( ( rule__Grade__NameAssignment_0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1027:1: ( ( rule__Grade__NameAssignment_0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1019:1: ( ( ( rule__Grade__NameAssignment_0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1020:1: ( ( rule__Grade__NameAssignment_0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1027:1: ( ( rule__Grade__NameAssignment_0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1028:1: ( rule__Grade__NameAssignment_0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1020:1: ( ( rule__Grade__NameAssignment_0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1021:1: ( rule__Grade__NameAssignment_0 )
             {
              before(grammarAccess.getGradeAccess().getNameAssignment_0()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1029:1: ( rule__Grade__NameAssignment_0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1029:2: rule__Grade__NameAssignment_0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1022:1: ( rule__Grade__NameAssignment_0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1022:2: rule__Grade__NameAssignment_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__NameAssignment_0_in_rule__Grade__Group__0__Impl2024);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__NameAssignment_0_in_rule__Grade__Group__0__Impl2008);
             rule__Grade__NameAssignment_0();
 
             state._fsp--;
@@ -2708,21 +2683,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__1"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1039:1: rule__Grade__Group__1 : rule__Grade__Group__1__Impl rule__Grade__Group__2 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1032:1: rule__Grade__Group__1 : rule__Grade__Group__1__Impl rule__Grade__Group__2 ;
     public final void rule__Grade__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1043:1: ( rule__Grade__Group__1__Impl rule__Grade__Group__2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1044:2: rule__Grade__Group__1__Impl rule__Grade__Group__2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1036:1: ( rule__Grade__Group__1__Impl rule__Grade__Group__2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1037:2: rule__Grade__Group__1__Impl rule__Grade__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__1__Impl_in_rule__Grade__Group__12054);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__1__Impl_in_rule__Grade__Group__12038);
             rule__Grade__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__2_in_rule__Grade__Group__12057);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__2_in_rule__Grade__Group__12041);
             rule__Grade__Group__2();
 
             state._fsp--;
@@ -2746,20 +2721,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__1__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1051:1: rule__Grade__Group__1__Impl : ( ':' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1044:1: rule__Grade__Group__1__Impl : ( ':' ) ;
     public final void rule__Grade__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1055:1: ( ( ':' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1056:1: ( ':' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1048:1: ( ( ':' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1049:1: ( ':' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1056:1: ( ':' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1057:1: ':'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1049:1: ( ':' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1050:1: ':'
             {
              before(grammarAccess.getGradeAccess().getColonKeyword_1()); 
-            match(input,20,FollowSets000.FOLLOW_20_in_rule__Grade__Group__1__Impl2085); 
+            match(input,20,FollowSets000.FOLLOW_20_in_rule__Grade__Group__1__Impl2069); 
              after(grammarAccess.getGradeAccess().getColonKeyword_1()); 
 
             }
@@ -2783,21 +2758,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__2"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1070:1: rule__Grade__Group__2 : rule__Grade__Group__2__Impl rule__Grade__Group__3 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1063:1: rule__Grade__Group__2 : rule__Grade__Group__2__Impl rule__Grade__Group__3 ;
     public final void rule__Grade__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1074:1: ( rule__Grade__Group__2__Impl rule__Grade__Group__3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1075:2: rule__Grade__Group__2__Impl rule__Grade__Group__3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1067:1: ( rule__Grade__Group__2__Impl rule__Grade__Group__3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1068:2: rule__Grade__Group__2__Impl rule__Grade__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__2__Impl_in_rule__Grade__Group__22116);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__2__Impl_in_rule__Grade__Group__22100);
             rule__Grade__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__3_in_rule__Grade__Group__22119);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__3_in_rule__Grade__Group__22103);
             rule__Grade__Group__3();
 
             state._fsp--;
@@ -2821,23 +2796,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__2__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1082:1: rule__Grade__Group__2__Impl : ( ( rule__Grade__RequiredPointsAssignment_2 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1075:1: rule__Grade__Group__2__Impl : ( ( rule__Grade__RequiredPointsAssignment_2 ) ) ;
     public final void rule__Grade__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1086:1: ( ( ( rule__Grade__RequiredPointsAssignment_2 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1087:1: ( ( rule__Grade__RequiredPointsAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1079:1: ( ( ( rule__Grade__RequiredPointsAssignment_2 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1080:1: ( ( rule__Grade__RequiredPointsAssignment_2 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1087:1: ( ( rule__Grade__RequiredPointsAssignment_2 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1088:1: ( rule__Grade__RequiredPointsAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1080:1: ( ( rule__Grade__RequiredPointsAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1081:1: ( rule__Grade__RequiredPointsAssignment_2 )
             {
              before(grammarAccess.getGradeAccess().getRequiredPointsAssignment_2()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1089:1: ( rule__Grade__RequiredPointsAssignment_2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1089:2: rule__Grade__RequiredPointsAssignment_2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1082:1: ( rule__Grade__RequiredPointsAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1082:2: rule__Grade__RequiredPointsAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__RequiredPointsAssignment_2_in_rule__Grade__Group__2__Impl2146);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__RequiredPointsAssignment_2_in_rule__Grade__Group__2__Impl2130);
             rule__Grade__RequiredPointsAssignment_2();
 
             state._fsp--;
@@ -2868,16 +2843,16 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__3"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1099:1: rule__Grade__Group__3 : rule__Grade__Group__3__Impl ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1092:1: rule__Grade__Group__3 : rule__Grade__Group__3__Impl ;
     public final void rule__Grade__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1103:1: ( rule__Grade__Group__3__Impl )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1104:2: rule__Grade__Group__3__Impl
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1096:1: ( rule__Grade__Group__3__Impl )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1097:2: rule__Grade__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__3__Impl_in_rule__Grade__Group__32176);
+            pushFollow(FollowSets000.FOLLOW_rule__Grade__Group__3__Impl_in_rule__Grade__Group__32160);
             rule__Grade__Group__3__Impl();
 
             state._fsp--;
@@ -2901,20 +2876,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grade__Group__3__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1110:1: rule__Grade__Group__3__Impl : ( ';' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1103:1: rule__Grade__Group__3__Impl : ( ';' ) ;
     public final void rule__Grade__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1114:1: ( ( ';' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1115:1: ( ';' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1107:1: ( ( ';' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1108:1: ( ';' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1115:1: ( ';' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1116:1: ';'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1108:1: ( ';' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1109:1: ';'
             {
              before(grammarAccess.getGradeAccess().getSemicolonKeyword_3()); 
-            match(input,21,FollowSets000.FOLLOW_21_in_rule__Grade__Group__3__Impl2204); 
+            match(input,21,FollowSets000.FOLLOW_21_in_rule__Grade__Group__3__Impl2188); 
              after(grammarAccess.getGradeAccess().getSemicolonKeyword_3()); 
 
             }
@@ -2938,21 +2913,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__0"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1137:1: rule__TaskGroup__Group__0 : rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1130:1: rule__TaskGroup__Group__0 : rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1 ;
     public final void rule__TaskGroup__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1141:1: ( rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1142:2: rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1134:1: ( rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1135:2: rule__TaskGroup__Group__0__Impl rule__TaskGroup__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__0__Impl_in_rule__TaskGroup__Group__02243);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__0__Impl_in_rule__TaskGroup__Group__02227);
             rule__TaskGroup__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__1_in_rule__TaskGroup__Group__02246);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__1_in_rule__TaskGroup__Group__02230);
             rule__TaskGroup__Group__1();
 
             state._fsp--;
@@ -2976,23 +2951,23 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__0__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1149:1: rule__TaskGroup__Group__0__Impl : ( ( rule__TaskGroup__NameAssignment_0 ) ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1142:1: rule__TaskGroup__Group__0__Impl : ( ( rule__TaskGroup__NameAssignment_0 ) ) ;
     public final void rule__TaskGroup__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1153:1: ( ( ( rule__TaskGroup__NameAssignment_0 ) ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1154:1: ( ( rule__TaskGroup__NameAssignment_0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1146:1: ( ( ( rule__TaskGroup__NameAssignment_0 ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1147:1: ( ( rule__TaskGroup__NameAssignment_0 ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1154:1: ( ( rule__TaskGroup__NameAssignment_0 ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1155:1: ( rule__TaskGroup__NameAssignment_0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1147:1: ( ( rule__TaskGroup__NameAssignment_0 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1148:1: ( rule__TaskGroup__NameAssignment_0 )
             {
              before(grammarAccess.getTaskGroupAccess().getNameAssignment_0()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1156:1: ( rule__TaskGroup__NameAssignment_0 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1156:2: rule__TaskGroup__NameAssignment_0
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1149:1: ( rule__TaskGroup__NameAssignment_0 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1149:2: rule__TaskGroup__NameAssignment_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__NameAssignment_0_in_rule__TaskGroup__Group__0__Impl2273);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__NameAssignment_0_in_rule__TaskGroup__Group__0__Impl2257);
             rule__TaskGroup__NameAssignment_0();
 
             state._fsp--;
@@ -3023,21 +2998,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__1"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1166:1: rule__TaskGroup__Group__1 : rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1159:1: rule__TaskGroup__Group__1 : rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2 ;
     public final void rule__TaskGroup__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1170:1: ( rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1171:2: rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1163:1: ( rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1164:2: rule__TaskGroup__Group__1__Impl rule__TaskGroup__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__1__Impl_in_rule__TaskGroup__Group__12303);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__1__Impl_in_rule__TaskGroup__Group__12287);
             rule__TaskGroup__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__2_in_rule__TaskGroup__Group__12306);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__2_in_rule__TaskGroup__Group__12290);
             rule__TaskGroup__Group__2();
 
             state._fsp--;
@@ -3061,20 +3036,20 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__1__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1178:1: rule__TaskGroup__Group__1__Impl : ( '{' ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1171:1: rule__TaskGroup__Group__1__Impl : ( '{' ) ;
     public final void rule__TaskGroup__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1182:1: ( ( '{' ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1183:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1175:1: ( ( '{' ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1176:1: ( '{' )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1183:1: ( '{' )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1184:1: '{'
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1176:1: ( '{' )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1177:1: '{'
             {
              before(grammarAccess.getTaskGroupAccess().getLeftCurlyBracketKeyword_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__TaskGroup__Group__1__Impl2334); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__TaskGroup__Group__1__Impl2318); 
              after(grammarAccess.getTaskGroupAccess().getLeftCurlyBracketKeyword_1()); 
 
             }
@@ -3098,21 +3073,21 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__2"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1197:1: rule__TaskGroup__Group__2 : rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3 ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1190:1: rule__TaskGroup__Group__2 : rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3 ;
     public final void rule__TaskGroup__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1201:1: ( rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3 )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1202:2: rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1194:1: ( rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1195:2: rule__TaskGroup__Group__2__Impl rule__TaskGroup__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__2__Impl_in_rule__TaskGroup__Group__22365);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__2__Impl_in_rule__TaskGroup__Group__22349);
             rule__TaskGroup__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__3_in_rule__TaskGroup__Group__22368);
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__Group__3_in_rule__TaskGroup__Group__22352);
             rule__TaskGroup__Group__3();
 
             state._fsp--;
@@ -3136,20 +3111,42 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TaskGroup__Group__2__Impl"
-    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1209:1: rule__TaskGroup__Group__2__Impl : ( ( rule__TaskGroup__ContainsAssignment_2 )* ) ;
+    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1202:1: rule__TaskGroup__Group__2__Impl : ( ( ( rule__TaskGroup__ContainsAssignment_2 ) ) ( ( rule__TaskGroup__ContainsAssignment_2 )* ) ) ;
     public final void rule__TaskGroup__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1213:1: ( ( ( rule__TaskGroup__ContainsAssignment_2 )* ) )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1214:1: ( ( rule__TaskGroup__ContainsAssignment_2 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1206:1: ( ( ( ( rule__TaskGroup__ContainsAssignment_2 ) ) ( ( rule__TaskGroup__ContainsAssignment_2 )* ) ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1207:1: ( ( ( rule__TaskGroup__ContainsAssignment_2 ) ) ( ( rule__TaskGroup__ContainsAssignment_2 )* ) )
             {
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1214:1: ( ( rule__TaskGroup__ContainsAssignment_2 )* )
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1215:1: ( rule__TaskGroup__ContainsAssignment_2 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1207:1: ( ( ( rule__TaskGroup__ContainsAssignment_2 ) ) ( ( rule__TaskGroup__ContainsAssignment_2 )* ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1208:1: ( ( rule__TaskGroup__ContainsAssignment_2 ) ) ( ( rule__TaskGroup__ContainsAssignment_2 )* )
+            {
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1208:1: ( ( rule__TaskGroup__ContainsAssignment_2 ) )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1209:1: ( rule__TaskGroup__ContainsAssignment_2 )
             {
              before(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); 
-            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1216:1: ( rule__TaskGroup__ContainsAssignment_2 )*
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1210:1: ( rule__TaskGroup__ContainsAssignment_2 )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1210:2: rule__TaskGroup__ContainsAssignment_2
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2381);
+            rule__TaskGroup__ContainsAssignment_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); 
+
+            }
+
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1213:1: ( ( rule__TaskGroup__ContainsAssignment_2 )* )
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1214:1: ( rule__TaskGroup__ContainsAssignment_2 )*
+            {
+             before(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); 
+            // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1215:1: ( rule__TaskGroup__ContainsAssignment_2 )*
             loop7:
             do {
                 int alt7=2;
@@ -3162,9 +3159,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1216:2: rule__TaskGroup__ContainsAssignment_2
+            	    // ../at.ac.tuwien.big.me12.GSMLDsl.ui/src-gen/at/ac/tuwien/big/me12/ui/contentassist/antlr/internal/InternalGSMLDsl.g:1215:2: rule__TaskGroup__ContainsAssignment_2
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2395);
+            	    pushFollow(FollowSets000.FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2393);
             	    rule__TaskGroup__ContainsAssignment_2();
 
             	    state._fsp--;
@@ -3179,6 +3176,9 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
             } while (true);
 
              after(grammarAccess.getTaskGroupAccess().getContainsAssignment_2()); 
+
+            }
+
 
             }
 
@@ -5270,113 +5270,113 @@ public class InternalGSMLDslParser extends AbstractInternalContentAssistParser {
     private static class FollowSets000 {
         public static final BitSet FOLLOW_ruleGradingSystem_in_entryRuleGradingSystem61 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleGradingSystem68 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem96 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem108 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_ruleCourse_in_entryRuleCourse138 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCourse145 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__0_in_ruleCourse171 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrading_in_entryRuleGrading198 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGrading205 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__0_in_ruleGrading231 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGradingScheme_in_entryRuleGradingScheme258 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGradingScheme265 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__0_in_ruleGradingScheme291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrade_in_entryRuleGrade318 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGrade325 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__Group__0_in_ruleGrade351 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTask_in_entryRuleTask378 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTask385 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Task__Alternatives_in_ruleTask411 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTaskGroup_in_entryRuleTaskGroup438 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTaskGroup445 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__0_in_ruleTaskGroup471 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleConcreteTask_in_entryRuleConcreteTask498 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleConcreteTask505 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ConcreteTask__Group__0_in_ruleConcreteTask531 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleMinRequirement_in_entryRuleMinRequirement558 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleMinRequirement565 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__MinRequirement__Group__0_in_ruleMinRequirement591 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__MinRequirementsType__Alternatives_in_ruleMinRequirementsType628 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleConcreteTask_in_rule__Task__Alternatives663 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTaskGroup_in_rule__Task__Alternatives680 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_11_in_rule__MinRequirementsType__Alternatives713 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_12_in_rule__MinRequirementsType__Alternatives734 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__0__Impl_in_rule__Course__Group__0767 = new BitSet(new long[]{0x0000000000002000L});
-        public static final BitSet FOLLOW_rule__Course__Group__1_in_rule__Course__Group__0770 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__1__Impl_in_rule__Course__Group__1828 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__Course__Group__2_in_rule__Course__Group__1831 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_13_in_rule__Course__Group__1__Impl859 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__2__Impl_in_rule__Course__Group__2890 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Course__Group__3_in_rule__Course__Group__2893 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__NameAssignment_2_in_rule__Course__Group__2__Impl920 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__3__Impl_in_rule__Course__Group__3950 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_rule__Course__Group__4_in_rule__Course__Group__3953 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Course__Group__3__Impl981 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__Group__4__Impl_in_rule__Course__Group__41012 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Course__Group__5_in_rule__Course__Group__41015 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1044 = new BitSet(new long[]{0x0000000000010002L});
-        public static final BitSet FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1056 = new BitSet(new long[]{0x0000000000010002L});
-        public static final BitSet FOLLOW_rule__Course__Group__5__Impl_in_rule__Course__Group__51089 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Course__Group__5__Impl1117 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__0__Impl_in_rule__Grading__Group__01160 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__Grading__Group__1_in_rule__Grading__Group__01163 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_16_in_rule__Grading__Group__0__Impl1191 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__1__Impl_in_rule__Grading__Group__11222 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Grading__Group__2_in_rule__Grading__Group__11225 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__SemesterAssignment_1_in_rule__Grading__Group__1__Impl1252 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__2__Impl_in_rule__Grading__Group__21282 = new BitSet(new long[]{0x0000000000020000L});
-        public static final BitSet FOLLOW_rule__Grading__Group__3_in_rule__Grading__Group__21285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Grading__Group__2__Impl1313 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__3__Impl_in_rule__Grading__Group__31344 = new BitSet(new long[]{0x0000000000008010L});
-        public static final BitSet FOLLOW_rule__Grading__Group__4_in_rule__Grading__Group__31347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__GradingSchemeAssignment_3_in_rule__Grading__Group__3__Impl1374 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__Group__4__Impl_in_rule__Grading__Group__41404 = new BitSet(new long[]{0x0000000000008010L});
-        public static final BitSet FOLLOW_rule__Grading__Group__5_in_rule__Grading__Group__41407 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1434 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__Grading__Group__5__Impl_in_rule__Grading__Group__51465 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Grading__Group__5__Impl1493 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__0__Impl_in_rule__GradingScheme__Group__01536 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__1_in_rule__GradingScheme__Group__01539 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__GradingScheme__Group__0__Impl1567 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__1__Impl_in_rule__GradingScheme__Group__11598 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__2_in_rule__GradingScheme__Group__11601 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_18_in_rule__GradingScheme__Group__1__Impl1629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__2__Impl_in_rule__GradingScheme__Group__21660 = new BitSet(new long[]{0x0000000000080000L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__3_in_rule__GradingScheme__Group__21663 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2_in_rule__GradingScheme__Group__2__Impl1690 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__3__Impl_in_rule__GradingScheme__Group__31720 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__4_in_rule__GradingScheme__Group__31723 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__GradingScheme__Group__3__Impl1751 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__4__Impl_in_rule__GradingScheme__Group__41782 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__5_in_rule__GradingScheme__Group__41785 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__GradingScheme__Group__4__Impl1813 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__5__Impl_in_rule__GradingScheme__Group__51844 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__6_in_rule__GradingScheme__Group__51847 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1876 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1888 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__GradingScheme__Group__6__Impl_in_rule__GradingScheme__Group__61921 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__GradingScheme__Group__6__Impl1949 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__Group__0__Impl_in_rule__Grade__Group__01994 = new BitSet(new long[]{0x0000000000100000L});
-        public static final BitSet FOLLOW_rule__Grade__Group__1_in_rule__Grade__Group__01997 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__NameAssignment_0_in_rule__Grade__Group__0__Impl2024 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__Group__1__Impl_in_rule__Grade__Group__12054 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_rule__Grade__Group__2_in_rule__Grade__Group__12057 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_20_in_rule__Grade__Group__1__Impl2085 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__Group__2__Impl_in_rule__Grade__Group__22116 = new BitSet(new long[]{0x0000000000200000L});
-        public static final BitSet FOLLOW_rule__Grade__Group__3_in_rule__Grade__Group__22119 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__RequiredPointsAssignment_2_in_rule__Grade__Group__2__Impl2146 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Grade__Group__3__Impl_in_rule__Grade__Group__32176 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__Grade__Group__3__Impl2204 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__0__Impl_in_rule__TaskGroup__Group__02243 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__1_in_rule__TaskGroup__Group__02246 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__NameAssignment_0_in_rule__TaskGroup__Group__0__Impl2273 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__1__Impl_in_rule__TaskGroup__Group__12303 = new BitSet(new long[]{0x0000000000408010L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__2_in_rule__TaskGroup__Group__12306 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__TaskGroup__Group__1__Impl2334 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__2__Impl_in_rule__TaskGroup__Group__22365 = new BitSet(new long[]{0x0000000000408010L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__3_in_rule__TaskGroup__Group__22368 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2395 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__TaskGroup__Group__3__Impl_in_rule__TaskGroup__Group__32426 = new BitSet(new long[]{0x0000000000408010L});
+        public static final BitSet FOLLOW_rule__GradingSystem__CoursesAssignment_in_ruleGradingSystem94 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_ruleCourse_in_entryRuleCourse122 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCourse129 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__0_in_ruleCourse155 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrading_in_entryRuleGrading182 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGrading189 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__0_in_ruleGrading215 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGradingScheme_in_entryRuleGradingScheme242 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGradingScheme249 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__0_in_ruleGradingScheme275 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrade_in_entryRuleGrade302 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGrade309 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__Group__0_in_ruleGrade335 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTask_in_entryRuleTask362 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTask369 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Task__Alternatives_in_ruleTask395 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTaskGroup_in_entryRuleTaskGroup422 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTaskGroup429 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__0_in_ruleTaskGroup455 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleConcreteTask_in_entryRuleConcreteTask482 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleConcreteTask489 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ConcreteTask__Group__0_in_ruleConcreteTask515 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleMinRequirement_in_entryRuleMinRequirement542 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleMinRequirement549 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__MinRequirement__Group__0_in_ruleMinRequirement575 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__MinRequirementsType__Alternatives_in_ruleMinRequirementsType612 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleConcreteTask_in_rule__Task__Alternatives647 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTaskGroup_in_rule__Task__Alternatives664 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_11_in_rule__MinRequirementsType__Alternatives697 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_12_in_rule__MinRequirementsType__Alternatives718 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__0__Impl_in_rule__Course__Group__0751 = new BitSet(new long[]{0x0000000000002000L});
+        public static final BitSet FOLLOW_rule__Course__Group__1_in_rule__Course__Group__0754 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__1__Impl_in_rule__Course__Group__1812 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__Course__Group__2_in_rule__Course__Group__1815 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_13_in_rule__Course__Group__1__Impl843 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__2__Impl_in_rule__Course__Group__2874 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Course__Group__3_in_rule__Course__Group__2877 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__NameAssignment_2_in_rule__Course__Group__2__Impl904 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__3__Impl_in_rule__Course__Group__3934 = new BitSet(new long[]{0x0000000000018000L});
+        public static final BitSet FOLLOW_rule__Course__Group__4_in_rule__Course__Group__3937 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Course__Group__3__Impl965 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__Group__4__Impl_in_rule__Course__Group__4996 = new BitSet(new long[]{0x0000000000018000L});
+        public static final BitSet FOLLOW_rule__Course__Group__5_in_rule__Course__Group__4999 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Course__GradingsAssignment_4_in_rule__Course__Group__4__Impl1026 = new BitSet(new long[]{0x0000000000010002L});
+        public static final BitSet FOLLOW_rule__Course__Group__5__Impl_in_rule__Course__Group__51057 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Course__Group__5__Impl1085 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__0__Impl_in_rule__Grading__Group__01128 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__Grading__Group__1_in_rule__Grading__Group__01131 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_16_in_rule__Grading__Group__0__Impl1159 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__1__Impl_in_rule__Grading__Group__11190 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Grading__Group__2_in_rule__Grading__Group__11193 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__SemesterAssignment_1_in_rule__Grading__Group__1__Impl1220 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__2__Impl_in_rule__Grading__Group__21250 = new BitSet(new long[]{0x0000000000020000L});
+        public static final BitSet FOLLOW_rule__Grading__Group__3_in_rule__Grading__Group__21253 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Grading__Group__2__Impl1281 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__3__Impl_in_rule__Grading__Group__31312 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__Grading__Group__4_in_rule__Grading__Group__31315 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__GradingSchemeAssignment_3_in_rule__Grading__Group__3__Impl1342 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__Group__4__Impl_in_rule__Grading__Group__41372 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Grading__Group__5_in_rule__Grading__Group__41375 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1404 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__Grading__TasksAssignment_4_in_rule__Grading__Group__4__Impl1416 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__Grading__Group__5__Impl_in_rule__Grading__Group__51449 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Grading__Group__5__Impl1477 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__0__Impl_in_rule__GradingScheme__Group__01520 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__1_in_rule__GradingScheme__Group__01523 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__GradingScheme__Group__0__Impl1551 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__1__Impl_in_rule__GradingScheme__Group__11582 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__2_in_rule__GradingScheme__Group__11585 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_18_in_rule__GradingScheme__Group__1__Impl1613 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__2__Impl_in_rule__GradingScheme__Group__21644 = new BitSet(new long[]{0x0000000000080000L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__3_in_rule__GradingScheme__Group__21647 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__MinRequirementNotFulfilledGradeAssignment_2_in_rule__GradingScheme__Group__2__Impl1674 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__3__Impl_in_rule__GradingScheme__Group__31704 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__4_in_rule__GradingScheme__Group__31707 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__GradingScheme__Group__3__Impl1735 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__4__Impl_in_rule__GradingScheme__Group__41766 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__5_in_rule__GradingScheme__Group__41769 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__GradingScheme__Group__4__Impl1797 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__5__Impl_in_rule__GradingScheme__Group__51828 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__6_in_rule__GradingScheme__Group__51831 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1860 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__GradingScheme__GradesAssignment_5_in_rule__GradingScheme__Group__5__Impl1872 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__GradingScheme__Group__6__Impl_in_rule__GradingScheme__Group__61905 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__GradingScheme__Group__6__Impl1933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__Group__0__Impl_in_rule__Grade__Group__01978 = new BitSet(new long[]{0x0000000000100000L});
+        public static final BitSet FOLLOW_rule__Grade__Group__1_in_rule__Grade__Group__01981 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__NameAssignment_0_in_rule__Grade__Group__0__Impl2008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__Group__1__Impl_in_rule__Grade__Group__12038 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__Grade__Group__2_in_rule__Grade__Group__12041 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_20_in_rule__Grade__Group__1__Impl2069 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__Group__2__Impl_in_rule__Grade__Group__22100 = new BitSet(new long[]{0x0000000000200000L});
+        public static final BitSet FOLLOW_rule__Grade__Group__3_in_rule__Grade__Group__22103 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__RequiredPointsAssignment_2_in_rule__Grade__Group__2__Impl2130 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Grade__Group__3__Impl_in_rule__Grade__Group__32160 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__Grade__Group__3__Impl2188 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__0__Impl_in_rule__TaskGroup__Group__02227 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__1_in_rule__TaskGroup__Group__02230 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__NameAssignment_0_in_rule__TaskGroup__Group__0__Impl2257 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__1__Impl_in_rule__TaskGroup__Group__12287 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__2_in_rule__TaskGroup__Group__12290 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__TaskGroup__Group__1__Impl2318 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__2__Impl_in_rule__TaskGroup__Group__22349 = new BitSet(new long[]{0x0000000000408000L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__3_in_rule__TaskGroup__Group__22352 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2381 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__TaskGroup__ContainsAssignment_2_in_rule__TaskGroup__Group__2__Impl2393 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_rule__TaskGroup__Group__3__Impl_in_rule__TaskGroup__Group__32426 = new BitSet(new long[]{0x0000000000408000L});
         public static final BitSet FOLLOW_rule__TaskGroup__Group__4_in_rule__TaskGroup__Group__32429 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__TaskGroup__Group_3__0_in_rule__TaskGroup__Group__3__Impl2456 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__TaskGroup__Group__4__Impl_in_rule__TaskGroup__Group__42487 = new BitSet(new long[]{0x0000000000000002L});

@@ -49,11 +49,11 @@ protected class ThisRootNode extends RootToken {
 /************ begin Rule GradingSystem ****************
  *
  * GradingSystem:
- * 	courses+=Course+;
+ * 	courses+=Course*;
  *
  **/
 
-// courses+=Course+
+// courses+=Course*
 protected class GradingSystem_CoursesAssignment extends AssignmentToken  {
 	
 	public GradingSystem_CoursesAssignment(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -75,7 +75,7 @@ protected class GradingSystem_CoursesAssignment extends AssignmentToken  {
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("courses",true)) == null) return null;
+		if((value = eObjectConsumer.getConsumable("courses",false)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("courses");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
@@ -105,11 +105,11 @@ protected class GradingSystem_CoursesAssignment extends AssignmentToken  {
 /************ begin Rule Course ****************
  *
  * Course:
- * 	{Course} "course" name=ID "{" gradings+=Grading+ "}";
+ * 	{Course} "course" name=ID "{" gradings+=Grading* "}";
  *
  **/
 
-// {Course} "course" name=ID "{" gradings+=Grading+ "}"
+// {Course} "course" name=ID "{" gradings+=Grading* "}"
 protected class Course_Group extends GroupToken {
 	
 	public Course_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -242,7 +242,7 @@ protected class Course_LeftCurlyBracketKeyword_3 extends KeywordToken  {
 
 }
 
-// gradings+=Grading+
+// gradings+=Grading*
 protected class Course_GradingsAssignment_4 extends AssignmentToken  {
 	
 	public Course_GradingsAssignment_4(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -264,7 +264,7 @@ protected class Course_GradingsAssignment_4 extends AssignmentToken  {
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("gradings",true)) == null) return null;
+		if((value = eObjectConsumer.getConsumable("gradings",false)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("gradings");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
@@ -305,6 +305,7 @@ protected class Course_RightCurlyBracketKeyword_5 extends KeywordToken  {
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
 			case 0: return new Course_GradingsAssignment_4(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Course_LeftCurlyBracketKeyword_3(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}
@@ -318,11 +319,11 @@ protected class Course_RightCurlyBracketKeyword_5 extends KeywordToken  {
 /************ begin Rule Grading ****************
  *
  * Grading:
- * 	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task* "}";
+ * 	"semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task+ "}";
  *
  **/
 
-// "semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task* "}"
+// "semester" semester=ID "{" gradingScheme=GradingScheme tasks+=Task+ "}"
 protected class Grading_Group extends GroupToken {
 	
 	public Grading_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -474,7 +475,7 @@ protected class Grading_GradingSchemeAssignment_3 extends AssignmentToken  {
 	}	
 }
 
-// tasks+=Task*
+// tasks+=Task+
 protected class Grading_TasksAssignment_4 extends AssignmentToken  {
 	
 	public Grading_TasksAssignment_4(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -496,7 +497,7 @@ protected class Grading_TasksAssignment_4 extends AssignmentToken  {
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("tasks",false)) == null) return null;
+		if((value = eObjectConsumer.getConsumable("tasks",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("tasks");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
@@ -537,7 +538,6 @@ protected class Grading_RightCurlyBracketKeyword_5 extends KeywordToken  {
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
 			case 0: return new Grading_TasksAssignment_4(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new Grading_GradingSchemeAssignment_3(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}
@@ -1049,11 +1049,11 @@ protected class Task_TaskGroupParserRuleCall_1 extends RuleCallToken {
 /************ begin Rule TaskGroup ****************
  *
  * TaskGroup:
- * 	name=ID "{" contains+=Task* ("@all" ":" minRequirement=MinRequirement ";")? "}";
+ * 	name=ID "{" contains+=Task+ ("@all" ":" minRequirement=MinRequirement ";")? "}";
  *
  **/
 
-// name=ID "{" contains+=Task* ("@all" ":" minRequirement=MinRequirement ";")? "}"
+// name=ID "{" contains+=Task+ ("@all" ":" minRequirement=MinRequirement ";")? "}"
 protected class TaskGroup_Group extends GroupToken {
 	
 	public TaskGroup_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1137,7 +1137,7 @@ protected class TaskGroup_LeftCurlyBracketKeyword_1 extends KeywordToken  {
 
 }
 
-// contains+=Task*
+// contains+=Task+
 protected class TaskGroup_ContainsAssignment_2 extends AssignmentToken  {
 	
 	public TaskGroup_ContainsAssignment_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1159,7 +1159,7 @@ protected class TaskGroup_ContainsAssignment_2 extends AssignmentToken  {
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("contains",false)) == null) return null;
+		if((value = eObjectConsumer.getConsumable("contains",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("contains");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
@@ -1222,7 +1222,6 @@ protected class TaskGroup_AllKeyword_3_0 extends KeywordToken  {
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
 			case 0: return new TaskGroup_ContainsAssignment_2(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new TaskGroup_LeftCurlyBracketKeyword_1(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}
@@ -1337,7 +1336,6 @@ protected class TaskGroup_RightCurlyBracketKeyword_4 extends KeywordToken  {
 		switch(index) {
 			case 0: return new TaskGroup_Group_3(lastRuleCallOrigin, this, 0, inst);
 			case 1: return new TaskGroup_ContainsAssignment_2(lastRuleCallOrigin, this, 1, inst);
-			case 2: return new TaskGroup_LeftCurlyBracketKeyword_1(lastRuleCallOrigin, this, 2, inst);
 			default: return null;
 		}	
 	}
