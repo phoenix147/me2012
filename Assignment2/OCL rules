@@ -1,0 +1,35 @@
+Rule 1 (Auswahl auf Grading Scheme): 
+self.grades->forAll(g1,g2|g1 <>g2 implies g1.requiredPoints <> g2.requiredPoints)
+
+Rule 2 (Auswahl auf Concrete Task 1-n):
+self.maxPoints >= 0
+
+Rule 3 (Auswahl auf Task Group):
+self.contains ->forAll(t | t.oclIsTypeOf(ConcreteTask))
+
+Diese Regel kann gegengetestet werden mit GradingScheme 2011 TaskGroup (siehe Fußnote in der Angabe)
+
+Rule 4 (Auswahl auf Concrete Task):
+if(self.minRequirement.type = MinRequirementsType::Percentage) then ((self.minRequirement.value > 0) and (self.minRequirement.value <=100)) else false 
+endif
+
+Rule 5 (Auswahl auf einem Concrete Task mit absoluten Punkten):
+if(self.minRequirement.type = MinRequirementsType::Absolute) then ((self.minRequirement.value >=
+ 0) and (self.minRequirement.value <=self.maxPoints
+)) else false 
+endif
+
+Rule 6 (Ggf. Type einer TaskGroup minRequirement auf Absolute ändern und passenden wert eintragen):
+if (self.minRequirement.type = MinRequirementsType::Absolute) then (self.minRequirement.value >= 0 and self.minRequirement.value
+ <= self.contains.minRequirement.value->sum())
+ 
+ else false endif
+
+Rule 7
+self.gradingScheme.grades -> forAll(g | g.requiredPoints <= self.tasks.oclAsType(TaskGroup).contains ->selectByType(ConcreteTask).maxPoints->sum()
+)
+
+
+
+=====
+Rule 7 nicht funktional momentan....
