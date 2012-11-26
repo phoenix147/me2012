@@ -1,31 +1,28 @@
--- Alle Grades in einem GradingScheme müssen unterschiedliche requiredPoints haben 
+-- 1: Alle Grades in einem GradingScheme müssen unterschiedliche requiredPoints haben 
 context GradingScheme
 inv: self.grades -> forAll(g1,g2 | g1 <> g2 implies g1.requiredPoints <> g2.requiredPoints)
 
--- concreteTasks müssen maxPoints >= 0 haben
+-- 2: concreteTasks müssen maxPoints >= 0 haben
 context ConcreteTask
 inv: self.maxPoints >= 0
 
--- eine TaskGroup soll nur aus ConcreteTasks bestehen
+-- 3: eine TaskGroup soll nur aus ConcreteTasks bestehen
 context TaskGroup
 inv: self.contains -> forAll(t | t.oclIsTypeOf(ConcreteTask))
 
--- Wenn ein Task Percentage als MinRequirementType hat, muss der Wert 0 <= x <= 100 sein
+-- 4: Wenn ein Task Percentage als MinRequirementType hat, muss der Wert 0 <= x <= 100 sein
 context Task
 inv: self.minRequirement.type = MinRequirementsType::Percentage implies self.minRequirement.value >= 0 and self.minRequirement.value <= 100
 
--- Wenn ein Task Absolute als MinRequirmentType hat, muss der Wert 0 <= x <= maxPoints sein
+-- 5: Wenn ein Task Absolute als MinRequirmentType hat, muss der Wert 0 <= x <= maxPoints sein
 context Task
 inv: self.minRequirement.type = MinRequirementsType::Absolute implies self.minRequirement.value >= 0 and self.minRequirement.value <= self.maxPoints
 
+-- 6: Wenn eine TaskGroup minRequirementType Absolute hat, dann muss der Wert 0 <= x <= sum(concrecteTasks) sein
+context TaskGroup
+inv: if (not self.minRequirement.oclIsUndefined()) then (self.minRequirement.type = MinRequirementsType::Absolute implies 
+self.minRequirement.value >= 0 and self.minRequirement.value <= (self.contains.oclAsType(ConcreteTask).maxPoints->sum()) else true endif
 
--- Rule 6 (Ggf. Type einer TaskGroup minRequirement auf Absolute ändern und passenden wert eintragen):
-if (self.minRequirement.type = MinRequirementsType::Absolute) then (self.minRequirement.value >= 0 and self.minRequirement.value
- <= self.contains.minRequirement.value->sum())
- 
- else false endif
-
--- Rule 7 (momnetan NICHT funktional)
-self.gradingScheme.grades -> forAll(g | g.requiredPoints <= self.tasks.oclAsType(TaskGroup).contains ->selectByType(ConcreteTask).maxPoints->sum()
-)
-
+-- 7: Check für alle grades, dass requieredPoints <= sum(ConcreteTasks.maxPoints)
+self.gradingScheme.grades -> forAll(g | g.requiredPoints <= (self.tasks.oclAsSet() ->selectByType(ConcreteTask).maxPoints->sum()) + 
+(self.tasks.oclAsSet()->selectByType(TaskGroup).contains.oclAsType(ConcreteTask).maxPoints->sum()))
