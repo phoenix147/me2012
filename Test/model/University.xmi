@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<test:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:test="http://test/1.0"
+    xsi:schemaLocation="http://test/1.0 Test.ecore">
+  <persons lastname="Roetzer"
+      firstame="Lukas"
+      supervisor="//@persons.2"/>
+  <persons xsi:type="test:Student"/>
+  <persons xsi:type="test:Employee"
+      lastname="Visor"
+      firstame="Super"
+      Grade="MSC"
+      incomeLevel="PostDoc"/>
+</test:University>
