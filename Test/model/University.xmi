@@ -7,11 +7,13 @@
     xsi:schemaLocation="http://test/1.0 Test.ecore">
   <persons lastname="Roetzer"
       firstame="Lukas"
-      supervisor="//@persons.2"/>
-  <persons xsi:type="test:Student"/>
+      supervisor="//@persons.2"
+      Grade="BSC"/>
+  <persons xsi:type="test:Student"
+      Grade="PHD"/>
   <persons xsi:type="test:Employee"
       lastname="Visor"
       firstame="Super"
-      Grade="MSC"
-      incomeLevel="PostDoc"/>
+      Grade="Professor"
+      incomeLevel="Professor"/>
 </test:University>
