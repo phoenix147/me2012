@@ -13,6 +13,12 @@ helper context GradingSystem!Task def: asTaskGroup: GradingSystem!TaskGroup =
 		OclUndefined
 	endif;
 
+helper context GradingSystem!TaskGroup def: allSubTasks: Sequence(GradingSystem!ConcreteTask) = 
+	self.contains->select(t | t.oclIsKindOf(GradingSystem!ConcreteTask)).union(
+		self.contains -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) 
+	)
+	;
+
 helper def: createFileDefinitionName(course: GradingSystem!Course, grading: GradingSystem!Grading ): String = 
 	course.name.concat('_').concat(grading.semester).concat('_Gradings')
 	;
@@ -34,11 +40,16 @@ helper def: createStaticFieldName(taskGroup: GradingSystem!TaskGroup, concreteTa
 
 rule Grading2FileDefinition{
 	from
-		grading: GradingSystem!Grading
+		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
 	to
 		fileDefinition: FileDefinition!FileDefinition(
-			fields <- grading.tasks -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
-				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.contains) )
+			name <- thisModule.createFileDefinitionName(course, grading),
+			fields <- thisModule.CreateStaticField('StudentRegistrationNumber', #"String"),
+			fields <- thisModule.CreateStaticField('StudentFirstName', #"String"),
+			fields <- thisModule.CreateStaticField('StudentLastName', #"String"),
+			fields <- grading.tasks 
+			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
+				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) )
 		)
 }
 
@@ -47,21 +58,12 @@ rule ConcreteTask2Field{
 		concreteTask: GradingSystem!ConcreteTask
 	to
 		staticField: FileDefinition!StaticField(
+--			name <- thisModule.createStaticFieldName(taskGroup, concreteTask),
 			name <- concreteTask.name,
+		
 			fieldType <- #INTEGER
 			)
 }
-
---rule Gradings2FileDefinitions{
---	from
---	    taskGroup: GradingSystem!TaskGroup, concreteTask: GradingSystem!ConcreteTask
---	to
---	    st: FileDefinition!StaticField(
---	    	name <- thisModule.createStaticFieldName(taskGroup, concreteTask),
---			fieldType <- #INTEGER
---	   )
---}
-
 
 rule CreateStaticField(name: String, type: FileDefinition!FieldType){
 	to
@@ -72,19 +74,6 @@ rule CreateStaticField(name: String, type: FileDefinition!FieldType){
 	do {
 	sf;
  }
-}
-
-rule NewFileDefinition(course: GradingSystem!Course, grading: GradingSystem!Grading) {
-	to 
-		fd : FileDefinition!FileDefinition (
-			name <- thisModule.createFileDefinitionName(course, grading)
-			)
-	do {
-		fd.fields <- thisModule.CreateStaticField('StudentRegistrationNumber', #"String");
-		fd.fields <- thisModule.CreateStaticField('StudentFirstName', #"String");
-		fd.fields <- thisModule.CreateStaticField('StudentLastName', #"String");
-		fd;
-	}
 }
 
 --TODO index fields
