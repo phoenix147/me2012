@@ -1,0 +1,15 @@
+-- @path GradingSystem=/at.ac.tuwien.big.me12.gs2csv/model/gradingsystem.ecore
+-- @path FileDefinition=/at.ac.tuwien.big.me12.gs2csv/model/csv.ecore
+
+module GradingSystem2FileDefinition;
+create OUT : FileDefinition from IN : GradingSystem;
+
+
+rule GradingSystem2FileDefinitionSet {
+	from
+		gs: GradingSystem!GradingSystem
+	to
+		fds: FileDefinition!FileDefinitionSet(
+		)
+		
+}
