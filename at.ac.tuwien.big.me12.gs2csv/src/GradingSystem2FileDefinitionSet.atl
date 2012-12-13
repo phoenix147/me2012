@@ -13,6 +13,14 @@ helper context GradingSystem!Task def: asTaskGroup: GradingSystem!TaskGroup =
 		OclUndefined
 	endif;
 
+helper def: parseTaskGroup(taskGroup: GradingSystem!TaskGroup, prefix:String) : Sequence(FileDefinition!StaticField) =  
+	taskGroup.contains -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask))
+		-> collect(t | thisModule.parseTask(t, prefix.concat(taskGroup.name))).union(
+		taskGroup.contains -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup))
+		-> collect(tg | thisModule.parseTaskGroup(tg, prefix.concat(taskGroup.name)))
+		)
+	;
+
 helper context GradingSystem!TaskGroup def: allSubTasks: Sequence(GradingSystem!ConcreteTask) = 
 	self.contains->select(t | t.oclIsKindOf(GradingSystem!ConcreteTask)).union(
 		self.contains -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) 
@@ -28,6 +36,7 @@ helper def: createStaticFieldName(taskGroup: GradingSystem!TaskGroup, concreteTa
 	;
 
 
+
 --rule Gradings2FileDefinitions {
 --	from
 --		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
@@ -38,6 +47,8 @@ helper def: createStaticFieldName(taskGroup: GradingSystem!TaskGroup, concreteTa
 --}
 --
 
+
+
 rule Grading2FileDefinition{
 	from
 		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
@@ -47,23 +58,41 @@ rule Grading2FileDefinition{
 			fields <- thisModule.CreateStaticField('StudentRegistrationNumber', #"String"),
 			fields <- thisModule.CreateStaticField('StudentFirstName', #"String"),
 			fields <- thisModule.CreateStaticField('StudentLastName', #"String"),
+
+--			fields <- grading.tasks 
+--			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
+--				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) )
+
 			fields <- grading.tasks 
-			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
-				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) )
+			 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)) -> collect(tg | thisModule.parseTaskGroup(tg, '')),
+			fields <- grading.tasks 
+			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)) -> collect(t | thisModule.parseTask(t, ''))
+
+--			fields <- thisModule.parseGroup
 		)
 }
 
-rule ConcreteTask2Field{
-	from
-		concreteTask: GradingSystem!ConcreteTask
-	to
-		staticField: FileDefinition!StaticField(
---			name <- thisModule.createStaticFieldName(taskGroup, concreteTask),
-			name <- concreteTask.name,
-		
-			fieldType <- #INTEGER
-			)
+rule parseTask(task: GradingSystem!ConcreteTask, prefix:String){
+	to field:FileDefinition!StaticField (
+		name <- prefix.concat(task.name).concat('Points'),
+		fieldType <- #INTEGER
+	)
+	do {
+		field;
+	}
 }
+
+--rule ConcreteTask2Field{
+--	from
+--		concreteTask: GradingSystem!ConcreteTask
+--	to
+--		staticField: FileDefinition!StaticField(
+----			name <- thisModule.createStaticFieldName(taskGroup, concreteTask),
+--			name <- concreteTask.name,
+--		
+--			fieldType <- #INTEGER
+--			)
+--}
 
 rule CreateStaticField(name: String, type: FileDefinition!FieldType){
 	to
