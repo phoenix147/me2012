@@ -4,7 +4,14 @@
 module GradingSystem2FileDefinition;
 create OUT : FileDefinition from IN : GradingSystem;
 
-helper def: tasksTaskGroup: Map(GradingSystem!Task, GradingSystem!TaskGroup) = Map{};
+--helper def: tasksTaskGroup: Map(GradingSystem!Task, GradingSystem!TaskGroup) = Map{};
+
+helper context GradingSystem!Task def: asTaskGroup: GradingSystem!TaskGroup = 
+	if self.oclIsTypeOf(GradingSystem!TaskGroup) then 
+	self
+	else 
+		OclUndefined
+	endif;
 
 helper def: createFileDefinitionName(course: GradingSystem!Course, grading: GradingSystem!Grading ): String = 
 	course.name.concat('_').concat(grading.semester).concat('_Gradings')
@@ -15,19 +22,34 @@ helper def: createStaticFieldName(taskGroup: GradingSystem!TaskGroup, concreteTa
 	;
 
 
+--rule Gradings2FileDefinitions {
+--	from
+--		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
+--	to
+--		fds: FileDefinition!FileDefinitionSet(
+--			fileDefinitions <- course.gradings -- thisModule.NewFileDefinition(course, grading)
+--		)
+--}
+--
 
-rule GradingSystem2FileDefinitionSet {
+rule Grading2FileDefinition{
 	from
-		gs: GradingSystem!GradingSystem
+		grading: GradingSystem!Grading
 	to
-		fds: FileDefinition!FileDefinitionSet
-	do {
-		for ( c in gs.courses) {
-			for ( g in c.gradings) {
-				fds.fileDefinitions <- thisModule.NewFileDefinition(c, g);
-			}
-		}
-	}
+		fileDefinition: FileDefinition!FileDefinition(
+			fields <- grading.tasks -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
+				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.contains) )
+		)
+}
+
+rule ConcreteTask2Field{
+	from
+		concreteTask: GradingSystem!ConcreteTask
+	to
+		staticField: FileDefinition!StaticField(
+			name <- concreteTask.name,
+			fieldType <- #INTEGER
+			)
 }
 
 --rule Gradings2FileDefinitions{
