@@ -35,6 +35,8 @@ helper def: createStaticFieldName(taskGroup: GradingSystem!TaskGroup, concreteTa
 	taskGroup.name.concat(concreteTask.name).concat(concreteTask.maxPoints)
 	;
 
+helper def : index :Integer=0;
+helper context Integer def : inc(): Integer = self+1;
 
 
 --rule Gradings2FileDefinitions {
@@ -64,12 +66,90 @@ rule Grading2FileDefinition{
 --				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) )
 
 			fields <- grading.tasks 
-			 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)) -> collect(tg | thisModule.parseTaskGroup(tg, '')),
+				 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)) -> collect(tg | thisModule.parseTaskGroup(tg, '')),
 			fields <- grading.tasks 
-			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)) -> collect(t | thisModule.parseTask(t, ''))
+				-> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)) -> collect(t | thisModule.parseTask(t, '')),
 
+			
 --			fields <- thisModule.parseGroup
+			fields <- grading.tasks 
+			 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)),
+			 fields <- thisModule.totalSumField(grading),
+			 fields <- grading.gradingScheme
 		)
+	do{
+		--thisModule.index <- 0;
+	}
+}
+
+rule totalSumField(gs:GradingSystem!Grading){
+	to
+		af:FileDefinition!AggregationField(
+			name <- 'TotalSum',
+			fieldType <- #INTEGER,
+			aggregatedFields <-thisModule.resolveTemp(gs.tasks->select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)),'field')	
+		)
+	do {
+		af.index <- thisModule.index;
+		thisModule.index <- thisModule.index.inc();
+		af;
+ }
+}
+
+rule GradingScheme2RuleBasedField{
+	from
+		gs:GradingSystem!GradingScheme
+	to
+		rf:FileDefinition!RuleBasedField(
+			name <- 'Grading',
+			fieldType <- #"String",
+			rules <- thisModule.MinRequComparisonRule(gs.minRequirementNotFulfilledGrade),
+			rules <- gs.grades->sortedBy(g|0-g.requiredPoints)		
+		)
+	do {
+		rf.index <- thisModule.index;
+		thisModule.index <- thisModule.index.inc();
+	}
+}
+
+rule Grade2ComparisonRule{
+	from
+		g:GradingSystem!Grade
+	to
+		cr:FileDefinition!ComparisonRule(
+			resultValue <- g.name,
+			operator <- #GREATER_OR_EQUALS,
+			comparisonValue <- g.requiredPoints.toString()
+		)	
+}
+
+lazy rule MinRequComparisonRule{
+	from
+		g:GradingSystem!Grade
+	to
+		cr:FileDefinition!ComparisonRule(
+			resultValue <- g.name,
+			operator <- #EQUALS,
+			comparisonValue <- 'false'
+		)	
+}
+
+
+rule TaskGroup2AggField{
+	from
+		tg:GradingSystem!TaskGroup
+	to
+		af:FileDefinition!AggregationField(
+			name <- tg.name.concat('Sum'),
+			fieldType <- #INTEGER,
+			aggType <- #SUM,
+			aggregatedFields <- thisModule.resolveTemp(tg.allSubTasks,'field')
+			
+		)
+	do {
+		af.index <- thisModule.index;
+		thisModule.index <- thisModule.index.inc();
+	}
 }
 
 rule parseTask(task: GradingSystem!ConcreteTask, prefix:String){
@@ -78,6 +158,8 @@ rule parseTask(task: GradingSystem!ConcreteTask, prefix:String){
 		fieldType <- #INTEGER
 	)
 	do {
+		field.index <- thisModule.index;
+		thisModule.index <- thisModule.index.inc();
 		field;
 	}
 }
@@ -101,8 +183,9 @@ rule CreateStaticField(name: String, type: FileDefinition!FieldType){
 		name <- name
 	)
 	do {
+	sf.index <- thisModule.index;
+	thisModule.index <- thisModule.index.inc();
 	sf;
  }
 }
 
---TODO index fields
