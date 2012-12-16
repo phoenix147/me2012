@@ -1,2 +1,119 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<csv:FileDefinitionSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:csv="http://csv.me12.big.tuwien.ac.at/1.0"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csv="http://csv.me12.big.tuwien.ac.at/1.0">
+  <csv:FileDefinitionSet>
+    <fileDefinitions name="Model_Engineering_WS2012_Gradings">
+      <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber"/>
+      <fields xsi:type="csv:StaticField" name="StudentFirstName" index="1"/>
+      <fields xsi:type="csv:StaticField" name="StudentLastName" index="2"/>
+      <fields xsi:type="csv:StaticField" name="LecturePartExam1Points" index="3" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LecturePartExam2Points" index="4" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab1Points" index="5" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab2Points" index="6" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab3Points" index="7" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab4Points" index="8" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LecturePartSum" index="52" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LabPartSum" index="53" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="TotalSum" index="9" fieldType="INTEGER"/>
+      <fields xsi:type="csv:RuleBasedField" name="Grading" index="47">
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="EQUALS" comparisonValue="false"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="S1" operator="GREATER_OR_EQUALS" comparisonValue="176"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="U2" operator="GREATER_OR_EQUALS" comparisonValue="150"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="B3" operator="GREATER_OR_EQUALS" comparisonValue="124"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
+      </fields>
+    </fileDefinitions>
+  </csv:FileDefinitionSet>
+  <csv:FileDefinitionSet>
+    <fileDefinitions name="Model_Engineering_WS2011_Gradings">
+      <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber" index="10"/>
+      <fields xsi:type="csv:StaticField" name="StudentFirstName" index="11"/>
+      <fields xsi:type="csv:StaticField" name="StudentLastName" index="12"/>
+      <fields xsi:type="csv:StaticField" name="LecturePartExam1Points" index="13" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LecturePartExam2Points" index="14" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab1Points" index="15" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab2Points" index="16" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab3Points" index="17" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab4Points" index="18" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LecturePartSum" index="54" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LabPartSum" index="55" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="TotalSum" index="19" fieldType="INTEGER"/>
+      <fields xsi:type="csv:RuleBasedField" name="Grading" index="48">
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="EQUALS" comparisonValue="false"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="S1" operator="GREATER_OR_EQUALS" comparisonValue="176"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="U2" operator="GREATER_OR_EQUALS" comparisonValue="150"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="B3" operator="GREATER_OR_EQUALS" comparisonValue="124"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
+      </fields>
+    </fileDefinitions>
+  </csv:FileDefinitionSet>
+  <csv:FileDefinitionSet>
+    <fileDefinitions name="Distributed_Systems_WS2012_Gradings">
+      <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber" index="20"/>
+      <fields xsi:type="csv:StaticField" name="StudentFirstName" index="21"/>
+      <fields xsi:type="csv:StaticField" name="StudentLastName" index="22"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab1Points" index="23" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab2Points" index="24" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab3Points" index="25" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab4Points" index="26" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="ExamPoints" index="27" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LabPartSum" index="56" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="TotalSum" index="28" fieldType="INTEGER"/>
+      <fields xsi:type="csv:RuleBasedField" name="Grading" index="49">
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="EQUALS" comparisonValue="false"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="S1" operator="GREATER_OR_EQUALS" comparisonValue="176"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="U2" operator="GREATER_OR_EQUALS" comparisonValue="150"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="B3" operator="GREATER_OR_EQUALS" comparisonValue="124"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
+      </fields>
+    </fileDefinitions>
+  </csv:FileDefinitionSet>
+  <csv:FileDefinitionSet>
+    <fileDefinitions name="Distributed_Systems_WS2011_Gradings">
+      <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber" index="29"/>
+      <fields xsi:type="csv:StaticField" name="StudentFirstName" index="30"/>
+      <fields xsi:type="csv:StaticField" name="StudentLastName" index="31"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab1Points" index="32" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab2Points" index="33" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab3Points" index="34" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartLab4Points" index="35" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="ExamPoints" index="36" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LabPartSum" index="57" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="TotalSum" index="37" fieldType="INTEGER"/>
+      <fields xsi:type="csv:RuleBasedField" name="Grading" index="50">
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="EQUALS" comparisonValue="false"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="S1" operator="GREATER_OR_EQUALS" comparisonValue="176"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="U2" operator="GREATER_OR_EQUALS" comparisonValue="150"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="B3" operator="GREATER_OR_EQUALS" comparisonValue="124"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
+      </fields>
+    </fileDefinitions>
+  </csv:FileDefinitionSet>
+  <csv:FileDefinitionSet>
+    <fileDefinitions name="CourseWithNoMinReqAndNestedGroups_SS2012_Gradings">
+      <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber" index="38"/>
+      <fields xsi:type="csv:StaticField" name="StudentFirstName" index="39"/>
+      <fields xsi:type="csv:StaticField" name="StudentLastName" index="40"/>
+      <fields xsi:type="csv:StaticField" name="LabPartSubGroup1Lab1Points" index="41" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartSubGroup1Lab2Points" index="42" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartSubGroup2Lab1Points" index="43" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="LabPartSubGroup2Lab2Points" index="44" fieldType="INTEGER"/>
+      <fields xsi:type="csv:StaticField" name="ExamPoints" index="45" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="LabPartSum" index="58" fieldType="INTEGER"/>
+      <fields xsi:type="csv:AggregationField" name="TotalSum" index="46" fieldType="INTEGER"/>
+      <fields xsi:type="csv:RuleBasedField" name="Grading" index="51">
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="EQUALS" comparisonValue="false"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="S1" operator="GREATER_OR_EQUALS" comparisonValue="176"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="U2" operator="GREATER_OR_EQUALS" comparisonValue="150"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="B3" operator="GREATER_OR_EQUALS" comparisonValue="124"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
+        <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
+      </fields>
+    </fileDefinitions>
+  </csv:FileDefinitionSet>
+  <csv:AggregationField name="SubGroup1Sum" index="59" fieldType="INTEGER"/>
+  <csv:AggregationField name="SubGroup2Sum" index="60" fieldType="INTEGER"/>
+</xmi:XMI>

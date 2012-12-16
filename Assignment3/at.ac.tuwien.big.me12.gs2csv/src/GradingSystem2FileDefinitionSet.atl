@@ -39,19 +39,24 @@ helper def : index :Integer=0;
 helper context Integer def : inc(): Integer = self+1;
 
 
-rule GradingSystem2FileDefinitionSet {
-	from
-		gradingSystem: GradingSystem!GradingSystem, course: GradingSystem!Course
-	to
-		fds: FileDefinition!FileDefinitionSet(
-			fileDefinitions <- course.gradings
-		)
-}
+--rule GradingSystem2FileDefinitionSet {
+--	from
+--		gradingSystem: GradingSystem!GradingSystem, course: GradingSystem!Course
+--	to
+--		fds: FileDefinition!FileDefinitionSet(
+--			fileDefinitions <- gradingSystem
+--		)
+--}
 
 rule Grading2FileDefinition{
 	from
 		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
 	to
+		fds: FileDefinition!FileDefinitionSet(
+			fileDefinitions <- fileDefinition	
+		) ,
+		
+	
 		fileDefinition: FileDefinition!FileDefinition(
 			name <- thisModule.createFileDefinitionName(course, grading),
 			fields <- thisModule.CreateStaticField('StudentRegistrationNumber', #"String"),

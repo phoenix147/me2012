@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csv="http://csv.me12.big.tuwien.ac.at/1.0">
-  <csv:FileDefinitionSet/>
-  <csv:FileDefinition name="Model_Engineering_WS2012_Gradings">
+<csv:FileDefinitionSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csv="http://csv.me12.big.tuwien.ac.at/1.0">
+  <fileDefinitions name="Model_Engineering_WS2012_Gradings">
     <fields xsi:type="csv:StaticField" name="StudentRegistrationNumber"/>
     <fields xsi:type="csv:StaticField" name="StudentFirstName" index="1"/>
     <fields xsi:type="csv:StaticField" name="StudentLastName" index="2"/>
@@ -22,5 +21,5 @@
       <rules xsi:type="csv:ComparisonRule" resultValue="G4" operator="GREATER_OR_EQUALS" comparisonValue="100"/>
       <rules xsi:type="csv:ComparisonRule" resultValue="N5" operator="GREATER_OR_EQUALS" comparisonValue="0"/>
     </fields>
-  </csv:FileDefinition>
-</xmi:XMI>
+  </fileDefinitions>
+</csv:FileDefinitionSet>
