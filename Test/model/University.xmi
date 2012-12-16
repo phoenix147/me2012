@@ -10,10 +10,13 @@
       supervisor="//@persons.2"
       Grade="BSC"/>
   <persons xsi:type="test:Student"
+      lastname="bla"
       Grade="PHD"/>
   <persons xsi:type="test:Employee"
       lastname="Visor"
       firstame="Super"
-      Grade="Professor"
+      Grade="PHD"
+      supervised="//@persons.0"
       incomeLevel="Professor"/>
+  <persons lastname="foo"/>
 </test:University>

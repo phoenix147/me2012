@@ -10,6 +10,8 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Grade" eType="#//Grade"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supervised" upperBound="-1"
+        eType="#//Person"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Student" eSuperTypes="#//Person">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="regNo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
