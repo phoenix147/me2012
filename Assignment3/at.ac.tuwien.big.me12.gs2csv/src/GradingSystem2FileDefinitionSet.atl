@@ -8,7 +8,7 @@ create OUT : FileDefinition from IN : GradingSystem;
 
 helper context GradingSystem!Task def: asTaskGroup: GradingSystem!TaskGroup = 
 	if self.oclIsTypeOf(GradingSystem!TaskGroup) then 
-	self
+		self
 	else 
 		OclUndefined
 	endif;
@@ -39,17 +39,14 @@ helper def : index :Integer=0;
 helper context Integer def : inc(): Integer = self+1;
 
 
---rule Gradings2FileDefinitions {
---	from
---		course: GradingSystem!Course, grading: GradingSystem!Grading (course.gradings.includes(grading))
---	to
---		fds: FileDefinition!FileDefinitionSet(
---			fileDefinitions <- course.gradings -- thisModule.NewFileDefinition(course, grading)
---		)
---}
---
-
-
+rule GradingSystem2FileDefinitionSet {
+	from
+		gradingSystem: GradingSystem!GradingSystem, course: GradingSystem!Course
+	to
+		fds: FileDefinition!FileDefinitionSet(
+			fileDefinitions <- course.gradings
+		)
+}
 
 rule Grading2FileDefinition{
 	from
@@ -61,25 +58,16 @@ rule Grading2FileDefinition{
 			fields <- thisModule.CreateStaticField('StudentFirstName', #"String"),
 			fields <- thisModule.CreateStaticField('StudentLastName', #"String"),
 
---			fields <- grading.tasks 
---			 -> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)).union(
---				grading.tasks -> select(tg | tg.oclIsKindOf(GradingSystem!TaskGroup)) -> collect(tg | tg.asTaskGroup.allSubTasks) )
-
 			fields <- grading.tasks 
 				 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)) -> collect(tg | thisModule.parseTaskGroup(tg, '')),
 			fields <- grading.tasks 
 				-> select(t | t.oclIsTypeOf(GradingSystem!ConcreteTask)) -> collect(t | thisModule.parseTask(t, '')),
 
-			
---			fields <- thisModule.parseGroup
 			fields <- grading.tasks 
 			 -> select(tg | tg.oclIsTypeOf(GradingSystem!TaskGroup)),
 			 fields <- thisModule.totalSumField(grading),
 			 fields <- grading.gradingScheme
 		)
-	do{
-		--thisModule.index <- 0;
-	}
 }
 
 rule totalSumField(gs:GradingSystem!Grading){
@@ -95,6 +83,8 @@ rule totalSumField(gs:GradingSystem!Grading){
 		af;
  }
 }
+
+
 
 rule GradingScheme2RuleBasedField{
 	from
@@ -178,13 +168,13 @@ rule parseTask(task: GradingSystem!ConcreteTask, prefix:String){
 
 rule CreateStaticField(name: String, type: FileDefinition!FieldType){
 	to
-	sf : FileDefinition!StaticField (
-		fieldType <- type,
-		name <- name
+		sf : FileDefinition!StaticField (
+			fieldType <- type,
+			name <- name
 	)
 	do {
-	sf.index <- thisModule.index;
-	thisModule.index <- thisModule.index.inc();
-	sf;
- }
+		sf.index <- thisModule.index;
+		thisModule.index <- thisModule.index.inc();
+		sf;
+	}
 }
