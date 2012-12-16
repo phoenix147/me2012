@@ -34,7 +34,7 @@
         <contains
             xsi:type="gradingsystem:ConcreteTask"
             name="Lab1"
-            maxPoints="25">
+            maxPoints="-1">
           <minRequirement
               value="8"
               type="ABSOLUTE"/>
