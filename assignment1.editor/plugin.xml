@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="csvml_metamodel.presentation.Csvml_metamodelModelWizardID"
+            name="%_UI_Csvml_metamodelModelWizard_label"
+            class="csvml_metamodel.presentation.Csvml_metamodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Csvml_metamodelModelFile.gif">
+         <description>%_UI_Csvml_metamodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="csvml_metamodel.presentation.Csvml_metamodelEditorID"
+            name="%_UI_Csvml_metamodelEditor_label"
+            icon="icons/full/obj16/Csvml_metamodelModelFile.gif"
+            extensions="csvml_metamodel"
+            class="csvml_metamodel.presentation.Csvml_metamodelEditor"
+            contributorClass="csvml_metamodel.presentation.Csvml_metamodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

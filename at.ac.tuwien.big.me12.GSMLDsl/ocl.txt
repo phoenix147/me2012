@@ -1,0 +1,37 @@
+-- 1. The required points of the grades within one grading scheme have to be distinct. 
+context GradingScheme 
+inv: self.grades->forAll(grade1,grade2|grade1 <> grade2 implies grade1.requiredPoints <> grade2.requiredPoints)
+--OR
+--inv: self.grades.requiredPoints->asBag()->size() = self.grades.requiredPoints->asSet()->size()
+
+-- 2. The maximum amount of points of a concrete task has to be greater than or equals 0.
+context ConcreteTask
+inv: self.maxPoints >= 0
+
+-- 3. Task groups may only contain concrete tasks.
+context TaskGroup
+self.contains ->forAll(task | task.oclIsTypeOf(ConcreteTask)) 
+
+-- 4. If the minimal requirement of a task is given in percentage, the value of the minimal requirement must not be lower than 0 and not greater than 100.
+context Task
+inv: self.minRequirement.type = MinRequirementsType::Percentage implies self.minRequirement.value >= 0 and self.minRequirement.value <= 100
+
+-- 5. If the minimal requirement of a concrete task is given using an absolute number of required points, this amount of required points must be greater than or equals 0 and lower than or equals the maximum points that can be achieved for that concrete task.
+context Task
+inv: self.minRequirement.type = MinRequirementsType::Absolute implies self.minRequirement.value >= 0 and self.minRequirement.value <= self.maxPoints
+
+-- 6. If the minimal requirement of a task group is given using an absolute number of required points, this amount of required points must be greater than or equals 0 and lower or equals the sum of the maximum points that can be achieved for its contained concrete tasks. You can assume that a task group only contains concrete tasks.
+context TaskGroup
+inv: if (not self.minRequirement.oclIsUndefined()) 
+then (self.minRequirement.type = MinRequirementsType::Absolute implies 
+      self.minRequirement.value >= 0 
+      and self.minRequirement.value <= 
+      (self.contains.oclAsType(ConcreteTask).maxPoints->sum()) 
+else true 
+endif
+
+-- 7. The required points of the grades of a grading scheme of one course must not be greater than the maximum points that can be reached in that course which is given by the sum of the maximum points that can be achieved for the concrete tasks. You can assume that if the grading of a course contains a task group that this task group only contains concrete tasks and not nested task groups. 
+context GradingScheme
+inf: self.gradingScheme.grades -> forAll(grade | grade.requiredPoints <= 
+     (self.tasks.oclAsSet()->selectByType(ConcreteTask).maxPoints->sum()) + 
+     (self.tasks.oclAsSet()->selectByType(TaskGroup).contains.oclAsType(ConcreteTask).maxPoints->sum()))
