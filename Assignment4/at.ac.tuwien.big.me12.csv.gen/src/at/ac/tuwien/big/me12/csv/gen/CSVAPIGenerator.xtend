@@ -10,35 +10,32 @@ import at.ac.tuwien.big.me12.csv.csvmm.impl.FileDefinitionSetImpl
 class CSVAPIGenerator implements IGenerator {
 	
 	public static String PACKAGE_PATH = "at/ac/tuwien/big/me12/csv/me/";
-	
 	public static String packageName = "at.ac.tuwien.big.me12.csv.me";
-	
 	public static String csvLine = "CSVLine";
 	public static String csvFile = "CSVFile";
 	public static String csvWriter = "CSVWriter";
 	public static String csvReader = "CSVReader";
-	
 
 	override doGenerate(Resource resource, IFileSystemAccess fsa) {
-		for(EObject object : resource.contents)
-			object.generateClassFiles(fsa)
-	}
-	
-	def generateClassFiles(EObject object, IFileSystemAccess fileSystemAccess){
-		var csvAPIGeneratorWriter = new CSVAPIGeneratorWriter()
-		var csvAPIGeneratorReader = new CSVAPIGeneratorReader()
-		var csvAPIGeneratorFile = new CSVAPIGeneratorFile()
-		var csvAPIGeneratorLine = new CSVAPIGeneratorLine()
+		for(EObject object : resource.contents) {
 
-		if(object instanceof FileDefinitionSetImpl){
-			var fileDefinitionSet = object as FileDefinitionSetImpl
+			if(object instanceof FileDefinitionSetImpl){
+				var fileDefinitionSet = object as FileDefinitionSetImpl
+
+				var csvAPIGeneratorReader = new CSVAPIGeneratorReader()
+				var csvAPIGeneratorWriter = new CSVAPIGeneratorWriter()
+				var csvAPIGeneratorFile = new CSVAPIGeneratorFile()
+				var csvAPIGeneratorLine = new CSVAPIGeneratorLine()
+								
+				for(FileDefinition fileDefinition : fileDefinitionSet.fileDefinitions) {
+	   				csvAPIGeneratorReader.generateReaderClassFile(fsa, fileDefinition);
+	   				csvAPIGeneratorWriter.generateWriterClassFile(fsa, fileDefinition);
+	   				csvAPIGeneratorFile.generateFileClassFile(fsa, fileDefinition);
+	   				csvAPIGeneratorLine.generateLineClassFile(fsa, fileDefinition);
+	   			}
+			}
 			
-			for(FileDefinition fileDefinition : fileDefinitionSet.fileDefinitions) {
-   				csvAPIGeneratorReader.generateReaderClassFile(fileSystemAccess, fileDefinition);
-   				csvAPIGeneratorWriter.generateWriterClassFile(fileSystemAccess, fileDefinition);
-   				csvAPIGeneratorFile.generateFileClassFile(fileSystemAccess, fileDefinition);
-   				csvAPIGeneratorLine.generateLineClassFile(fileSystemAccess, fileDefinition);
-   			}
 		}
 	}
+
 }

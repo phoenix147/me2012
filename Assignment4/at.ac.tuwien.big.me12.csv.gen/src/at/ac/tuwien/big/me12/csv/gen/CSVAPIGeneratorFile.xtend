@@ -5,9 +5,7 @@ import at.ac.tuwien.big.me12.csv.csvmm.FileDefinition
 
 class CSVAPIGeneratorFile {
 	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	
 	String packageName = CSVAPIGenerator::packageName;
-	
 	String csvLine = CSVAPIGenerator::csvLine;
 	String csvFile = CSVAPIGenerator::csvFile;
 	

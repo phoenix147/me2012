@@ -44,20 +44,22 @@ class CSVAPIGeneratorWriter {
 			public void writeFile(«csvFileName» «csvFileObject», boolean writeDerived){
 				List<«csvLineName»> lines = «csvFileObject».getLines();
 				
-				for(«csvLineName» line : lines){
+				for(«csvLineName» line : lines) {
 					StringBuilder outputLine = new StringBuilder();
 					«FOR fieldDefinition : fileDefinition.fields»
-						«IF fieldDefinition instanceof StaticField»
-						outputLine.append(line.getField«fieldDefinition.index»());
-				 		«ELSE»
-						if(writeDerived){
-							outputLine.append(line.getField«fieldDefinition.index»());
-						}else{
-							outputLine.append("");
-						}
+						«IF (fieldDefinition instanceof StaticField)»
+						outputLine.append(line.«IF fieldDefinition.fieldType.getName.equals("Boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
 						«ENDIF»
-						outputLine.append(FIELD_SEPARATOR);
 					«ENDFOR»
+						
+					if(writeDerived) {
+						«FOR fieldDefinition : fileDefinition.fields»
+							«IF !(fieldDefinition instanceof StaticField)»
+								outputLine.append(line.«IF fieldDefinition.fieldType.getName.equals("Boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
+							«ENDIF»
+						«ENDFOR»
+					}
+					
 					outputLine.append("\n");
 					
 					try {
@@ -74,6 +76,7 @@ class CSVAPIGeneratorWriter {
 					throw new RuntimeException("Could not close fileWriter", e);
 				}
 			}
+			
 		}
 		'''		
 	}

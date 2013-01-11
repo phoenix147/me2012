@@ -6,9 +6,7 @@ import at.ac.tuwien.big.me12.csv.csvmm.StaticField
 
 class CSVAPIGeneratorReader {
 	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	
 	String packageName = CSVAPIGenerator::packageName;
-	
 	String csvLine = CSVAPIGenerator::csvLine;
 	String csvFile = CSVAPIGenerator::csvFile;
 	String csvReader = CSVAPIGenerator::csvReader;
@@ -57,15 +55,9 @@ class CSVAPIGeneratorReader {
 
 				String line = null;
 				try {
-					while(true){
-						line = bufferedReader.readLine();
-
-						if(line == null){
-							break;
-						}
-
-						«csvLineName» csvline  = create«csvLineName»(line);
-						lines.add(csvline);
+					while((line=bufferedReader.readLine()) != null){
+						«csvLineName» csvLine = create«csvLineName»(line);
+						lines.add(csvLine);
 					}
 				} catch (IOException e) {
 						e.printStackTrace();
@@ -86,7 +78,7 @@ class CSVAPIGeneratorReader {
 				
 				«FOR fieldDefinition : fileDefinition.fields»
 					«IF fieldDefinition instanceof StaticField»
-					  csvLine.setStaticField«fieldDefinition.index»(«fieldDefinition.fieldType.getName».valueOf(fields[«fieldDefinition.index»]));
+					  csvLine.set«fieldDefinition.name»(«fieldDefinition.fieldType.getName».valueOf(fields[«fieldDefinition.index»]));
 					«ENDIF»
 				«ENDFOR»
 						

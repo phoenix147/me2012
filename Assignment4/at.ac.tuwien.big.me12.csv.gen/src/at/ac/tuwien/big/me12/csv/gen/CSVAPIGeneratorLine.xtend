@@ -17,13 +17,9 @@ import java.util.List
 
 class CSVAPIGeneratorLine {
 	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	
 	String packageName = CSVAPIGenerator::packageName;
-
 	String csvLine = CSVAPIGenerator::csvLine;
-	
 	var ruleMethods = new StringBuilder
-	
 	var compositeRuleNr = 1
 	
 	
@@ -34,6 +30,8 @@ class CSVAPIGeneratorLine {
 		def CharSequence generateLineCode(FileDefinition fileDefinition) { 
 		var name = fileDefinition.name.toFirstUpper;
 		var className = name+csvLine;
+		ruleMethods = new StringBuilder;
+		
 		'''
 		package «packageName»;
 		
@@ -51,17 +49,13 @@ class CSVAPIGeneratorLine {
 				public «returnType» «IF returnType.equals("boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»(){
 					«createGetterBody(fieldDefinition, returnType)»
 				}
-				protected «returnType» getField«fieldDefinition.index»(){
-					return «IF returnType.equals("boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»();
-				}
+
 				«IF fieldDefinition instanceof StaticField»
 				«var fieldName = fieldDefinition.name.toFirstLower»
 				public void set«fieldDefinition.name.toFirstUpper»(«fieldDefinition.fieldType.getName» «fieldName»){
 					this.«fieldName» = «fieldName»;
 				}
-				protected void setStaticField«fieldDefinition.index»(«fieldDefinition.fieldType.getName» «fieldName»){
-					this.set«fieldDefinition.name.toFirstUpper»(«fieldName»);
-				}
+
 				«ENDIF»
 			«ENDFOR»
 			«ruleMethods»
@@ -85,17 +79,12 @@ class CSVAPIGeneratorLine {
 	
 	def dispatch createGetterBody(AggregationField aggregationField, String returnType){
 		'''
+		int computedValue = 0;
 		int[] values = new int[] {
 			«FOR field:aggregationField.aggregatedFields SEPARATOR ","»
 				get«field.name.toFirstUpper»()
 			«ENDFOR»
 		};
-		
-		«IF aggregationField.aggType==AggregationType::SUM ||aggregationField.aggType==AggregationType::AVERAGE»
-		int computedValue = 0;
-		«ELSE»
-		int computedValue = values[0];
-		«ENDIF»
 		
 		«IF aggregationField.aggType==AggregationType::SUM ||aggregationField.aggType==AggregationType::AVERAGE»
 		for(int i : values){
@@ -106,18 +95,13 @@ class CSVAPIGeneratorLine {
 		computedValue = (int)((double)computedValue/values.length+0.5d);
 		«ENDIF»
 		«IF aggregationField.aggType==AggregationType::MIN»
-		for(int j=1;j<values.length;j++){
-			if(values[j]<computedValue){
-				computedValue=values[j];	
-			}
-		}
+		java.util.Arrays.sort(values);
+		computedValue = values[0];
+
 		«ENDIF»		
 		«IF aggregationField.aggType==AggregationType::MAX»
-		for(int j=1;j<values.length;j++){
-			if(values[j]>computedValue){
-				computedValue=values[j];	
-			}
-		}
+		java.util.Arrays.sort(values);
+		computedValue = values[values.length-1];
 		«ENDIF»			
 		return computedValue;'''	
 	}
