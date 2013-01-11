@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: ME CSV API Test
-Bundle-SymbolicName: at.ac.tuwien.big.me12.csv.me.test
-Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Bundle-Vendor: BIG Model Engineering Team
-Require-Bundle: at.ac.tuwien.big.me12.csv.gen;bundle-version="1.0.0",
- org.junit;bundle-version="4.10.0"
