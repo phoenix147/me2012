@@ -1,0 +1,35 @@
+module at.ac.tuwien.big.me12.csv.gen.CSVAPIGenerator
+
+import org.eclipse.emf.mwe.utils.*
+
+var targetDir = "src-gen"
+var modelPath = "model"
+
+Workflow {
+
+	bean = StandaloneSetup {
+		registerGeneratedEPackage = "at.ac.tuwien.big.me12.csv.csvmm.CSVPackage"
+	}
+
+	component = DirectoryCleaner {
+		directory = targetDir
+	}
+
+	component = at.ac.tuwien.big.me12.csv.gen.CSVAPIGeneratorSupport {}
+
+	component = org.eclipse.xtext.mwe.Reader {
+		path = modelPath
+		register = at.ac.tuwien.big.me12.csv.gen.CSVAPIGeneratorSetup {}
+		loadResource = {
+			slot = "model"
+		}
+	}
+
+	component = org.eclipse.xtext.generator.GeneratorComponent {
+		register = at.ac.tuwien.big.me12.csv.gen.CSVAPIGeneratorSetup {}
+		slot = 'model'
+		outlet = {
+			path = targetDir
+		}
+	}
+}
