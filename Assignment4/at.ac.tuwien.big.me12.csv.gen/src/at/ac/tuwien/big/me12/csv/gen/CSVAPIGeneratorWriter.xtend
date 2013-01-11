@@ -2,7 +2,8 @@ package at.ac.tuwien.big.me12.csv.gen
 
 import org.eclipse.xtext.generator.IFileSystemAccess
 import at.ac.tuwien.big.me12.csv.csvmm.FileDefinition
-import at.ac.tuwien.big.me12.csv.csvmm.StaticField 
+import at.ac.tuwien.big.me12.csv.csvmm.StaticField
+import at.ac.tuwien.big.me12.csv.csvmm.FieldType 
 
 class CSVAPIGeneratorWriter {
 	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
@@ -48,14 +49,14 @@ class CSVAPIGeneratorWriter {
 					StringBuilder outputLine = new StringBuilder();
 					«FOR fieldDefinition : fileDefinition.fields»
 						«IF (fieldDefinition instanceof StaticField)»
-						outputLine.append(line.«IF fieldDefinition.fieldType.getName.equals("Boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
+						outputLine.append(line.«IF fieldDefinition.fieldType==FieldType::BOOLEAN»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
 						«ENDIF»
 					«ENDFOR»
 						
 					if(writeDerived) {
 						«FOR fieldDefinition : fileDefinition.fields»
 							«IF !(fieldDefinition instanceof StaticField)»
-								outputLine.append(line.«IF fieldDefinition.fieldType.getName.equals("Boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
+								outputLine.append(line.«IF fieldDefinition.fieldType==FieldType::BOOLEAN»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»() + FIELD_SEPARATOR);
 							«ENDIF»
 						«ENDFOR»
 					}

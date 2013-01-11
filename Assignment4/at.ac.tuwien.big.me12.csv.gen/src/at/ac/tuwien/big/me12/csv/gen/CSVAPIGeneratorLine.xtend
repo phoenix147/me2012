@@ -12,8 +12,8 @@ import at.ac.tuwien.big.me12.csv.csvmm.RuleBasedField
 import at.ac.tuwien.big.me12.csv.csvmm.StaticField
 import org.eclipse.xtext.generator.IFileSystemAccess
 import at.ac.tuwien.big.me12.csv.csvmm.LogicalOperator
-import java.util.LinkedList
 import java.util.List
+import java.util.ArrayList
 
 class CSVAPIGeneratorLine {
 	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
@@ -111,7 +111,7 @@ class CSVAPIGeneratorLine {
 		var ruleNr = 1
 		
 		for(rule : ruleBasedField.rules){
-			var ruleName = ""+ruleName(ruleBasedField,ruleNr)
+			var ruleName = ""+'''is«ruleBasedField.name.toFirstUpper»Rule_«ruleNr»_Fulfilled'''
 			ifs.append(createIf(rule,ruleName,ruleBasedField))
 			ruleMethods.append(createRuleMethod(rule,ruleName))
 			ruleNr = ruleNr+1
@@ -146,10 +146,6 @@ class CSVAPIGeneratorLine {
 		'''
 	}
 	
-	def ruleName(RuleBasedField ruleBasedField,int ruleNr){
-		return '''is«ruleBasedField.name.toFirstUpper»Rule_«ruleNr»_Fulfilled'''
-	}
-	
 	def dispatch createRuleMethod(ComparisonRule comparisonRule ,String ruleName){
 		'''
 		private boolean «ruleName»(){
@@ -159,19 +155,8 @@ class CSVAPIGeneratorLine {
 		'''
 	}
 	
-	def comparisonOperator(ComparisonOperator operator){
-			switch operator {
-				case ComparisonOperator::GREATER:return ' > '
-				case ComparisonOperator::GREATER_OR_EQUALS:return ' >= '
-				case ComparisonOperator::LOWER:return ' < '
-				case ComparisonOperator::LOWER_OR_EQUALS:return ' <= '
-				case ComparisonOperator::UNEQUALS:return ' != '
-				case ComparisonOperator::EQUALS:return ' == '
-				}
-	}
-	
 	def dispatch createRuleMethod(CompositeRule compositeRule,String ruleName){
-		var List<String> ruleNames = new LinkedList<String>()
+		var List<String> ruleNames = new ArrayList<String>()
 		
 		for(rule:compositeRule.rules){
 			var cRuleName = "CompositeRule_"+compositeRuleNr
@@ -194,10 +179,22 @@ class CSVAPIGeneratorLine {
 		'''
 	}
 	
+		
+	def comparisonOperator(ComparisonOperator operator){
+		switch operator {
+			case ComparisonOperator::GREATER:return ' > '
+			case ComparisonOperator::GREATER_OR_EQUALS:return ' >= '
+			case ComparisonOperator::LOWER:return ' < '
+			case ComparisonOperator::LOWER_OR_EQUALS:return ' <= '
+			case ComparisonOperator::UNEQUALS:return ' != '
+			case ComparisonOperator::EQUALS:return ' == '
+		}
+	}
+	
 	def logicalOperator(LogicalOperator operator){
 		switch operator {
-				case LogicalOperator::AND:return ' && '
-				case LogicalOperator::OR:return ' || '
-			}
+			case LogicalOperator::AND:return ' && '
+			case LogicalOperator::OR:return ' || '
+		}
 	}
 }
