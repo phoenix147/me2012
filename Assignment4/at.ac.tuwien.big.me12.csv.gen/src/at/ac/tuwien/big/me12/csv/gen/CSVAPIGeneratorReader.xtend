@@ -4,12 +4,7 @@ import org.eclipse.xtext.generator.IFileSystemAccess
 import at.ac.tuwien.big.me12.csv.csvmm.FileDefinition
 import at.ac.tuwien.big.me12.csv.csvmm.StaticField 
 
-class CSVAPIGeneratorReader {
-	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	String packageName = CSVAPIGenerator::packageName;
-	String csvLine = CSVAPIGenerator::csvLine;
-	String csvFile = CSVAPIGenerator::csvFile;
-	String csvReader = CSVAPIGenerator::csvReader;
+class CSVAPIGeneratorReader extends CSVAPIGenerator {
 	
 	def generateReaderClassFile(IFileSystemAccess fileSystemAccess, FileDefinition fileDefinition){
    		fileSystemAccess.generateFile('''«PACKAGE_PATH»«fileDefinition.name.toFirstUpper»«csvReader».java''', fileDefinition.generateReaderCode);
@@ -56,7 +51,7 @@ class CSVAPIGeneratorReader {
 				String line = null;
 				try {
 					while((line=bufferedReader.readLine()) != null){
-						«csvLineName» csvLine = create«csvLineName»(line);
+						«csvLineName» csvLine = parseLine(line);
 						lines.add(csvLine);
 					}
 				} catch (IOException e) {
@@ -71,7 +66,7 @@ class CSVAPIGeneratorReader {
 				return lines;
 			}
 
-			private «csvLineName» create«csvLineName»(String line) {
+			private «csvLineName» parseLine(String line) {
 				String[] fields = line.split(FIELD_SEPARATOR);
 		
 				«csvLineName» csvLine = new «csvLineName»();

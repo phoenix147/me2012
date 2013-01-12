@@ -3,11 +3,7 @@ package at.ac.tuwien.big.me12.csv.gen
 import org.eclipse.xtext.generator.IFileSystemAccess
 import at.ac.tuwien.big.me12.csv.csvmm.FileDefinition 
 
-class CSVAPIGeneratorFile {
-	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	String packageName = CSVAPIGenerator::packageName;
-	String csvLine = CSVAPIGenerator::csvLine;
-	String csvFile = CSVAPIGenerator::csvFile;
+class CSVAPIGeneratorFile extends CSVAPIGenerator {
 	
 	def generateFileClassFile(IFileSystemAccess fileSystemAccess, FileDefinition fileDefinition){
    		fileSystemAccess.generateFile('''«PACKAGE_PATH»«fileDefinition.name.toFirstUpper»«csvFile».java''', fileDefinition.generateFileCode);

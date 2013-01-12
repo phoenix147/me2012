@@ -15,10 +15,7 @@ import at.ac.tuwien.big.me12.csv.csvmm.LogicalOperator
 import java.util.List
 import java.util.ArrayList
 
-class CSVAPIGeneratorLine {
-	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	String packageName = CSVAPIGenerator::packageName;
-	String csvLine = CSVAPIGenerator::csvLine;
+class CSVAPIGeneratorLine extends CSVAPIGenerator {
 	var ruleMethods = new StringBuilder
 	var compositeRuleNr = 1
 	
@@ -49,7 +46,7 @@ class CSVAPIGeneratorLine {
 				public «returnType» «IF returnType.equals("boolean")»is«ELSE»get«ENDIF»«fieldDefinition.name.toFirstUpper»(){
 					«createGetterBody(fieldDefinition, returnType)»
 				}
-
+				
 				«IF fieldDefinition instanceof StaticField»
 				«var fieldName = fieldDefinition.name.toFirstLower»
 				public void set«fieldDefinition.name.toFirstUpper»(«fieldDefinition.fieldType.getName» «fieldName»){
@@ -92,7 +89,7 @@ class CSVAPIGeneratorLine {
 		}
 		«ENDIF»
 		«IF aggregationField.aggType==AggregationType::AVERAGE»
-		computedValue = (int)((double)computedValue/values.length+0.5d);
+		computedValue = (int)(Math.round((double)computedValue/values.length));
 		«ENDIF»
 		«IF aggregationField.aggType==AggregationType::MIN»
 		java.util.Arrays.sort(values);
@@ -107,17 +104,19 @@ class CSVAPIGeneratorLine {
 	}
 	
 	def dispatch createGetterBody(RuleBasedField ruleBasedField, String returnType){
-		var ifs = new StringBuilder
+		var ifStatements = new StringBuilder
 		var ruleNr = 1
 		
 		for(rule : ruleBasedField.rules){
 			var ruleName = ""+'''is«ruleBasedField.name.toFirstUpper»Rule_«ruleNr»_Fulfilled'''
-			ifs.append(createIf(rule,ruleName,ruleBasedField))
+			ifStatements.append(createIfStatement(rule,ruleName,ruleBasedField))
 			ruleMethods.append(createRuleMethod(rule,ruleName))
+			
 			ruleNr = ruleNr+1
 		}
 		'''
-		«ifs»
+		«ifStatements»
+		
 		«IF ruleBasedField.fieldType==FieldType::BOOLEAN»
 			«IF ruleBasedField.defaultValue == null»
 				return false;
@@ -132,7 +131,7 @@ class CSVAPIGeneratorLine {
 		'''				
 	}
 	
-	def createIf(Rule rule,String ruleName,RuleBasedField ruleBasedField){
+	def createIfStatement(Rule rule,String ruleName,RuleBasedField ruleBasedField){
 		'''
 		if(«ruleName»()){
 			«IF ruleBasedField.fieldType==FieldType::BOOLEAN»
@@ -176,6 +175,7 @@ class CSVAPIGeneratorLine {
 				return «FOR rule:ruleNames SEPARATOR logicalOperator(compositeRule.operator)»«rule»()«ENDFOR»;
 			«ENDIF»
 		}
+		
 		'''
 	}
 	

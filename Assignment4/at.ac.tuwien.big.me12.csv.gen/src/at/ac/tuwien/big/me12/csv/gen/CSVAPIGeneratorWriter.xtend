@@ -5,14 +5,7 @@ import at.ac.tuwien.big.me12.csv.csvmm.FileDefinition
 import at.ac.tuwien.big.me12.csv.csvmm.StaticField
 import at.ac.tuwien.big.me12.csv.csvmm.FieldType 
 
-class CSVAPIGeneratorWriter {
-	String PACKAGE_PATH = CSVAPIGenerator::PACKAGE_PATH;
-	
-	String packageName = CSVAPIGenerator::packageName;
-	
-	String csvWriter = CSVAPIGenerator::csvWriter;
-	String csvFile = CSVAPIGenerator::csvFile;
-	String csvLine = CSVAPIGenerator::csvLine;
+class CSVAPIGeneratorWriter extends CSVAPIGenerator {
 	
 	def generateWriterClassFile(IFileSystemAccess fileSystemAccess, FileDefinition fileDefinition){
    		fileSystemAccess.generateFile('''«PACKAGE_PATH»«fileDefinition.name.toFirstUpper»«csvWriter».java''', fileDefinition.generateWriterCode);
